@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 html,
 body {
   padding: 0;
@@ -13,6 +15,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  max-width: var(--width);
+  width: var(--width);
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 @media (prefers-color-scheme: dark) {

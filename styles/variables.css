@@ -1,0 +1,23 @@
+:root {
+  --orange: #ff6633;
+  --orange-soft: rgba(255, 102, 51, 0.1);
+  --red: #e62e7b;
+  --red-soft: rgba(230, 46, 123, 0.1);
+  --blue: #3361ff;
+  --blue-soft: rgba(51, 97, 255, 0.1);
+  --green: #29cc39;
+  --green-soft: rgba(41, 204, 57, 0.1);
+  --purple: #7b29cc;
+  --purple-soft: rgba(123, 41, 204, 0.1);
+  --teal: #29c6cc;
+  --teal-soft: rgba(41, 198, 204, 0.1);
+  --slate: #4d5e80;
+  --transition: 300ms;
+  --width: 1440px;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
