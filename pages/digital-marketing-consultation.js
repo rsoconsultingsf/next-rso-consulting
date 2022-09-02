@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import Head from "next/head";
 
-import Hero from "../components/hero/heroSection";
+import Hero from "../components/heroSection/heroSection";
 import Header from "../components/Layout/Header";
 
 import ContactSection from "../components/Contact/ContactSection";
