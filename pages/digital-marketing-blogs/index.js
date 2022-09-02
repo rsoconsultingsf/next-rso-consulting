@@ -74,7 +74,7 @@ const Blog = ({ posts, pageCount, categories }) => {
       </Hero>
       <section>
         <div id="intro" ref={myRef}></div>
-        <div className={styles["blog-archive"]}>
+        <div ref={myRef} className={styles["blog-archive"]}>
           <div></div>
           <div>
             <Archive posts={archivePosts} />
