@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from "react";
 
 import Head from "next/head";
 
-import Hero from "../components/hero/hero";
+import Hero from "../components/hero/heroSection";
 import Card from "../components/UI/Cards/Card";
 import ContactSection from "../components/Contact/ContactSection";
 import Button from "../components/UI/Buttons/Button";
