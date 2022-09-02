@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import Image from "next/image";
 import Head from "next/head";
 
-import Hero from "../../components/hero/heroSection";
+import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
 import ServiceCard from "../../components/UI/Cards/ServiceCard";
 import ContactSection from "../../components/Contact/ContactSection";
