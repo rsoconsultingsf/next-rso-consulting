@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import Head from "next/head";
 
-import Hero from "../components/Hero/hero";
+import Hero from "../components/hero/hero";
 
 import heroImage from "../public/images/hero/rso-hero_contact.png";
 

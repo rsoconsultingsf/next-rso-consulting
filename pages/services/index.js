@@ -4,7 +4,7 @@ import Image from "next/image";
 import Head from "next/head";
 
 import Button from "../../components/UI/Buttons/Button";
-import Hero from "../../components/Hero/hero";
+import Hero from "../../components/hero/hero";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
 import ServiceCard from "../../components/UI/Cards/ServiceCard";
 import ContactSection from "../../components/Contact/ContactSection";

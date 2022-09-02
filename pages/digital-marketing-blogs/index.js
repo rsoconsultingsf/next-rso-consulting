@@ -5,7 +5,7 @@ import Pagination from "@mui/material/Pagination";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import Hero from "../../components/Hero/hero";
+import Hero from "../../components/hero/hero";
 import ContactSection from "../../components/Contact/ContactSection";
 import Archive from "../../components/Blog/Archive";
 import Card from "../../components/UI/Cards/Card";
