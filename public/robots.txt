@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.rso-consulting.com
+
+# Sitemaps
+Sitemap: https://www.rso-consulting.com/sitemap.xml

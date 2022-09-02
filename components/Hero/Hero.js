@@ -1,45 +1,112 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
 
 import Button from "../UI/Buttons/Button";
+import NavMenu from "../Navigation/Desktop/NavMenu";
+import MobileNav from "../Navigation/Mobile/NavMenu";
+import Backdrop from "../UI/Backdrop/Backdrop";
+import SideDrawer from "../UI/SideDrawer/SideDrawer";
+import ContactForm from "../Forms/ContactForm";
 
-import styles from "./Hero.module.css";
+import { BiMenu } from "react-icons/bi";
 
-import { navLinks } from "../../data/navLinks";
+import styles from "./hero.module.css";
 
 const Hero = (props) => {
   const { image, alt, children } = props;
 
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+  const [drawerIsClosing, setDrawerIsClosing] = useState(true);
+
+  const openDrawer = () => {
+    setDrawerIsClosing(false);
+    setDrawerIsOpen(true);
+  };
+
+  const closeDrawer = () => {
+    setDrawerIsClosing(true);
+    const drawerTimer = setInterval(() => {
+      setDrawerIsOpen(false);
+      clearInterval(drawerTimer);
+    }, 270);
+  };
+
+  // Prevent scrolling behind sidedrawer when open
+  useEffect(() => {
+    drawerIsOpen && (document.documentElement.style.overflow = "hidden");
+    drawerIsOpen && (document.body.style.paddingRight = "15px");
+    !drawerIsOpen && (document.documentElement.style.overflow = "unset");
+    !drawerIsOpen && (document.body.style.paddingRight = "0");
+  }, [drawerIsOpen]);
+
   return (
-    <section className={styles["hero-container"]}>
-      <div className={styles.hero}>
-        <div className={styles["hero-inner"]}>
-          <Image
-            className={styles["hero-image"]}
-            src={image}
-            alt={alt}
-            objectFit="cover"
-          />
-          <div className={`${styles.header} container`}>
-            <Image
-              src="/images/logos/rso-logo-white.svg"
-              alt="RSO Consulting logo"
-              width={145}
-              height={54}
-            />
-            <nav></nav>
+    <>
+      {drawerIsOpen && <Backdrop onClick={closeDrawer} />}
+      <SideDrawer
+        show={drawerIsOpen}
+        close={closeDrawer}
+        isClosing={drawerIsClosing}
+      >
+        <MobileNav />
+        <p style={{ fontSize: "22px", fontWeight: "700" }}>Contact Us Today</p>
+        <ContactForm />
+      </SideDrawer>
+      <section
+        className={styles["hero-container"]}
+        style={{ marginBottom: props.noAnchor ? "-35px" : null }}
+      >
+        <div className={props.fixed ? "hero-fixed" : styles.hero}>
+          <div
+            className={
+              props.noAnchor
+                ? styles["hero-inner-no-anchor"]
+                : styles["hero-inner"]
+            }
+          >
+            <Image src={image} alt={alt} objectFit="cover" priority />
+            <div className={`${styles.header} container`}>
+              <Link href="/" passHref>
+                <a>
+                  <Image
+                    src="/images/logos/san-francisco-digital-marketing-agency_white.svg"
+                    alt="RSO Logo - San Francisco Digital Marketing Agency"
+                    className="header-logo-link"
+                    width={145}
+                    height={54}
+                  />
+                </a>
+              </Link>
+              <div className="desktop">
+                <NavMenu white />
+              </div>
+              <div className="mobile" onClick={openDrawer}>
+                <BiMenu color="#fff" size={32} />
+              </div>
+            </div>
+            <div
+              className={
+                props.fixed
+                  ? `${styles["hero-overlay"]} ${props.className}`
+                  : `${styles["hero-overlay"]} container ${props.className}`
+              }
+              style={{ maxWidth: props.fixed ? "none" : "1440px" }}
+            >
+              {children}
+            </div>
           </div>
-          <div className={styles["hero-overlay"]}>{children}</div>
+
+          {!props.noAnchor && (
+            <div className={styles["btn-container"]}>
+              <Button heroAnchor anchor="intro">
+                Show More
+              </Button>
+            </div>
+          )}
         </div>
-        <div className={styles["btn-container"]}>
-          <Button heroAnchor anchor="top">
-            Show More
-          </Button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from "./Header";
+import StickyHeader from "./StickyHeader";
 import Footer from "./Footer";
 
 const Layout = (props) => {
@@ -8,6 +8,7 @@ const Layout = (props) => {
 
   return (
     <>
+      <StickyHeader />
       <main>{children}</main>
       <Footer />
     </>

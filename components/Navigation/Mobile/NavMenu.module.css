@@ -1,0 +1,12 @@
+.nav-menu {
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight:600;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  padding-left: 0;
+  color: var(--dark-slate);
+  border-bottom: 2px solid var(--slate);
+}

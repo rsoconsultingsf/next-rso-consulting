@@ -1,7 +1,19 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: ["images.ctfassets.net", "www.gstatic.com"],
+  },
+  reactStrictMode: true,
+  trailingSlash: true,
+  swcMinify: true,
+  async redirects() {
+    return [
+      {
+        source: "/seo-services/",
+        destination: "/services/seo-services/",
+        permanent: true,
+      },
+    ];
+  },
+};

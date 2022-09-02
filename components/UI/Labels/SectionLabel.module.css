@@ -1,0 +1,130 @@
+.orange,
+.red,
+.blue,
+.green,
+.purple,
+.turq,
+.teal {
+  text-align:center;
+  border-radius:50px;
+  padding: 15px 30px;
+  margin-bottom: 10px;
+  display:inline-block;
+}
+
+.orange h2,
+.red h2,
+.blue h2,
+.green h2,
+.purple h2,
+.turq h2,
+.teal h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.orange {
+  background-color: var(--orange-soft);
+}
+
+.red {
+  background-color: var(--red-soft);
+}
+
+.blue {
+  background-color: var(--blue-soft);
+}
+
+.green {
+  background-color: var(--green-soft);
+}
+
+.purple {
+  background-color: var(--purple-soft);
+}
+
+.turq {
+  background-color: var(--turq-soft);
+}
+
+.teal {
+  background-color: var(--teal-soft);
+}
+
+.orange h2 {
+  color: var(--orange);
+}
+
+.red h2 {
+  color: var(--red);
+}
+
+.blue h2 {
+  color: var(--blue);
+}
+
+.green h2 {
+  color: var(--green);
+}
+
+.purple h2 {
+  color: var(--purple);
+}
+
+.turq h2 {
+  color: var(--turq);
+}
+
+.teal h2 {
+  color: var(--teal);
+}
+
+@media (min-width: 426px) {
+  .orange h2,
+  .red h2,
+  .blue h2,
+  .green h2,
+  .purple h2,
+  .turq h2,
+  .teal h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width:768px) {
+  .orange h2,
+  .red h2,
+  .blue h2,
+  .green h2,
+  .purple h2,
+  .turq h2,
+  .teal h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width:1024px) {
+  .orange h2,
+  .red h2,
+  .blue h2,
+  .green h2,
+  .purple h2,
+  .turq h2,
+  .teal h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width:1440px) {
+  .orange h2,
+  .red h2,
+  .blue h2,
+  .green h2,
+  .purple h2,
+  .turq h2,
+  .teal h2 {
+    font-size: 28px;
+  }
+}

@@ -1,3 +1,21 @@
+.btn {
+  background-color: #F26522;
+  filter: drop-shadow(0 10px 20px rgba(242, 101, 34, 0.3));
+  border-radius: 5px;
+  padding: 15px 40px;
+  border:none;
+  color:#fff;
+  font-weight: 800;
+  transition: var(--transition);
+  font-size:18px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color:#fa7d41;
+}
+
 .hero-anchor {
   color: #7d8fb3;
   background: #fff;
@@ -14,8 +32,10 @@
 .blue,
 .green,
 .purple,
-.teal {
-  display: contents;
+.turq,
+.teal,
+.dark-red {
+  display:block;
   text-align: center;
   border-radius: 50px;
   border: 1px solid #fff;
@@ -24,7 +44,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   font-weight: bold;
   font-size: 18px;
-  padding: 15px 50px;
+  padding: 15px 20px;
   transition: var(--transition);
 }
 
@@ -55,5 +75,15 @@
 
 .teal:hover {
   background-color: var(--teal);
+  cursor: pointer;
+}
+
+.turq:hover {
+  background-color: var(--turq);
+  cursor: pointer;
+}
+
+.dark-red:hover {
+  background-color: var(--dark-red);
   cursor: pointer;
 }

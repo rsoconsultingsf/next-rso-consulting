@@ -1,0 +1,22 @@
+.sidedrawer__slide__in {
+  animation: 300ms slide-in;
+}
+
+.sidedrawer__slide__out {
+  animation: 300ms slide-out;
+}
+
+@keyframes slide-in {
+  0% {transform: translateX(-300px);}
+  100% {transform: translateX(0);}
+}
+
+@keyframes slide-out {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-500px);}
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

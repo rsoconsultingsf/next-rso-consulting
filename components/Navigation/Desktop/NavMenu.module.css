@@ -1,0 +1,15 @@
+.nav-menu,
+.nav-menu-white {
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:400px;
+  font-weight:600;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.nav-menu-white {
+  color: #fff;
+}

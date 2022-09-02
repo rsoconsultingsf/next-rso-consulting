@@ -1,0 +1,19 @@
+import { Html, Head, Main, NextScript } from "next/document";
+
+export default function Document() {
+  return (
+    <Html>
+      <Head>
+        <meta charSet="utf-8" />
+      </Head>
+      <body>
+        <Main />
+        {/* Here we will mount our portals */}
+        <div id="backdrop-hook" />
+        <div id="drawer-hook" />
+        <div id="modal-hook" />
+        <NextScript />
+      </body>
+    </Html>
+  );
+}

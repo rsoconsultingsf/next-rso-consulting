@@ -1,0 +1,141 @@
+.footer {
+  min-height: 360px;
+  background-color: #F3F3F3;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 50px;
+}
+
+.badges {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:50px;
+}
+
+.badges a,
+.badges div {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 100%;
+}
+
+.footer__bottom__desktop {
+  display:none;
+}
+
+.footer__bottom__mobile {
+  padding-left: 30px;
+  padding-right:30px;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+}
+
+.footer__bottom__mobile .copyright {
+  text-align:right;
+}
+
+.footer__bottom__mobile .social__icons {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.footer__bottom__mobile .footer__menu {
+  grid-template-columns: 1fr;
+}
+
+.footer__col {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__menu {
+  gap: 20px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.footer__menu a {
+  text-decoration: none;
+  color: #6B7A99;
+}
+
+.copyright {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 13px;
+}
+
+.logo {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social__icons {
+  gap:15px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 425px) {
+
+}
+
+@media (min-width: 768px) {
+  .badges a,
+  .badges div {
+    flex: 0 0 40%;
+  }
+
+  .footer__bottom__mobile .footer__menu {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .footer__bottom__mobile .social__icons {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .badges a,
+  .badges div {
+    flex: 0 0 15%;
+  }
+
+  .footer__bottom__mobile {
+    display:none;
+  }
+  
+  .footer__bottom__desktop {
+    padding-left: 30px;
+    padding-right:30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width:1024px) {
+  .footer {
+    padding-top: 20px;
+  }
+}

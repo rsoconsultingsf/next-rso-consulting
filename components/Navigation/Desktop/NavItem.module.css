@@ -1,0 +1,7 @@
+.link-item:hover {
+  color:var(--orange);
+}
+
+.link-item-white:hover {
+  color:var(--orange);
+}

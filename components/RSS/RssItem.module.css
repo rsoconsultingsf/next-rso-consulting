@@ -1,0 +1,27 @@
+.excerpt {
+  color: var(--slate);
+  margin-top: 0;
+}
+
+.item {
+  max-width:800px;
+  margin: 0 auto 30px auto;
+  padding: 0 10px;
+  border-bottom: 1px solid var(--slate)
+}
+
+.title {
+  color: var(--orange);
+  font-weight:600;
+  font-size: 18px;
+  margin-left:-10px;
+}
+
+.title::before {
+  content: '›';
+  position: relative;
+  font-size: 30px;
+  top: 50%;
+  left: -10px;
+  color: var(--slate)
+}

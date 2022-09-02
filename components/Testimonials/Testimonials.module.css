@@ -1,0 +1,31 @@
+.background-image {
+  position: absolute;
+  display:inherit;
+}
+
+.background-image-container {
+  visibility: hidden;
+  display:none;
+}
+
+.content {
+  position: relative;
+}
+
+.inner {
+  position: relative
+}
+
+@media (min-width: 1024px) {
+  .background-image-container {
+    visibility: inherit;
+    display:inherit;
+  }
+
+  .content {
+    position: absolute;
+    left:0;
+    right:0;
+    top: 130px;
+  }
+}
