@@ -27,7 +27,7 @@ const Home = () => {
           <b>Make It Easy</b>
           <br /> For Future Customers To Find You
         </h1>
-        <div className="col-3" style={{ gridAutoRows: "auto" }}>
+        <div className="col-3 home-hero-btns" style={{ gridAutoRows: "auto" }}>
           <Button color="orange" link="/services/seo-services/">
             Search Engine Optimization
           </Button>
@@ -108,7 +108,7 @@ const Home = () => {
               />
             }
             title="Search Engine Optimization"
-            description="Drive more traffic to your website, generate leads, and grow your business."
+            description="Grow your website’s organic search results, drive more traffic to your website and generate leads."
             details={
               <ul>
                 <li>Site Audits</li>
@@ -133,8 +133,8 @@ const Home = () => {
             details={
               <ul>
                 <li>Strategy-Campaign Alignment</li>
-                <li>Keyword Research & Analysis</li>
-                <li>Campaign Bidding</li>
+                <li>Keyword Bidding & Analysis</li>
+                <li>Creative Ad Content</li>
                 <li>Budget Allocation & Adjustments</li>
               </ul>
             }
@@ -150,14 +150,12 @@ const Home = () => {
               />
             }
             title="Social Media Optimization"
-            description="Build your brand awareness, expand online
-            visibility, and improve your website's organic
-            search results."
+            description="Build your brand awareness, grow your audience and increase engagement through organic or paid content."
             details={
               <ul>
                 <li>Platform Selections</li>
                 <li>Content Strategy & Creation</li>
-                <li>Scheduleing & Interaction</li>
+                <li>Scheduling & Interaction</li>
                 <li>Analysis & Reporting</li>
               </ul>
             }
@@ -177,9 +175,10 @@ const Home = () => {
             your budget more effectively."
             details={
               <ul>
-                <li>Website Analysis</li>
-                <li>Analytics Introduction & Guidance</li>
-                <li>Strategy Development</li>
+                <li>Data-Driven Marketing</li>
+                <li>Audience & Landing Page Analysis</li>
+                <li>Channel User Behavior Analysis</li>
+                <li>Conversion & Attribution Modeling</li>
               </ul>
             }
           />
@@ -194,12 +193,11 @@ const Home = () => {
               />
             }
             title="Web Design & Development"
-            description="Offer an engaging experience for your user base 
-            with web design & development."
+            description="Offer an engaging experience for your website visitors with modern web design using the latest technology and best practices."
             details={
               <ul>
                 <li>Optimized Content</li>
-                <li>Maintenance</li>
+                <li>Ongoing Maintenance</li>
                 <li>UX Consulting</li>
                 <li>Website Rebuilds</li>
               </ul>

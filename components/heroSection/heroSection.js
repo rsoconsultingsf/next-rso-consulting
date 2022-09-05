@@ -93,7 +93,7 @@ const Hero = (props) => {
               }
               style={{ maxWidth: props.fixed ? "none" : "1440px" }}
             >
-              {children}
+              <div className={styles["hero-overlay-inner"]}>{children}</div>
             </div>
           </div>
 
