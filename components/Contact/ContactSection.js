@@ -56,8 +56,11 @@ const ContactSection = (props) => {
                   <p className="medium">+1 415-992-7711</p>
                 </div>
                 <div className="contact-meta-inner">
-                  <FaRegClock />
-                  <p className="medium">Monday - Friday: 8 am – 5 pm</p>
+                  <FaRegClock size={36} />
+                  <p className="medium">
+                    Hours? Our work is not limited to set hours. Contact us and
+                    give us a try!
+                  </p>
                 </div>
                 <div className="contact-meta-inner">
                   <FaEnvelope />

@@ -50,16 +50,65 @@ const TestimonialSlider = () => {
           </p>
         </div>
         <div>
-          <h3>3</h3>
+          <p>
+            Thanks for doing such a great job on our SEO. We are coming up in
+            the top section of Google often and it is helping our business.
+          </p>
+          <p>
+            <b>Rose Weidmann</b>
+          </p>
+          <p>
+            <span className="light">Weidmann & Farrar PC</span>
+          </p>
         </div>
         <div>
-          <h3>4</h3>
+          <p>
+            I can highly recommend working with Rob Sanders and his team at RSO.
+            I was very impressed with RSO! I reached out for their help with
+            increasing the SEO of my non-profits website. I learned so much more
+            than I thought I would! It was amazing how much better it was to
+            learn and think in terms of the context of their recommendations for
+            the non-profit organization rather than just “in concept”. They made
+            the ideas they suggested really STICK.
+          </p>
+          <p>
+            <b>Janet Beach</b>
+          </p>
+          <p>
+            <span className="light">Strategic Harmony® Partners</span>
+          </p>
         </div>
         <div>
-          <h3>5</h3>
+          <p>
+            I’ve been working with RSO consulting since 2010. In that time, they
+            have been my go-to team for my company’s online marketing needs. As
+            an experienced digital marketer myself, I am impressed with their
+            commitment to our success, and their ability to work closely with us
+            to help us evolve our strategy over time, and measurably grow our
+            online traffic and leads in a high-quality way.
+          </p>
+          <p>
+            <b>Nerissa Lemaster-Sardi</b>
+          </p>
+          <p>
+            <span className="light">CrowdScience</span>
+          </p>
         </div>
         <div>
-          <h3>6</h3>
+          <p>
+            I’ve been working with RSO consulting since 2010. In that time, they
+            have been my go-to team for my company’s online marketing needs. As
+            an experienced digital marketer myself, I am impressed with their
+            commitment to our success, and their ability to work closely with us
+            to help us evolve our strategy over time, and measurably grow our
+            online traffic and leads in a high-quality way.
+          </p>
+          <p>
+            <b>Heather Aho</b>
+          </p>
+          <p>
+            <span className="light">Intrax</span>
+          </p>
         </div>
       </Slider>
     </div>

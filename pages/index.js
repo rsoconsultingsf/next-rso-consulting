@@ -27,7 +27,7 @@ const Home = () => {
           <b>Make It Easy</b>
           <br /> For Future Customers To Find You
         </h1>
-        <div className="col-3 home-hero-btns" style={{ gridAutoRows: "auto" }}>
+        <div className="col-3 short-grid" style={{ gridAutoRows: "auto" }}>
           <Button color="orange" link="/services/seo-services/">
             Search Engine Optimization
           </Button>
@@ -45,6 +45,12 @@ const Home = () => {
           </Button>
           <Button color="turq" link="/services/a-b-testing/">
             A/B Testing
+          </Button>
+          <Button color="dark-red" link="/services/email-marketing/">
+            Email Marketing
+          </Button>
+          <Button color="teal" link="/services/affiliate-marketing/">
+            Affiliate Marketing
           </Button>
         </div>
       </Hero>
@@ -252,10 +258,10 @@ const Home = () => {
             </div>
             <div className="flex-center">
               <Image
-                src="/images/logos/asana.png"
+                src="/images/logos/BlueJeans_logo.png"
                 alt="Asana logo"
                 width={283}
-                height={55}
+                height={65}
               />
             </div>
             <div className="flex-center">
