@@ -42,7 +42,7 @@ const ContactUs = () => {
         <ContactSection
           noLabel
           contactHeader={
-            <h1
+            <span
               className="sub-headline"
               style={{
                 maxWidth: "1200px",
@@ -52,7 +52,7 @@ const ContactUs = () => {
             >
               Reach out with any <b>questions</b> you might have regarding how{" "}
               <b>RSO</b> can help you with your <b>digital marketing</b>.
-            </h1>
+            </span>
           }
         />
       </div>
