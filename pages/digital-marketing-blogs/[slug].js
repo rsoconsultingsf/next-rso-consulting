@@ -42,6 +42,8 @@ export default function Post({
     return <ErrorPage statusCode={404} />;
   }
 
+  console.log(seoTitle);
+
   return (
     <Fragment>
       <Head>

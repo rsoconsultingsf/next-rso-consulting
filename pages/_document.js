@@ -3,9 +3,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html>
-      <Head>
-        <meta charSet="utf-8" />
-      </Head>
+      <Head></Head>
       <body>
         <Main />
         {/* Here we will mount our portals */}

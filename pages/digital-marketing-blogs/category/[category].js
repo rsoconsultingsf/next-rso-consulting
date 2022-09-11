@@ -30,6 +30,10 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
   const [page, setPage] = useState(1);
   const [archivePosts, setArchivePosts] = useState(posts);
 
+  const pageCategory = category;
+
+  const pageTitle = `${pageCategory} Blog Posts | RSO Consulting`;
+
   // Update post previews displayed
   useEffect(() => {
     const fetchData = async () => {
@@ -63,7 +67,7 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
   return (
     <Fragment>
       <Head>
-        <title>Digital Marketing Blogs: Trends & Tips | RSO Consulting</title>
+        <title>{pageTitle}</title>
         <meta name="description" content="" />
       </Head>
       <Hero image={heroImage} alt="">
