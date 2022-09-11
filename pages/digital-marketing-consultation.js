@@ -42,17 +42,10 @@ const ContactUs = () => {
         <ContactSection
           noLabel
           contactHeader={
-            <span
-              className="sub-headline"
-              style={{
-                maxWidth: "1200px",
-                margin: "40px auto 40px auto",
-                color: "#4D5E80",
-              }}
-            >
+            <h3 className="sub-headline">
               Reach out with any <b>questions</b> you might have regarding how{" "}
               <b>RSO</b> can help you with your <b>digital marketing</b>.
-            </span>
+            </h3>
           }
         />
       </div>
