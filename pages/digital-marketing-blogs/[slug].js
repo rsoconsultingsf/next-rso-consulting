@@ -48,7 +48,7 @@ export default function Post({
     <Fragment>
       <Head>
         <title>{seoTitle}</title>
-        <meta description={metaDescription} />
+        <meta name="description" content={metaDescription} />
 
         {/* Open Graph */}
         <meta property="og:image" content={metaFeaturedImage} />
