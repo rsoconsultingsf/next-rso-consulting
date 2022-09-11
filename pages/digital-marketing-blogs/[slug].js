@@ -10,7 +10,7 @@ import ContactSection from "../../components/Contact/ContactSection";
 
 import {
   getAllPostsCategories,
-  getAllPostsWithSlug,
+  getAllPostSlugs,
   getPostAndMorePosts,
 } from "../../lib/api";
 
@@ -186,7 +186,7 @@ export async function getStaticProps({ params, preview = false }) {
       preview,
       post: data?.post ?? null,
       postTitle: data?.post?.title ?? null,
-      seoTitle: data?.post?.seoTitle ?? `${data.post.title} - RSO Consulting`,
+      seoTitle: data?.post?.seoTitle ?? `${data.post.title} | RSO Consulting`,
       author: data?.post?.author ?? null,
       authorName: data?.post?.author.name ?? null,
       authorImage: data?.post?.author.image ?? null,
@@ -208,7 +208,7 @@ export async function getStaticProps({ params, preview = false }) {
 }
 
 export async function getStaticPaths() {
-  const allPosts = await getAllPostsWithSlug();
+  const allPosts = await getAllPostSlugs();
 
   return {
     paths:
