@@ -29,6 +29,7 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
 
   const [page, setPage] = useState(1);
   const [archivePosts, setArchivePosts] = useState(posts);
+  const [visible, setVisible] = useState(true);
 
   const pageCategory = category;
 
@@ -36,20 +37,26 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
 
   // Update post previews displayed
   useEffect(() => {
-    const fetchData = async () => {
-      const categoryPostPreviews = await getCategoryPostPreviews(
-        false,
-        page - 1,
-        ITEMS_PER_PAGE,
-        category
-      );
-      setArchivePosts(categoryPostPreviews.items);
-    };
+    const timer = setTimeout(() => {
+      const fetchData = async () => {
+        const categoryPostPreviews = await getCategoryPostPreviews(
+          false,
+          page - 1,
+          ITEMS_PER_PAGE,
+          category
+        );
+        setArchivePosts(categoryPostPreviews.items);
+        setVisible(true);
+      };
 
-    fetchData().catch(console.error);
+      fetchData().catch(console.error);
+    }, 500);
+
+    return () => clearTimeout(timer);
   }, [page, category]);
 
   const paginationChangeHandler = (e, value) => {
+    setVisible(false);
     setPage(value);
     myRef.current.scrollIntoView();
     router.push(
@@ -70,7 +77,7 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
         <title>{pageTitle}</title>
         <meta name="description" content="" />
       </Head>
-      <Hero image={heroImage} alt="">
+      <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Blog Category:</b> <br />
           {category}
@@ -87,11 +94,11 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
           Read about the latest {category} trends and tips.
         </h2>
       </Hero>
-      <section>
+      <section id="cards">
         <div id="intro"></div>
         <div ref={myRef} className={styles["blog-archive"]}>
           <div></div>
-          <div>
+          <div className={visible ? "fade-in" : "fade-out"}>
             <Archive posts={archivePosts} />
             <div className="pagination-wrapper">
               <Card>

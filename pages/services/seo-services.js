@@ -21,7 +21,11 @@ const SEOServices = () => {
           content="RSO is an award-winning San Francisco SEO company helping clients increase visibility and traffic via organic search based on proven methodology."
         />
       </Head>
-      <Hero image={heroImage} alt="Digital Marketing Agency Graphic">
+      <Hero
+        image={heroImage}
+        alt="Digital Marketing Agency Graphic"
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Award Winning</b>
           <br /> San Francisco SEO Company
@@ -83,7 +87,7 @@ const SEOServices = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
           <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>

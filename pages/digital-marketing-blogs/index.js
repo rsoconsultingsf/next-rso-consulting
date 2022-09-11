@@ -25,23 +25,30 @@ const Blog = ({ posts, pageCount, categories }) => {
 
   const [page, setPage] = useState(1);
   const [archivePosts, setArchivePosts] = useState(posts);
+  const [visible, setVisible] = useState(true);
 
   // Update post previews displayed
   useEffect(() => {
-    const fetchData = async () => {
-      const postPreviews = await getPostPreviews(
-        false,
-        page - 1,
-        ITEMS_PER_PAGE,
-        "all"
-      );
-      setArchivePosts(postPreviews.items);
-    };
+    const timer = setTimeout(() => {
+      const fetchData = async () => {
+        const postPreviews = await getPostPreviews(
+          false,
+          page - 1,
+          ITEMS_PER_PAGE,
+          "all"
+        );
+        setArchivePosts(postPreviews.items);
+        setVisible(true);
+      };
 
-    fetchData().catch(console.error);
+      fetchData().catch(console.error);
+    }, 500);
+
+    return () => clearTimeout(timer);
   }, [page]);
 
   const paginationChangeHandler = (e, value) => {
+    setVisible(false);
     setPage(value);
     router.push(`digital-marketing-blogs/?page=${value}`, undefined, {
       shallow: true,
@@ -55,7 +62,7 @@ const Blog = ({ posts, pageCount, categories }) => {
         <title>Digital Marketing Blogs: Trends & Tips | RSO Consulting</title>
         <meta name="description" content="" />
       </Head>
-      <Hero image={heroImage} alt="">
+      <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Digital Marketing</b> <br />
           Blog
@@ -72,11 +79,11 @@ const Blog = ({ posts, pageCount, categories }) => {
           Read about the latest trends and tips in digital marketing.
         </h2>
       </Hero>
-      <section>
+      <section id="cards">
         <div id="intro" ref={myRef}></div>
         <div ref={myRef} className={styles["blog-archive"]}>
           <div></div>
-          <div>
+          <div className={visible ? "fade-in" : "fade-out"}>
             <Archive posts={archivePosts} />
             <div className="pagination-wrapper">
               <Card>

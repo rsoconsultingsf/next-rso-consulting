@@ -1,5 +1,5 @@
 .blog-archive {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: unset;
   gap: 50px;
@@ -8,15 +8,15 @@
 
 .blog-archive > div:nth-child(1),
 .blog-archive > div:nth-child(3) {
-  display:none; 
+  display: none;
 }
 
 .blog-archive > div:nth-child(2) {
-  flex: 0 0 calc(60vw - 20px)
+  flex: 0 0 calc(60vw - 20px);
 }
 
 .categories-desktop {
-  display:none;
+  display: none;
 }
 
 .categories-mobile {
@@ -24,18 +24,19 @@
 }
 
 .desktop {
-  display:none;
+  display: none;
 }
 
 .mobile {
-  display:inherit;
+  display: inherit;
 }
 
-@media (min-width: 426px) {}
+@media (min-width: 426px) {
+}
 
 @media (min-width: 768px) {
   .blog-archive {
-    scroll-margin-top:160px;
+    scroll-margin-top: 160px;
   }
 
   .desktop {
@@ -47,64 +48,63 @@
   }
 
   .blog-archive {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    
+
     gap: 50px;
     padding: 0;
   }
 
-  .blog-archive > div:nth-child(1) 
-  .blog-archive > div:nth-child(3) {
+  .blog-archive > div:nth-child(1) .blog-archive > div:nth-child(3) {
     flex: 0 0 0;
   }
 
   .blog-archive > div:nth-child(2) {
-    flex: 0 0 calc(100vw - 90px);  
+    flex: 0 0 calc(100vw - 90px);
     margin: 0 auto;
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .blog-archive {
     justify-content: space-between;
   }
 
   .blog-archive > div:nth-child(1) {
-    display:flex;
-    flex: 0 0 0;  
+    display: flex;
+    flex: 0 0 0;
   }
 
   .blog-archive > div:nth-child(2) {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    flex: 0 0 calc(80vw - 90px);  
+    flex: 0 0 calc(80vw - 90px);
     margin: 0;
   }
 
   .blog-archive > div:nth-child(3) {
-    display:flex;
-    flex: 0 0 calc(25vw - 49px); 
+    display: flex;
+    flex: 0 0 calc(25vw - 49px);
     height: max-content;
   }
 
   .blog-archive > div:nth-child(3) > div {
-    width:100%;
+    width: 100%;
   }
 
   .categories-mobile {
-    display:none;
+    display: none;
   }
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .blog-archive > div:nth-child(1),
   .blog-archive > div:nth-child(3) {
-    display:flex;
+    display: flex;
     flex: 0 0 calc(20vw - 49px);
   }
 
   .blog-archive > div:nth-child(2) {
-    flex: 0 0 calc(60vw - 20px)
+    flex: 0 0 calc(60vw - 20px);
   }
 }

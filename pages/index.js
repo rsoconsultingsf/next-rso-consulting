@@ -22,12 +22,16 @@ const Home = () => {
           content="RSO is a full service digital marketing agency in San Francisco, offering SEO, PPC, social media & analytics expertise. Call 415-992-7711."
         />
       </Head>
-      <Hero image={heroImage} alt="Digital Marketing Agency Graphic">
+      <Hero
+        image={heroImage}
+        alt="Digital Marketing Agency Graphic"
+        anchor="/services#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Make It Easy</b>
           <br /> For Future Customers To Find You
         </h1>
-        <div className="col-3 short-grid" style={{ gridAutoRows: "auto" }}>
+        <div className="col-3" style={{ gridAutoRows: "auto" }}>
           <Button color="orange" link="/services/seo-services/">
             Search Engine Optimization
           </Button>
@@ -37,7 +41,7 @@ const Home = () => {
           <Button color="blue" link="/services/social-media-optimization/">
             Social Media Optimization
           </Button>
-          <Button color="green" link="/services/web-analytics-consultation/">
+          {/* <Button color="green" link="/services/web-analytics-consultation/">
             Web Analytics Consulting
           </Button>
           <Button color="purple" link="/services/web-development-services/">
@@ -51,7 +55,7 @@ const Home = () => {
           </Button>
           <Button color="teal" link="/services/affiliate-marketing/">
             Affiliate Marketing
-          </Button>
+          </Button> */}
         </div>
       </Hero>
       <section>

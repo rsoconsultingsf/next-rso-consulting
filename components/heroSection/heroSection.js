@@ -15,7 +15,7 @@ import { BiMenu } from "react-icons/bi";
 import styles from "./hero.module.css";
 
 const Hero = (props) => {
-  const { image, alt, children } = props;
+  const { image, alt, children, anchor } = props;
 
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
   const [drawerIsClosing, setDrawerIsClosing] = useState(true);
@@ -99,8 +99,8 @@ const Hero = (props) => {
 
           {!props.noAnchor && (
             <div className={styles["btn-container"]}>
-              <Button heroAnchor anchor="intro">
-                Show More
+              <Button heroAnchor anchor={anchor}>
+                Learn More
               </Button>
             </div>
           )}

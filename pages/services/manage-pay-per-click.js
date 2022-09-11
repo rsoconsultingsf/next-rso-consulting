@@ -19,7 +19,7 @@ const ManagePayPerClick = () => {
         <title></title>
         <meta name="description" content="" />
       </Head>
-      <Hero image={heroImage} alt="Paid Search Graphic">
+      <Hero image={heroImage} alt="Paid Search Graphic" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           Certified Seach Engine
           <br /> <span style={{ fontWeight: "400" }}>Marketing Services</span>
@@ -77,7 +77,7 @@ const ManagePayPerClick = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
           <p className="sub-headline" style={{ margin: "0 auto 30px auto" }}>

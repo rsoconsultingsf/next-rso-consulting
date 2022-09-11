@@ -18,7 +18,7 @@ const WebAnalytricsConsultation = () => {
         <title></title>
         <meta name="description" content="" />
       </Head>
-      <Hero image={heroImage} alt="">
+      <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Reliable</b> <br />
           Web Analytics Services
@@ -85,7 +85,7 @@ const WebAnalytricsConsultation = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section id="cards">
         <div className="container center">
           <SectionLabel blue>Data-Driven Marketing</SectionLabel>
           <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>

@@ -18,13 +18,17 @@ const Services = () => {
         <title></title>
         <meta name="description" content="" />
       </Head>
-      <Hero image={heroImage} alt="Digital Marketing Agency Graphic">
+      <Hero
+        image={heroImage}
+        alt="Digital Marketing Agency Graphic"
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Dedicated To Digital Marketing</b>
           <br /> Top Notch Digital Marketing and Website Analytics Services
         </h1>
-        <div className="col-3 short-grid" style={{ gridAutoRows: "auto" }}>
-          <Button color="orange" link="/services/seo-services/">
+        <div className="col-3" style={{ gridAutoRows: "auto" }}>
+          {/* <Button color="orange" link="/services/seo-services/">
             Search Engine Optimization
           </Button>
           <Button color="red" link="/services/manage-pay-per-click/">
@@ -38,7 +42,7 @@ const Services = () => {
           </Button>
           <Button color="purple" link="/services/web-development-services/">
             Website Development
-          </Button>
+          </Button> */}
           <Button color="turq" link="/services/a-b-testing/">
             A/B Testing
           </Button>
@@ -93,7 +97,8 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section></section>
+      <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
           <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>

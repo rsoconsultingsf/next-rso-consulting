@@ -7,7 +7,7 @@ import styles from "./Button.module.css";
 const Button = (props) => {
   if (props.heroAnchor) {
     return (
-      <a className={styles["hero-anchor"]} href={`#${props.anchor}`}>
+      <a className={styles["hero-anchor"]} href={`${props.anchor}`}>
         {props.children}
       </a>
     );
