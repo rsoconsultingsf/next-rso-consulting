@@ -47,10 +47,16 @@ const Blog = ({ posts, pageCount, categories }) => {
     return () => clearTimeout(timer);
   }, [page]);
 
+  useEffect(() => {
+    if (router.query.page) {
+      setPage(parseInt(router.query.page));
+    }
+  }, [router.query.page]);
+
   const paginationChangeHandler = (e, value) => {
     setVisible(false);
     setPage(value);
-    router.push(`digital-marketing-blogs/?page=${value}`, undefined, {
+    router.push(`digital-marketing-blogs?page=${value}`, undefined, {
       shallow: true,
     });
     myRef.current.scrollIntoView();

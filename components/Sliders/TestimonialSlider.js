@@ -96,12 +96,13 @@ const TestimonialSlider = () => {
         </div>
         <div>
           <p>
-            I’ve been working with RSO consulting since 2010. In that time, they
-            have been my go-to team for my company’s online marketing needs. As
-            an experienced digital marketer myself, I am impressed with their
-            commitment to our success, and their ability to work closely with us
-            to help us evolve our strategy over time, and measurably grow our
-            online traffic and leads in a high-quality way.
+            I worked closely with RSO’s team for about a year to develop and
+            roll out a robust and complex international PPC strategy for my
+            company. It has been a very productive and positive relationship and
+            I can see so much improvement with their help. Their dedication and
+            diligence was much appreciated both by myself as the primary account
+            contact, and the senior leaders at my company who also recognized
+            the improvements made.
           </p>
           <p>
             <b>Heather Aho</b>

@@ -42,8 +42,6 @@ export default function Post({
     return <ErrorPage statusCode={404} />;
   }
 
-  console.log(seoTitle);
-
   return (
     <Fragment>
       <Head>
@@ -209,6 +207,10 @@ export async function getStaticProps({ params, preview = false }) {
 
 export async function getStaticPaths() {
   const allPosts = await getAllPostSlugs();
+
+  allPosts.items.map((item) => {
+    return null;
+  });
 
   return {
     paths:
