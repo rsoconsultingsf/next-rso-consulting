@@ -4,6 +4,8 @@ import Slider from "react-slick";
 
 import Image from "next/image";
 
+import styles from "./PPCSlider.module.css";
+
 const PPCSlider = () => {
   const settings = {
     dots: false,
@@ -16,7 +18,7 @@ const PPCSlider = () => {
   };
 
   return (
-    <div style={{ maxWidth: "700px" }}>
+    <div className={styles["ppc-slider"]}>
       <Slider {...settings}>
         <div>
           <Image

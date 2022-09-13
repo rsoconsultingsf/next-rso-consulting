@@ -34,7 +34,13 @@ const EmailMarketing = () => {
         >
           From strategy to execution
         </h2>
-        <div style={{ textAlign: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px;",
+          }}
+        >
           <Button link="/digital-marketing-consultation/">
             Free Consultation
           </Button>

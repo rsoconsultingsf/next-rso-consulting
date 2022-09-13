@@ -34,7 +34,13 @@ const AffiliateMarketing = () => {
         >
           A unique marketing channel with many benefits.
         </h2>
-        <div style={{ textAlign: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px;",
+          }}
+        >
           <Button link="/digital-marketing-consultation/">
             Free Consultation
           </Button>

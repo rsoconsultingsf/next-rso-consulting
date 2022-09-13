@@ -27,7 +27,7 @@ const Services = () => {
           <b>Dedicated To Digital Marketing</b>
           <br /> Top Notch Digital Marketing and Website Analytics Services
         </h1>
-        <div className="col-3" style={{ gridAutoRows: "auto" }}>
+        <div className="col-3-hero" style={{ gridAutoRows: "auto" }}>
           {/* <Button color="orange" link="/services/seo-services/">
             Search Engine Optimization
           </Button>

@@ -31,7 +31,7 @@ const Home = () => {
           <b>Make It Easy</b>
           <br /> For Future Customers To Find You
         </h1>
-        <div className="col-3" style={{ gridAutoRows: "auto" }}>
+        <div className="col-3-hero" style={{ gridAutoRows: "auto" }}>
           <Button color="orange" link="/services/seo-services/">
             Search Engine Optimization
           </Button>

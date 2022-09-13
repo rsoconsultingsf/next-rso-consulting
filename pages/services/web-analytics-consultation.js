@@ -35,7 +35,13 @@ const WebAnalytricsConsultation = () => {
           Discover customer insights with in-depth digital marketing and website
           analytics
         </h2>
-        <div style={{ textAlign: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px;",
+          }}
+        >
           <Button link="/digital-marketing-consultation/">
             Free Consultation
           </Button>

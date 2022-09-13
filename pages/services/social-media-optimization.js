@@ -35,7 +35,13 @@ const SocialMediaOptimization = () => {
           through organic or paid content. Start from scratch or elevate your
           social media presence with a campaign.
         </h2>
-        <div style={{ textAlign: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px;",
+          }}
+        >
           <Button link="/digital-marketing-consultation/">
             Free Consultation
           </Button>

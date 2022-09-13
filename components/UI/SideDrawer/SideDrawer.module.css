@@ -9,7 +9,7 @@
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: 300ms;
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
 .side__drawer {
@@ -27,25 +27,26 @@
 }
 
 .side__drawer__inner {
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 20px 20px 0 20px;
-  overflow-y:auto;
-  height:100%
+  overflow-y: auto;
+  height: 100%;
 }
 
 .side__drawer__show {
   max-width: 95%;
   width: 100vw;
+  z-index: 9999;
 }
 
 .side__drawer__logo {
   padding: 20px;
   margin: 0 auto;
-  width:80%;
+  width: 80%;
 }
 
 .side__drawer__logo__container {
-  width:100%;
-  text-align:center;
+  width: 100%;
+  text-align: center;
 }

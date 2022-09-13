@@ -36,7 +36,13 @@ const ManagePayPerClick = () => {
           Boost brand awareness, leads, and revenue with best-in-class paid
           search management.
         </p>
-        <div style={{ textAlign: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px;",
+          }}
+        >
           <Button link="/digital-marketing-consultation/">
             Free Consultation
           </Button>

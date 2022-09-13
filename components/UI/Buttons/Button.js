@@ -31,13 +31,11 @@ const Button = (props) => {
 
   if (props.link) {
     return (
-      <div>
-        <Link href={props.link} passRef>
-          <a className={`${styles.btn} ${styles[props.color]}`}>
-            {props.children}
-          </a>
-        </Link>
-      </div>
+      <Link href={props.link} passRef>
+        <a className={`${styles.btn} ${styles[props.color]}`}>
+          {props.children}
+        </a>
+      </Link>
     );
   }
 
