@@ -200,6 +200,10 @@ section {
   position: fixed !important;
 }
 
+.intro {
+  text-align: center;
+}
+
 .news {
   display: flex;
   flex-direction: column;
