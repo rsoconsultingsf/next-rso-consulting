@@ -36,7 +36,7 @@ const SEOServices = () => {
             color: "#fff",
             textAlign: "center",
             maxWidth: "800px",
-            margin: "0 auto",
+            margin: "0 auto 30px auto",
           }}
         >
           Leverage our proven expertise in organic search and content strategy

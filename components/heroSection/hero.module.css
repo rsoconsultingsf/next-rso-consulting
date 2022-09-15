@@ -41,7 +41,7 @@
 
 .hero-overlay {
   position: absolute;
-  top: 5%;
+  top: -5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
