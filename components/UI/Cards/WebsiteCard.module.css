@@ -1,0 +1,33 @@
+.card,
+.link-card {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(54, 61, 77, 0.3);
+  transition: 300ms;
+}
+
+.link-card:hover {
+  transition: var(--transition);
+  background-color: #0e75bc;
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.website__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+}

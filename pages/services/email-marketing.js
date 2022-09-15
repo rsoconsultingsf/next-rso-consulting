@@ -38,7 +38,7 @@ const EmailMarketing = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            marginTop: "20px;",
+            marginTop: "20px",
           }}
         >
           <Button link="/digital-marketing-consultation/">

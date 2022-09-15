@@ -40,7 +40,7 @@ const ManagePayPerClick = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            marginTop: "20px;",
+            marginTop: "20px",
           }}
         >
           <Button link="/digital-marketing-consultation/">
@@ -131,7 +131,7 @@ const ManagePayPerClick = () => {
                 width={160}
               />
             }
-            title="Our initial analysis includesl:"
+            title="Our initial analysis includes:"
             details={
               <ul>
                 <li>Reviewing your business needs, budget, and goals</li>

@@ -21,11 +21,11 @@ const navLinks = [
       },
       {
         name: "Website Development",
-        path: "/",
+        path: "/services/web-development-services",
       },
       {
         name: "A/B Testing",
-        path: "/",
+        path: "/services/a-b-testing/",
       },
       {
         name: "Email Marketing",

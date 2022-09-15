@@ -39,7 +39,7 @@ const WebAnalytricsConsultation = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            marginTop: "20px;",
+            marginTop: "20px",
           }}
         >
           <Button link="/digital-marketing-consultation/">
@@ -116,7 +116,7 @@ const WebAnalytricsConsultation = () => {
             details={
               <ul>
                 <li>Defining KPIs and engagement metrics</li>
-                <li>Integrating other marketing tools</li>
+                <li>Attribution modeling</li>
                 <li>Enabling the full marketing funnel</li>
               </ul>
             }
@@ -133,9 +133,11 @@ const WebAnalytricsConsultation = () => {
             title="Analysis:"
             details={
               <ul>
-                <li>Aligning dimensions against KPIs</li>
-                <li>Segmenting and filtering key data points</li>
-                <li>Attribution modeling</li>
+                <li>
+                  Technical issues (ex. page load) that impact performance
+                </li>
+                <li>Segmenting and filtering key data points </li>
+                <li>A/B Testing (pages, ad copy, subject lines)</li>
               </ul>
             }
           />
@@ -148,15 +150,12 @@ const WebAnalytricsConsultation = () => {
                 width={160}
               />
             }
-            title="Recommendations:"
+            title="Management:"
             details={
               <ul>
-                <li>A/B Testing (pages, ad copy, subject lines)</li>
-                <li>Re-aligning landing pages based on user behavior</li>
-                <li>
-                  Addressing technical issues (ex. page load) that impact
-                  performance
-                </li>
+                <li>GA4 transition</li>
+                <li>Implementing/managing tags/triggers via GTM</li>
+                <li>Event tracking</li>
               </ul>
             }
           />
