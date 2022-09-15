@@ -51,7 +51,6 @@ const Hero = (props) => {
       >
         <MobileNav />
         <p style={{ fontSize: "22px", fontWeight: "700" }}>Contact Us Today</p>
-        <ContactForm />
       </SideDrawer>
       <section
         className={styles["hero-container"]}
