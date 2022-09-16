@@ -10,6 +10,11 @@ const ContactForm = () => {
       className={styles["contact-form"]}
       action="https://submit-form.com/vCTcQOVT"
     >
+      <input
+        type="hidden"
+        name="_redirect"
+        value="https://www.rso-consulting.com/welcome-to-rso-consulting"
+      />
       <div className="col-2 unset collapse">
         <input
           placeholder="First Name*"
