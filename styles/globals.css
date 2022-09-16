@@ -174,6 +174,24 @@ section {
   display: none;
 }
 
+.error-page {
+  min-height: calc(100vh - 200px - 360px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-page-title {
+  font-size: 100px;
+  font-weight: bold;
+  color: var(--dark-slate);
+}
+
+.error-page h2 {
+  color: var(--dark-slate);
+}
+
 .fade-in {
   opacity: 1;
   transition: 500ms;
