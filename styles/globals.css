@@ -50,6 +50,11 @@ section {
   margin-bottom: 80px;
 }
 
+#cards,
+#contact {
+  scroll-margin-top: 140px;
+}
+
 #intro {
   display: block;
   position: relative;

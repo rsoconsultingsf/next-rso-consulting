@@ -25,7 +25,7 @@ const Home = () => {
       <Hero
         image={heroImage}
         alt="Digital Marketing Agency Graphic"
-        anchor="/services#cards"
+        anchor="/services/#cards"
       >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Make It Easy</b>
@@ -242,7 +242,7 @@ const Home = () => {
             Take a look at our <b>complete list</b> of digital marketing
             services.
           </h2>
-          <Button>SEE ALL SERVICES</Button>
+          <Button link="/services/">SEE ALL SERVICES</Button>
         </div>
       </section>
       <section>

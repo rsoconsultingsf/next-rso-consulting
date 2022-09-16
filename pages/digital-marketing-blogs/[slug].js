@@ -42,8 +42,6 @@ export default function Post({
     return <ErrorPage statusCode={404} />;
   }
 
-  console.log(authorImage);
-
   return (
     <Fragment>
       <Head>
