@@ -14,6 +14,11 @@ module.exports = {
         destination: "/services/seo-services/",
         permanent: true,
       },
+      {
+        source: "/:slug",
+        destination: "/digital-marketing-blogs/:slug",
+        permanent: true,
+      },
     ];
   },
 };
