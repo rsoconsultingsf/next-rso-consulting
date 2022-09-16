@@ -169,7 +169,7 @@ const WebDevelopmentServices = () => {
                   layout="responsive"
                 />
               }
-              title="Ama Foundation"
+              title="Alsco"
               link="https://alsco.com/"
             />
             <WebsiteCard
@@ -182,7 +182,7 @@ const WebDevelopmentServices = () => {
                   layout="responsive"
                 />
               }
-              title="Alsco"
+              title="Ama Foundation"
               link="https://ama-foundation.org/"
             />
             <WebsiteCard
