@@ -45,7 +45,7 @@ export default function Author({ bio, image, name }) {
       </div>
       <div className={styles["author-meta"]}>
         <Image
-          src={image ? image.url : "/images/user-pic-placeholder.png"}
+          src={image ? image : "/images/user-pic-placeholder.png"}
           width={75}
           height={75}
           alt={image ? name : "author placeholder image"}
