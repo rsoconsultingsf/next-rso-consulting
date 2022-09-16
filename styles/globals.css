@@ -299,6 +299,16 @@ section {
   align-items: center;
 }
 
+.uhohhoney {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+
 @media (min-width: 426px) {
   .col-3.short-grid > div {
     flex: 1 0 calc(40% - 20px);
