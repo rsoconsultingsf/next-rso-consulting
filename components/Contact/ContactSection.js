@@ -13,7 +13,7 @@ import {
 
 const ContactSection = (props) => {
   return (
-    <section>
+    <section id="contact">
       <div className="container center">
         {!props.noLabel && (
           <SectionLabel orange>{props.title || "Get In Touch"}</SectionLabel>

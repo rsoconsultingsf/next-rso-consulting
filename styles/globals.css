@@ -293,7 +293,8 @@ section {
 }
 
 @media (min-width: 768px) {
-  #cards {
+  #cards,
+  #contact {
     scroll-margin-top: 160px;
   }
 

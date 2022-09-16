@@ -41,9 +41,7 @@ const ABTesting = () => {
             marginTop: "20px",
           }}
         >
-          <Button link="/digital-marketing-consultation/">
-            Free Consultation
-          </Button>
+          <Button anchor="contact">Free Consultation</Button>
         </div>
       </Hero>
       <section>

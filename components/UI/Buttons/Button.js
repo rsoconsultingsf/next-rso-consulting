@@ -15,7 +15,7 @@ const Button = (props) => {
 
   if (props.anchor) {
     return (
-      <a className={styles.anchor} href={`#${props.anchor}`}>
+      <a className={`${styles.anchor} ${styles.btn}`} href={`#${props.anchor}`}>
         {props.children}
       </a>
     );
@@ -23,7 +23,7 @@ const Button = (props) => {
 
   if (props.hero) {
     return (
-      <a className={`${styles.hero} ${props.color}`} href={`#${props.anchor}`}>
+      <a className={`${styles.hero}  ${props.color}`} href={`#${props.anchor}`}>
         {props.children}
       </a>
     );

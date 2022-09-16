@@ -43,9 +43,7 @@ const SEOServices = () => {
           to help your customers find you online
         </h2>
         <div style={{ textAlign: "center" }}>
-          <Button link="/digital-marketing-consultation/">
-            Free Consultation
-          </Button>
+          <Button anchor="contact">Free Consultation</Button>
         </div>
       </Hero>
       <section>

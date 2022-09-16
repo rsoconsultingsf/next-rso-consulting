@@ -43,9 +43,7 @@ const News = ({ items }) => {
           Read the Latest Trends and Headlines in Digital Marketing.
         </h2>
         <div style={{ textAlign: "center" }}>
-          <Button link="/digital-marketing-consultation/">
-            Free Consultation
-          </Button>
+          <Button anchor="contact">Free Consultation</Button>
         </div>
       </Hero>
       <section>

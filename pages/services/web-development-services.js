@@ -44,9 +44,7 @@ const WebDevelopmentServices = () => {
             marginTop: "20px",
           }}
         >
-          <Button link="/digital-marketing-consultation/">
-            Free Consultation
-          </Button>
+          <Button anchor="contact">Free Consultation</Button>
         </div>
       </Hero>
       <section>
@@ -89,7 +87,7 @@ const WebDevelopmentServices = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
           <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
@@ -164,19 +162,6 @@ const WebDevelopmentServices = () => {
             <WebsiteCard
               image={
                 <Image
-                  src="/images/development/alpec.png"
-                  alt="Alpec website"
-                  width={454}
-                  height={562}
-                  layout="responsive"
-                />
-              }
-              title="Alpec"
-              link="https://www.alpec.com/"
-            />
-            <WebsiteCard
-              image={
-                <Image
                   src="/images/development/alsco.png"
                   alt="Alsco website"
                   width={454}
@@ -184,7 +169,7 @@ const WebDevelopmentServices = () => {
                   layout="responsive"
                 />
               }
-              title="Alsco"
+              title="Ama Foundation"
               link="https://alsco.com/"
             />
             <WebsiteCard
@@ -239,6 +224,19 @@ const WebDevelopmentServices = () => {
               title="Valley Fig Growers"
               link="https://valleyfig.com/"
             />
+            <WebsiteCard
+              image={
+                <Image
+                  src="/images/development/alpec.png"
+                  alt="Alpec website"
+                  width={454}
+                  height={562}
+                  layout="responsive"
+                />
+              }
+              title="Alpec"
+              link="https://www.alpec.com/"
+            />
           </div>
         </div>
       </section>
@@ -248,9 +246,8 @@ const WebDevelopmentServices = () => {
             className="sub-headline"
             style={{ maxWidth: "800px", margin: "0 auto 40px auto" }}
           >
-            Reach out with any <b>questions</b> you have regarding{" "}
-            <b>projects or estimates</b>, or request any other{" "}
-            <b>information</b> you need.
+            Reach out with any <b>questions</b> you might have about{" "}
+            <b>improving your website</b> .
           </h2>
         }
       />
