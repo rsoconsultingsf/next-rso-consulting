@@ -8,7 +8,9 @@ import Link from "next/link";
 const PageNotFound = () => {
   return (
     <Fragment>
-      <Head></Head>
+      <Head>
+        <title>Page not found</title>
+      </Head>
       <Header />
       <section>
         <div className="container error-page">
