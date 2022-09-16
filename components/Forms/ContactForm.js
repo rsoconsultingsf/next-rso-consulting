@@ -51,6 +51,16 @@ const ContactForm = () => {
           wrap="soft"
           required
         />
+        <label className="uhohhoney" htmlFor="email2">
+          <input
+            className="uhohhoney"
+            autoComplete="off"
+            type="email"
+            id="email2"
+            name="email2"
+            placeholder="Your e-mail here"
+          />
+        </label>
         <div className={styles["btn-container"]}>
           <Button type="submit">SUBMIT</Button>
         </div>
