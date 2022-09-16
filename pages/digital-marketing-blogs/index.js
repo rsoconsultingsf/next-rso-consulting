@@ -66,7 +66,11 @@ const Blog = ({ posts, pageCount, categories }) => {
     <Fragment>
       <Head>
         <title>Digital Marketing Blogs: Trends & Tips | RSO Consulting</title>
-        <meta name="description" content="" />
+        <meta
+          name="description"
+          content="RSO Consulting’s digital marketing blogs cover the latest trends and how-tos in digital marketing. See what’s new in SEO, PPC, SEM, and social.
+Your #1 resource for digital marketing tips, trends, and strategy to help you build a successful online business"
+        />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>

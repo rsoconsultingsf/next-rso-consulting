@@ -13,8 +13,11 @@ const ContactUs = () => {
   return (
     <Fragment>
       <Head>
-        <title></title>
-        <meta name="description" content="" />
+        <title>Premier Internet Marketing Consulting Delivering Results</title>
+        <meta
+          name="description"
+          content="RSO delivers premier internet marketing consultation with the highest standards. An internet marketing consulting service that delivers results - Contact Us!"
+        />
       </Head>
       <div className="desktop-contact">
         <Hero className="contact-hero" image={heroImage} alt="" noAnchor>

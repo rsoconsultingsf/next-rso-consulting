@@ -15,8 +15,11 @@ const AffiliateMarketing = () => {
   return (
     <Fragment>
       <Head>
-        <title></title>
-        <meta name="description" content="" />
+        <title>Affiliate Marketing Agency | Performance based sales</title>
+        <meta
+          name="description"
+          content="RSO Affiliate Marketing Agency launches, manages, and scales affiliate marketing programs that drive sales through performance-based strategies"
+        />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>

@@ -15,8 +15,13 @@ const Services = () => {
   return (
     <Fragment>
       <Head>
-        <title></title>
-        <meta name="description" content="" />
+        <title>
+          Digital Marketing Agency, SEO, PPC, Web Design, Web Development - RSO
+        </title>
+        <meta
+          name="description"
+          content="Digital Marketing Agency (DMA) is a web marketing agency that offers SEO services, PPC services, social media marketing services, web design services, web development services and a host of other online marketing services."
+        />
       </Head>
       <Hero
         image={heroImage}

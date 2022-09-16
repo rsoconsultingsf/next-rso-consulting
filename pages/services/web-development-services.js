@@ -16,10 +16,10 @@ const WebDevelopmentServices = () => {
   return (
     <Fragment>
       <Head>
-        <title>San Francisco Digital Marketing Agency - RSO</title>
+        <title>Professional Web Development Services</title>
         <meta
           name="description"
-          content="RSO is a full service digital marketing agency in San Francisco, offering SEO, PPC, social media & analytics expertise. Call 415-992-7711."
+          content="Web development services by a company with 33 years of expertise. Professional UX/UI design and implementation of websites, web portals and other solutions."
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">

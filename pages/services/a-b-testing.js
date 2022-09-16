@@ -15,8 +15,11 @@ const ABTesting = () => {
   return (
     <Fragment>
       <Head>
-        <title></title>
-        <meta name="description" content="" />
+        <title>RSO Consulting Improves Results with AB testing.</title>
+        <meta
+          name="description"
+          content="Improve your website with our data driven UX & conversion methods. Leading CRO since 2006. Ecommerce Optimization For Growing Brands. Test & Personalize. Powerful..."
+        />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>

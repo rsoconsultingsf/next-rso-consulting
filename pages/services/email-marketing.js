@@ -15,8 +15,11 @@ const EmailMarketing = () => {
   return (
     <Fragment>
       <Head>
-        <title></title>
-        <meta name="description" content="" />
+        <title>Full Service Email Agency - Email Marketing Company</title>
+        <meta
+          name="description"
+          content="Our team is capable of building, deploying, & managing email marketing campaigns at scale. Strategy, Automations, Campaign management, Copywriting, Deliverability - we do it all."
+        />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>

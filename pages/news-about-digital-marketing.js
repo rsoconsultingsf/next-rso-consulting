@@ -23,8 +23,11 @@ const News = ({ items }) => {
   return (
     <Fragment>
       <Head>
-        <title></title>
-        <meta name="description" content="" />
+        <title>News about Digital Marketing | RSO Consulting</title>
+        <meta
+          name="description"
+          content="Here are some of the latest headlines on digital marketing insights, search, and ecommerce."
+        />
       </Head>
       <Hero image={heroImage} alt="">
         <h1 style={{ color: "#fff", textAlign: "center" }}>

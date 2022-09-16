@@ -15,8 +15,11 @@ const SocialMediaOptimization = () => {
   return (
     <Fragment>
       <Head>
-        <title></title>
-        <meta name="description" content="" />
+        <title>Leaders in Experienced Social Media Marketing Consulting</title>
+        <meta
+          name="description"
+          content="Social Media Optimization has become more important than ever. To keep your business growing,  RSO offers trusted social media marketing consulting expertise."
+        />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>
