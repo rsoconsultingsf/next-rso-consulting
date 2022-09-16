@@ -64,7 +64,13 @@ const Hero = (props) => {
                 : styles["hero-inner"]
             }
           >
-            <Image src={image} alt={alt} objectFit="cover" priority />
+            <Image
+              src={image}
+              alt={alt}
+              objectFit="cover"
+              priority
+              placeholder="blur"
+            />
             <div className={`${styles.header} container`}>
               <Link href="/" passHref>
                 <a>
