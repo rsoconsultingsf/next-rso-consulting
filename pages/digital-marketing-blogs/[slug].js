@@ -42,8 +42,6 @@ export default function Post({
     return <ErrorPage statusCode={404} />;
   }
 
-  console.log(authorImage);
-
   return (
     <Fragment>
       <Head>
@@ -189,7 +187,7 @@ export async function getStaticProps({ params, preview = false }) {
       seoTitle: data?.post?.seoTitle ?? `${data.post.title} | RSO Consulting`,
       author: data?.post?.author ?? null,
       authorName: data?.post?.author.name ?? null,
-      authorImage: data?.post?.author.image.url ?? null,
+      authorImage: data?.post?.author?.photo?.url ?? null,
       authorBio: data?.post?.author.bio ?? null,
       publishDate: data?.post?.publishDate ?? null,
       featuredImage: data?.post?.featuredImage ?? null,
