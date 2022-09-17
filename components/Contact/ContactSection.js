@@ -52,7 +52,9 @@ const ContactSection = (props) => {
                 </div>
                 <div className="contact-meta-inner">
                   <FaPhoneAlt />
-                  <p className="medium">+1 415-992-7711</p>
+                  <a className="medium" href="tel:4159927711">
+                    +1 415-992-7711
+                  </a>
                 </div>
                 <div className="contact-meta-inner">
                   <FaRegClock size={36} />
@@ -63,7 +65,12 @@ const ContactSection = (props) => {
                 </div>
                 <div className="contact-meta-inner">
                   <FaEnvelope />
-                  <p className="medium">support@rso-consulting.com</p>
+                  <a
+                    className="medium"
+                    href="mailto:support@rso-consulting.com"
+                  >
+                    support@rso-consulting.com
+                  </a>
                 </div>
               </div>
             </Card>
