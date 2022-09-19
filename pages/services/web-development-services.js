@@ -26,7 +26,7 @@ const WebDevelopmentServices = () => {
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>
-          <b>Reliable Web Design</b> <br />& Development Services
+          <b>Professional Web Design</b> <br />& Development Services
         </h1>
         <h2
           className="hero-subheader"
