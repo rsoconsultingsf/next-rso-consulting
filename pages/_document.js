@@ -3,7 +3,12 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html>
-      <Head></Head>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="Tbr21uTsJ1QOMx_2ddHGzYswYrxk1fvcyO4-D1GV4-U"
+        />
+      </Head>
       <body>
         <Main />
         {/* Here we will mount our portals */}
