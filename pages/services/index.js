@@ -16,11 +16,11 @@ const Services = () => {
     <Fragment>
       <Head>
         <title>
-          Digital marketing service for data-driven marketing solutions.
+          Digital marketing Services for Data-Driven Marketing Solutions - RSO
         </title>
         <meta
           name="description"
-          content="RSO offers data-driven digital marketing solutions: SEO · Paid advertising · Social media marketing · Email marketing · Affiliate marketing · Web development "
+          content="RSO offers data-driven digital marketing solutions: SEO, paid advertising, social media marketing, email marketing, affiliate marketing and Web development."
         />
       </Head>
       <Hero

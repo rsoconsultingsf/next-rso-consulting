@@ -16,7 +16,7 @@ const ManagePayPerClick = () => {
   return (
     <Fragment>
       <Head>
-        <title>Paid Search Management Service | 650+ Campaigns Led | RSO</title>
+        <title>Paid Search Management Service | 650+ Campaigns Led - RSO</title>
         <meta
           name="description"
           content="Boost brand awareness, sales, and revenue with best-in-class paid search management. RSO's pay-per-click PPC campaign management services can help you do just that!"

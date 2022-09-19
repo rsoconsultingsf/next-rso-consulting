@@ -15,10 +15,10 @@ const SEOServices = () => {
   return (
     <Fragment>
       <Head>
-        <title>San Francisco SEO Company - Proven Results for 15+ Years</title>
+        <title>Professional Search Engine Optimization Agency - RSO</title>
         <meta
           name="description"
-          content="RSO is an award-winning San Francisco SEO company helping clients increase visibility and traffic via organic search based on proven methodology."
+          content="Award-winning digital marketing agency providing SEO services. Our specialists design customized strategies to help your business achieve online success. "
         />
       </Head>
       <Hero
