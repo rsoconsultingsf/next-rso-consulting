@@ -65,10 +65,10 @@ const Blog = ({ posts, pageCount, categories }) => {
   return (
     <Fragment>
       <Head>
-        <title>Digital Marketing Blogs | Trends & Tips</title>
+        <title>Digital Marketing Blogs, Trends & Tips - RSO </title>
         <meta
           name="description"
-          content="Our digital marketing blogs cover the latest trends and how-tos in SEO, PPC, SEM, and more. Blogging with tips to help you build a successful business online!"
+          content="Our digital marketing blogs cover the latest trends and how-tos in SEO, PPC, Social Media, Digital Technology and more."
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">

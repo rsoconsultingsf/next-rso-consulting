@@ -23,10 +23,10 @@ const News = ({ items }) => {
   return (
     <Fragment>
       <Head>
-        <title>News about Digital Marketing | RSO</title>
+        <title>News about Digital Marketing - RSO </title>
         <meta
           name="description"
-          content="Stay up-to-date on the latest digital marketing news and trends, including search engine optimization (SEO), paid search (PPC), e-commerce, and more."
+          content="Stay up-to-date with the latest digital marketing news and trends, including search engine optimization (SEO), paid search (PPC), e-commerce, and more."
         />
       </Head>
       <Hero image={heroImage} alt="">

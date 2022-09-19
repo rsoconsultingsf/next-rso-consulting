@@ -15,7 +15,10 @@ const AffiliateMarketing = () => {
   return (
     <Fragment>
       <Head>
-        <title>Affiliate Marketing Agency | Performance based sales</title>
+        <title>
+          Leading Affiliate Marketing Agency to Improve Performance Based Sales
+          - RSO
+        </title>
         <meta
           name="description"
           content="Looking to drive sales through affiliated marketing? RSO is a leading affiliate marketing agency that will help you launch, manage, and scale your program for success."

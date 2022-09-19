@@ -15,10 +15,10 @@ const WebAnalytricsConsultation = () => {
   return (
     <Fragment>
       <Head>
-        <title>RSO Web Analytics Consultancy | Data Insights</title>
+        <title>Web Analytics Consultancy & Data Insights - RSO</title>
         <meta
           name="description"
-          content="Do you want to increase your website traffic? RSO is a data technology and web analytics consultancy that uses tech-forward solutions to propel your online success. "
+          content="Do you want to increase your website traffic? RSO, a web analytics consultancy, uses tech-forward solutions to you understand your users & propel your online success."
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">

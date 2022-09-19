@@ -18,7 +18,7 @@ const SEOServices = () => {
         <title>Professional Search Engine Optimization Agency - RSO</title>
         <meta
           name="description"
-          content="Award-winning digital marketing agency providing SEO services. Our specialists design customized strategies to help your business achieve online success. "
+          content="Award-winning digital marketing agency providing SEO services. Our specialists design customized strategies to help achieve success via organic search."
         />
       </Head>
       <Hero

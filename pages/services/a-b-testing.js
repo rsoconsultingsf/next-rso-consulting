@@ -15,10 +15,10 @@ const ABTesting = () => {
   return (
     <Fragment>
       <Head>
-        <title>A B Testing with RSO marketing | Leading CRO since 2006</title>
+        <title>AB Testing Services & Conversion Rate Optimization - RSO</title>
         <meta
           name="description"
-          content="Our A B testing marketing services will help improve your website with data driven UX and conversion methods. Ecommerce Optimization for Growing Brands!"
+          content="RSO's AB testing methodology leverages best practices by testing UI/UX and other variations in order to improve your website behavior and conversion rates. "
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">

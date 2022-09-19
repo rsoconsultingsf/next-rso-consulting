@@ -15,9 +15,7 @@ const EmailMarketing = () => {
   return (
     <Fragment>
       <Head>
-        <title>
-          Best Email Marketing Service | Targeted for long-term success
-        </title>
+        <title>Targeted Email Marketing Services - RSO</title>
         <meta
           name="description"
           content="The best email marketing service for businesses of all sizes. From strategy, automations, campaign management, copywriting, and deliverability - we do it all!"

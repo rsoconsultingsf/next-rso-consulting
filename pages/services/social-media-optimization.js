@@ -16,11 +16,11 @@ const SocialMediaOptimization = () => {
     <Fragment>
       <Head>
         <title>
-          Leaders in Social Media Marketing and Optimization Services
+          Leaders in Social Media Marketing and Optimization Services - RSO
         </title>
         <meta
           name="description"
-          content="RSO is an international social media marketing and optimization service that uses the power of social networks to connect brands with their audience."
+          content="RSO is an international social media marketing and optimization service that uses the power of social networks to connect brands with their audience. "
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
