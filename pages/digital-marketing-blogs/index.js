@@ -65,11 +65,10 @@ const Blog = ({ posts, pageCount, categories }) => {
   return (
     <Fragment>
       <Head>
-        <title>Digital Marketing Blogs: Trends & Tips | RSO Consulting</title>
+        <title>Digital Marketing Blogs | Trends & Tips</title>
         <meta
           name="description"
-          content="RSO Consulting’s digital marketing blogs cover the latest trends and how-tos in digital marketing. See what’s new in SEO, PPC, SEM, and social.
-Your #1 resource for digital marketing tips, trends, and strategy to help you build a successful online business"
+          content="Our digital marketing blogs cover the latest trends and how-tos in SEO, PPC, SEM, and more. Blogging with tips to help you build a successful business online!"
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">

@@ -15,10 +15,12 @@ const SocialMediaOptimization = () => {
   return (
     <Fragment>
       <Head>
-        <title>Leaders in Experienced Social Media Marketing Consulting</title>
+        <title>
+          Leaders in Social Media Marketing and Optimization Services
+        </title>
         <meta
           name="description"
-          content="Social Media Optimization has become more important than ever. To keep your business growing,  RSO offers trusted social media marketing consulting expertise."
+          content="RSO is an international social media marketing and optimization service that uses the power of social networks to connect brands with their audience."
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
@@ -71,9 +73,9 @@ const SocialMediaOptimization = () => {
               style={{ maxWidth: "515px", margin: "0 auto", lineHeight: "1.2" }}
             >
               <b>Social media</b> has provided multiple platforms on which
-              businesses can <b>brand</b>, <b>advertise</b> and{" "}
-              <b>ingratiate</b> themselves with their audience all at once,
-              while also <b>seeing what competitors are doing</b>.
+              businesses can <b>brand</b>, <b>advertise</b> and <b>cultivate</b>{" "}
+              themselves with their audience all at once, while also{" "}
+              <b>seeing what competitors are doing</b>.
             </h2>
             <p className="sub-intro-details">
               The heart – and greatest challenge – of social media marketing and

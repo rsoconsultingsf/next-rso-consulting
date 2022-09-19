@@ -13,10 +13,12 @@ const ContactUs = () => {
   return (
     <Fragment>
       <Head>
-        <title>Premier Internet Marketing Consulting Delivering Results</title>
+        <title>
+          Premier Internet Marketing Consultation Services | Contact Us!
+        </title>
         <meta
           name="description"
-          content="RSO delivers premier internet marketing consultation with the highest standards. An internet marketing consulting service that delivers results - Contact Us!"
+          content="RSO delivers premier internet marketing consultation with the highest standards. An innovative approach to gaining new customers for your business- Contact Us!"
         />
       </Head>
       <div className="desktop-contact">

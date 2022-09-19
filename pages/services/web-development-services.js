@@ -16,10 +16,12 @@ const WebDevelopmentServices = () => {
   return (
     <Fragment>
       <Head>
-        <title>Professional Web Development Services</title>
+        <title>
+          Professional Web Development Services | Over 30 Years Experience
+        </title>
         <meta
           name="description"
-          content="Web development services by a company with 33 years of expertise. Professional UX/UI design and implementation of websites, web portals and other solutions."
+          content="RSO provides professional custom web development services. Over 30 years' experience in designing and developing websites, web portals, and more. "
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">

@@ -16,11 +16,11 @@ const Services = () => {
     <Fragment>
       <Head>
         <title>
-          Digital Marketing Agency, SEO, PPC, Web Design, Web Development - RSO
+          Digital marketing service for data-driven marketing solutions.
         </title>
         <meta
           name="description"
-          content="Digital Marketing Agency (DMA) is a web marketing agency that offers SEO services, PPC services, social media marketing services, web design services, web development services and a host of other online marketing services."
+          content="RSO offers data-driven digital marketing solutions: SEO · Paid advertising · Social media marketing · Email marketing · Affiliate marketing · Web development "
         />
       </Head>
       <Hero
@@ -65,7 +65,7 @@ const Services = () => {
           <h2 className="intro sub-headline">
             We are an international <b>team of experts</b> each with a{" "}
             <b>unique set of skills</b> designed to{" "}
-            <b>deliver professional service</b> based on today’s
+            <b>deliver professional service</b> based on today’s{" "}
             <b>best practices</b>.
           </h2>
         </div>

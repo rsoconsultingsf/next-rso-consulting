@@ -16,10 +16,10 @@ const Home = () => {
   return (
     <Fragment>
       <Head>
-        <title>San Francisco Digital Marketing Agency - RSO</title>
+        <title>Full Service Digital Marketing Agency - RSO</title>
         <meta
           name="description"
-          content="RSO is a full service digital marketing agency in San Francisco, offering SEO, PPC, social media & analytics expertise. Call 415-992-7711."
+          content="RSO is a full-service digital marketing agency in San Francisco, offering SEO, PPC, Social Media, Web Design and Analytics. Call 415-992-7711"
         />
       </Head>
       <Hero

@@ -15,13 +15,10 @@ const WebAnalytricsConsultation = () => {
   return (
     <Fragment>
       <Head>
-        <title>
-          What is Google Analytics? Expert Consulting from RSO Can Answer!
-        </title>
+        <title>RSO Web Analytics Consultancy | Data Insights</title>
         <meta
           name="description"
-          content="Companies across the globe ask us every day: What is Google Analytics? At RSO our specialists use their certification to increase website traffic to your site
-RSO is a modern technology data and analytics consulting firm, bringing tech-forward solutions to propel your success. Read more about our services."
+          content="Do you want to increase your website traffic? RSO is a data technology and web analytics consultancy that uses tech-forward solutions to propel your online success. "
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">

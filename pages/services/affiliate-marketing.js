@@ -18,7 +18,7 @@ const AffiliateMarketing = () => {
         <title>Affiliate Marketing Agency | Performance based sales</title>
         <meta
           name="description"
-          content="RSO Affiliate Marketing Agency launches, manages, and scales affiliate marketing programs that drive sales through performance-based strategies"
+          content="Looking to drive sales through affiliated marketing? RSO is a leading affiliate marketing agency that will help you launch, manage, and scale your program for success."
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
@@ -52,9 +52,8 @@ const AffiliateMarketing = () => {
         <div className="container">
           <h2 className="intro sub-headline">
             <b>Your growth partners</b> - focused on{" "}
-            <b>creating nurturing partnerships</b>
-            that drive <b>exceptional and measurable outcomes</b> for our
-            clients.
+            <b>creating nurturing partnerships</b> that drive{" "}
+            <b>exceptional and measurable outcomes</b> for our clients.
           </h2>
         </div>
       </section>

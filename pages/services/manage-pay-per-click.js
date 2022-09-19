@@ -16,13 +16,10 @@ const ManagePayPerClick = () => {
   return (
     <Fragment>
       <Head>
-        <title>
-          Paid Search Management Services | 650+ Campaigns Led | RSO
-        </title>
+        <title>Paid Search Management Service | 650+ Campaigns Led | RSO</title>
         <meta
           name="description"
-          content="Boost brand awareness, sales, and revenue with best-in-class paid search management. Get a Free Consultation Why Paid Search Management Matters Getting a PPC (pay-per-click) campaign up and running may seem like a simple task at first glance. Yet a successful campaign requires more than choosing a
-Want to drive high-quality results for your paid search management? RSO's paid SEM services can help you do just that!"
+          content="Boost brand awareness, sales, and revenue with best-in-class paid search management. RSO's pay-per-click PPC campaign management services can help you do just that!"
         />
       </Head>
       <Hero image={heroImage} alt="Paid Search Graphic" anchor="#cards">

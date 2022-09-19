@@ -15,10 +15,10 @@ const ABTesting = () => {
   return (
     <Fragment>
       <Head>
-        <title>RSO Consulting Improves Results with AB testing.</title>
+        <title>A B Testing with RSO marketing | Leading CRO since 2006</title>
         <meta
           name="description"
-          content="Improve your website with our data driven UX & conversion methods. Leading CRO since 2006. Ecommerce Optimization For Growing Brands. Test & Personalize. Powerful..."
+          content="Our A B testing marketing services will help improve your website with data driven UX and conversion methods. Ecommerce Optimization for Growing Brands!"
         />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
@@ -76,13 +76,12 @@ const ABTesting = () => {
             >
               <b>A/B testing</b> is a method of comparing{" "}
               <b>different versions</b> of an online experience against each
-              other to determine which one
-              <b>performs better</b>.
+              other to determine which one <b>performs better</b>.
             </h2>
             <p className="sub-intro-details">
-              A/B testing is done by presenting each version to users at random
-              and analyzing the results. So, this gives you an opportunity to
-              learn what works and what doesn’t as it pertains to the user’s
+              A/B testing is carried out by presenting each version to users at
+              random and analyzing the results. This gives you an opportunity to
+              learn what works and what doesn’t with respect to the user’s
               experience on your website.
             </p>
           </div>
