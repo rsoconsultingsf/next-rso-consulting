@@ -4,7 +4,7 @@ import StickyHeader from "./StickyHeader";
 import Footer from "./Footer";
 
 const Layout = (props) => {
-  const { children } = props;
+  const { children, preview } = props;
 
   return (
     <>
