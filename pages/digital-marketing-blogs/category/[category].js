@@ -155,6 +155,8 @@ export async function getStaticProps({ params, preview = false }) {
     categoryArray.push(item.categories);
   });
 
+  console.log(categoryArray);
+
   const mergedCategories = [].concat.apply([], categoryArray);
 
   const uniqueCategories = mergedCategories.map((item) => {
