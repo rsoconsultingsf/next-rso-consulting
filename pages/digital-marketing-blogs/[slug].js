@@ -43,8 +43,6 @@ export default function Post({
     return <ErrorPage statusCode={404} />;
   }
 
-  console.log(preview);
-
   return (
     <Fragment>
       <Head>
