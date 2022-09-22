@@ -180,7 +180,6 @@ export async function getStaticProps({ params, preview = false }) {
   });
 
   return {
-    revalidate: 15,
     props: {
       preview,
       post: data?.post ?? null,
