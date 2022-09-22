@@ -7,6 +7,7 @@ import Card from "../../components/UI/Cards/Card";
 import SocialShare from "../../components/Posts/SocialShare";
 import Categories from "../../components/Posts/Categories";
 import ContactSection from "../../components/Contact/ContactSection";
+import Alert from "../../components/UI/Alert/alert";
 
 import {
   getAllPostsCategories,
@@ -41,6 +42,8 @@ export default function Post({
   if (!router.isFallback && !post) {
     return <ErrorPage statusCode={404} />;
   }
+
+  console.log(preview);
 
   return (
     <Fragment>
@@ -89,7 +92,9 @@ export default function Post({
     }
     `}</script>
       </Head>
-      <Header sticky />
+      {preview && <Alert />}
+      <Header />
+
       <section>
         <div className={styles["post-layout"]}>
           <Card className="left" sticky desktop>
