@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import Card from "../UI/Cards/Card";
 import SectionLabel from "../UI/Labels/SectionLabel";
