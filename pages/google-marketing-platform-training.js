@@ -36,14 +36,13 @@ const GoogleMarketingPlatformTraining = () => {
         >
           Competitive Pricing | Flexible Scheduling | Expert-Led Sessions
         </h2>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "20px",
-          }}
-        >
-          <Button anchor="contact">Free Consultation</Button>
+        <div className="col-2" style={{ gridAutoRows: "auto" }}>
+          <Button color="orange" link="#contact">
+            Register Now
+          </Button>
+          <Button color="blue" link="/digital-marketing-consultation/">
+            Get A Quote
+          </Button>
         </div>
       </Hero>
       <section>
@@ -59,7 +58,7 @@ const GoogleMarketingPlatformTraining = () => {
           </h2>
         </div>
       </section>
-      <section>
+      <section id="cards">
         <div className="col-2 unset container">
           <div className="img-center">
             <Image
