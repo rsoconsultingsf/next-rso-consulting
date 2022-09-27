@@ -197,7 +197,7 @@ export async function getStaticProps({ params, preview = false }) {
       content: data?.post?.content ?? null,
       postCategories: data?.post?.categories ?? null,
       metaFeaturedImage:
-        data?.post?.featuredImage ??
+        data?.post?.featuredImage?.url ??
         `https://www.rso-consulting.com/images/logos/san-francisco-digital-marketing-agency.png`,
       metaDescription:
         data?.post?.metaDescription ??
