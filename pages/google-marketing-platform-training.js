@@ -32,11 +32,12 @@ const GoogleMarketingPlatformTraining = () => {
             textAlign: "center",
             maxWidth: "1000px",
             margin: "0 auto",
+            paddingBottom: "30px",
           }}
         >
           Competitive Pricing | Flexible Scheduling | Expert-Led Sessions
         </h2>
-        <div className="col-2" style={{ gridAutoRows: "auto" }}>
+        <div className="col-2-hero" style={{ gridAutoRows: "auto" }}>
           <Button color="orange" link="#contact">
             Register Now
           </Button>
@@ -104,7 +105,7 @@ const GoogleMarketingPlatformTraining = () => {
         <div className="container col-2">
           <div>
             <div className="container center" style={{ paddingBottom: "30px" }}>
-              <SectionLabel blue>Learn How To:</SectionLabel>
+              <SectionLabel blue>Learn How To</SectionLabel>
             </div>
             <Card>
               <ul
@@ -133,11 +134,11 @@ const GoogleMarketingPlatformTraining = () => {
               </ul>
             </Card>
           </div>
-          <div className="container">
-            <div className="container center" style={{ paddingBottom: "30px" }}>
+          <div>
+            <div className="center" style={{ paddingBottom: "30px" }}>
               <SectionLabel purple>Testimonials</SectionLabel>
             </div>
-            <div className="container">
+            <div>
               <TrainingTestimonials />
             </div>
           </div>

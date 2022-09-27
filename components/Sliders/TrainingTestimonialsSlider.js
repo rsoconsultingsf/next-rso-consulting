@@ -16,7 +16,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div style={{ maxWidth: "700px", margin: "0 auto", padding: "0 20px" }}>
+    <div className="training-slider">
       <Card style={{ padding: "0 50px" }}>
         <Slider {...settings}>
           <div>
