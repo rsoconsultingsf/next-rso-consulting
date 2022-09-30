@@ -50,16 +50,16 @@ export default function Post({
   const schema = {
     "@context": "https://schema.org/",
     "@type": "Article",
-    name: "${seoTitle}",
-    author: { "@type": "Person", name: "${authorName}" },
-    datePublished: "${publishDate}",
-    description: "${metaDescription}",
-    headline: "${seoTitle}",
-    image: "${schemaImage}",
+    name: `${seoTitle}`,
+    author: { "@type": "Person", name: `${authorName}` },
+    datePublished: `${publishDate}`,
+    description: `${metaDescription}`,
+    headline: `${seoTitle}`,
+    image: `${schemaImage}`,
     inLanguage: "English",
-    mainEntityOfPage: "https://www.rso-consulting.com${router.asPath}",
+    mainEntityOfPage: `https://www.rso-consulting.com${router.asPath}`,
     publisher: { "@id": "https://www.rso-consulting.com" },
-    url: "https://www.rso-consulting.com${router.asPath}",
+    url: `https://www.rso-consulting.com${router.asPath}`,
   };
   return (
     <Fragment>
