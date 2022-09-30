@@ -58,8 +58,8 @@ const AffiliateMarketing = () => {
         {/* Schema */}
         <script type="application/ld+json">{`
     {
-      "@context":"https://schema.org/",
-      "@type":"Service",
+      "@context": "https://schema.org/",
+      "@type": "Service",
       "serviceType": "Affiliate Marketing Management Solutions",
       "audience": {
         "@type": "Audience",
@@ -69,7 +69,7 @@ const AffiliateMarketing = () => {
       "category": "Digital Marketing",
       "serviceOutput": "Increase brand awareness and grow your business",
       "alternateName": "RSO Consulting Digital Marketing Agency"
-      "name":"Digital Marketing Company",
+      "name": "Digital Marketing Company",
       "description": "Looking to drive sales through affiliated marketing? RSO is a leading affiliate marketing agency that will help you launch, manage, and scale your program for success.",
       "mainEntityOfPage": "https://www.rso-consulting.com/services/affiliate-marketing/",
     }
