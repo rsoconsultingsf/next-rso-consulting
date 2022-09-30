@@ -12,6 +12,25 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../public/images/hero/rso-hero_affiliate-marketing.png";
 
 const AffiliateMarketing = () => {
+  const schema = {
+    "@context": "https://schema.org/",
+    "@type": "Service",
+    serviceType: "Affiliate Marketing Management Solutions",
+    audience: {
+      "@type": "Audience",
+      audienceType: "Business Owners",
+    },
+    brand: "RSO Affiliate Marketing Management Solutions",
+    category: "Digital Marketing",
+    serviceOutput: "Increase brand awareness and grow your business",
+    alternateName: "RSO Consulting Digital Marketing Agency",
+    name: "Digital Marketing Company",
+    description:
+      "Looking to drive sales through affiliated marketing? RSO is a leading affiliate marketing agency that will help you launch, manage, and scale your program for success.",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/affiliate-marketing/",
+  };
+
   return (
     <Fragment>
       <Head>
@@ -56,24 +75,10 @@ const AffiliateMarketing = () => {
         <meta name="twitter:creator" content="rso_consulting" key="twhandle" />
 
         {/* Schema */}
-        <script type="application/ld+json">{`
-    {
-      "@context": "https://schema.org/",
-      "@type": "Service",
-      "serviceType": "Affiliate Marketing Management Solutions",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Business Owners"
-      },
-      "brand": "RSO Affiliate Marketing Management Solutions",
-      "category": "Digital Marketing",
-      "serviceOutput": "Increase brand awareness and grow your business",
-      "alternateName": "RSO Consulting Digital Marketing Agency",
-      "name": "Digital Marketing Company",
-      "description": "Looking to drive sales through affiliated marketing? RSO is a leading affiliate marketing agency that will help you launch, manage, and scale your program for success.",
-      "mainEntityOfPage": "https://www.rso-consulting.com/services/affiliate-marketing/"
-    }
-    `}</script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>

@@ -43,6 +43,24 @@ export default function Post({
     return <ErrorPage statusCode={404} />;
   }
 
+  let schemaImage = "";
+
+  metaFeaturedImage ? (schemaImage = metaFeaturedImage) : (schemaImage = "");
+
+  const schema = {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    name: `${seoTitle}`,
+    author: { "@type": "Person", name: `${authorName}` },
+    datePublished: `${publishDate}`,
+    description: `${metaDescription}`,
+    headline: `${seoTitle}`,
+    image: `${schemaImage}`,
+    inLanguage: "English",
+    mainEntityOfPage: `https://www.rso-consulting.com${router.asPath}`,
+    publisher: { "@id": "https://www.rso-consulting.com" },
+    url: `https://www.rso-consulting.com${router.asPath}`,
+  };
   return (
     <Fragment>
       <Head>
@@ -73,22 +91,10 @@ export default function Post({
         <meta name="twitter:creator" content="rso_consulting" key="twhandle" />
 
         {/* Schema */}
-        <script type="application/ld+json">{`
-    {
-      "@context":"https://schema.org/",
-      "@type":"Article",
-      "name":"${seoTitle}",
-      "author": { "@type": "Person", "name": "${authorName}" },
-      "datePublished": "${publishDate}",
-      "description": "${metaDescription}",
-      "headline": "${seoTitle}",
-      ${metaFeaturedImage ? `"image": "${metaFeaturedImage}",` : ""}
-      "inLanguage": "English",
-      "mainEntityOfPage": "https://www.rso-consulting.com${router.asPath}",
-      "publisher": { "@id": "https://www.rso-consulting.com" },
-      "url": "https://www.rso-consulting.com${router.asPath}"
-    }
-    `}</script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       </Head>
       {preview && <Alert />}
       <Header />
