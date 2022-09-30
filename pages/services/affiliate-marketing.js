@@ -60,7 +60,7 @@ const AffiliateMarketing = () => {
     {
       "@context":"https://schema.org/",
       "@type":"Service",
-      ""serviceType": "Affiliate Marketing Management Solutions",
+      "serviceType": "Affiliate Marketing Management Solutions",
       "audience": {
         "@type": "Audience",
         "audienceType": "Business Owners"
