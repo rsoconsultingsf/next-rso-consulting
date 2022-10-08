@@ -4,11 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <script
-          type="text/javascript"
-          src="//cdn-3.convertexperiments.com/js/10007633-10006971.js"
-          defer
-        />
         <meta
           name="google-site-verification"
           content="Tbr21uTsJ1QOMx_2ddHGzYswYrxk1fvcyO4-D1GV4-U"
