@@ -226,5 +226,6 @@ export async function getStaticPaths() {
       allPosts.items?.map(({ slug }) => `/digital-marketing-blogs/${slug}`) ??
       [],
     fallback: true,
+    revalidate: 60,
   };
 }

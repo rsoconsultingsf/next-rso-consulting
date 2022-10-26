@@ -168,5 +168,6 @@ export async function getStaticProps({ params, preview = false }) {
       pageCount: pageCount,
       categories: uniqueCategoryArray,
     },
+    revalidate: 60,
   };
 }
