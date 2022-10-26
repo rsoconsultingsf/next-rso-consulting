@@ -157,7 +157,7 @@ export async function getStaticProps({ params, preview = false }) {
       : null;
   });
 
-  // Get post previews, post count, and number of pages
+  // Get post previews, post count, and number of pagess
   const postPreviews = await getPostPreviews(preview, 0, ITEMS_PER_PAGE, "all");
 
   const pageCount = Math.ceil(postPreviews.total / ITEMS_PER_PAGE);
