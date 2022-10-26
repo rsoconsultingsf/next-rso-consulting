@@ -211,6 +211,7 @@ export async function getStaticProps({ params, preview = false }) {
       morePosts: data?.morePosts ?? null,
       uniqueCategories: uniqueCategoryArray,
     },
+    revalidate: 60,
   };
 }
 
@@ -226,6 +227,5 @@ export async function getStaticPaths() {
       allPosts.items?.map(({ slug }) => `/digital-marketing-blogs/${slug}`) ??
       [],
     fallback: true,
-    revalidate: 60,
   };
 }
