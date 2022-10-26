@@ -214,5 +214,6 @@ export async function getStaticPaths(preview = false) {
         return `/digital-marketing-blogs/category/${slug}`;
       }) ?? [],
     fallback: true,
+    revalidate: 60,
   };
 }
