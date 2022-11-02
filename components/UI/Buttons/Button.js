@@ -32,7 +32,7 @@ const Button = (props) => {
   if (props.link) {
     return (
       <Link href={props.link} passRef>
-        <a className={`${styles.btn} ${styles[props.color]}`}>
+        <a className={`${styles.btn} ${styles[props.color]} ${props.className}`}>
           {props.children}
         </a>
       </Link>
@@ -40,7 +40,7 @@ const Button = (props) => {
   }
 
   return (
-    <button type={props.type} className={styles.btn} onClick={props.onClick}>
+    <button type={props.type} className={`${styles.btn} ${props.className}`} onClick={props.onClick}>
       {props.children}
     </button>
   );

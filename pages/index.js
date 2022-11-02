@@ -32,13 +32,13 @@ const Home = () => {
           <br /> For Future Customers To Find You
         </h1>
         <div className="col-3-hero" style={{ gridAutoRows: "auto" }}>
-          <Button color="orange" link="/services/seo-services/">
+          <Button color="orange" className="cta cta-hero" link="/services/seo-services/">
             Search Engine Optimization
           </Button>
-          <Button color="red" link="/services/manage-pay-per-click/">
+          <Button color="red" className="cta cta-hero" link="/services/manage-pay-per-click/">
             Paid Advertising
           </Button>
-          <Button color="blue" link="/services/social-media-optimization/">
+          <Button color="blue" className="cta cta-hero" link="/services/social-media-optimization/">
             Social Media Optimization
           </Button>
           {/* <Button color="green" link="/services/web-analytics-consultation/">
@@ -242,7 +242,7 @@ const Home = () => {
             Take a look at our <b>complete list</b> of digital marketing
             services.
           </h2>
-          <Button link="/services/">SEE ALL SERVICES</Button>
+          <Button className="cta" link="/services/">SEE ALL SERVICES</Button>
         </div>
       </section>
       <section>
