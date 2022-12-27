@@ -631,6 +631,12 @@
     permanent: true,
   },
   {
+    source: "/google-analytics/",
+    destination:
+      "https://www.amazon.com/42-Rules-Applying-Google-Analytics/dp/1607730405",
+    permanent: true,
+  },
+  {
     source: "/google-analytics-4/",
     destination: "/digital-marking-blogs/google-analytics-4/",
     permanent: true,
@@ -1108,6 +1114,11 @@
     permanent: true,
   },
   {
+    source: "/internet-marketing-consultation/",
+    destination: "/digital-marketing-consultation/",
+    permanent: true,
+  },
+  {
     source: "/is-above-the-scroll-still-relevant/",
     destination: "/digital-marking-blogs/is-above-the-scroll-still-relevant/",
     permanent: true,
@@ -1214,6 +1225,11 @@
     source: "/making-the-most-of-back-to-school-2014/",
     destination:
       "/digital-marking-blogs/making-the-most-of-back-to-school-2014/",
+    permanent: true,
+  },
+  {
+    source: "/manage-pay-per-click/",
+    destination: "/services/manage-pay-per-click/",
     permanent: true,
   },
   {
@@ -1342,6 +1358,11 @@
     source: "/new-youtube-associated-website-annotations-improve-seo/",
     destination:
       "/digital-marking-blogs/new-youtube-associated-website-annotations-improve-seo/",
+    permanent: true,
+  },
+  {
+    source: "/news-about-digital-marketing/undefined/",
+    destination: "/news-about-digital-marketing/",
     permanent: true,
   },
   {
@@ -1563,6 +1584,11 @@
     permanent: true,
   },
   {
+    source: "/search-engine-optimization/",
+    destination: "/services/seo-services/",
+    permanent: true,
+  },
+  {
     source: "/searching-for-relevancy/",
     destination: "/digital-marking-blogs/searching-for-relevancy/",
     permanent: true,
@@ -1686,6 +1712,11 @@
   {
     source: "/social-media-metrics/",
     destination: "/digital-marking-blogs/social-media-metrics/",
+    permanent: true,
+  },
+  {
+    source: "/social-media-optimization/",
+    destination: "/services/social-media-optimization/",
     permanent: true,
   },
   {
