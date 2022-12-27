@@ -75,7 +75,10 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
     <Fragment>
       <Head>
         <title>{pageTitle}</title>
-        <meta name="description" content="" />
+        <meta
+          name="description"
+          content={`Read about the latest ${category} trends and tips.`}
+        />
       </Head>
       <Hero image={heroImage} alt="" anchor="#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>
