@@ -394,7 +394,7 @@ module.exports = {
       {
         source: "/differences-google-plus-pages-profiles/",
         destination:
-          "/digital-marketing-blogs/differences-google-plus-pages-profiles/",
+          "/digital-marketing-blogs/whats-the-difference-between-google-plus-business-pages-and-profiles/",
         permanent: true,
       },
       {
