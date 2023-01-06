@@ -403,6 +403,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: "/digital-marketing-blogs/category/adwords/",
+        destination: "/digital-marketing-blogs/category/google-ads/",
+        permanent: true,
+      },
+      {
         source: "/digital-marketing-for-digital-health/",
         destination:
           "/digital-marketing-blogs/digital-marketing-for-digital-health/",
