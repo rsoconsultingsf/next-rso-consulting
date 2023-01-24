@@ -66,7 +66,10 @@ const SEOServices = () => {
               alt="San Francisco SEO Services Methodology"
               width={705}
               height={461}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="sub-intro">
             <SectionLabel red>What is the value of SEO services?</SectionLabel>
@@ -102,7 +105,10 @@ const SEOServices = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="On-page Optimization"
             description="The first step in our SEO strategy, on-page optimization 
@@ -118,7 +124,10 @@ const SEOServices = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Off-page Optimization"
             description="Off-page SEO is the optimization happening off the page and, 
@@ -134,7 +143,10 @@ const SEOServices = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Technical Audit"
             description="The technical audit process ensures your website is 

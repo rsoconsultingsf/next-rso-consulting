@@ -29,14 +29,17 @@ const PostPreview = (props) => {
               <Image
                 src={imageURL}
                 alt={imageTitle}
-                layout="fill"
-                objectFit={
-                  props.imageURL.indexOf(
-                    "san-francisco-digital-marketing-agency_color.svg"
-                  ) > -1
-                    ? "contain"
-                    : "cover"
-                }
+                fill
+                style={{
+                  objectFit:
+                    props.imageURL.indexOf(
+                      "san-francisco-digital-marketing-agency_color.svg"
+                    ) > -1
+                      ? "contain"
+                      : "cover",
+
+                  maxWidth: "100%",
+                }}
               />
             }
           </div>
@@ -52,8 +55,11 @@ const PostPreview = (props) => {
           </div>
         </div>
         <div className={styles["btn-container"]}>
-          <Link href={`/digital-marketing-blogs/${link}`} passHref>
-            <a className={styles["read-more"]}>Read More</a>
+          <Link
+            href={`/digital-marketing-blogs/${link}`}
+            className={styles["read-more"]}
+          >
+            Read More
           </Link>
         </div>
       </article>

@@ -78,7 +78,10 @@ const Home = () => {
               alt="rso success"
               width={705}
               height={461}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="sub-intro">
             <SectionLabel red>How Do You Measure Success?</SectionLabel>
@@ -115,7 +118,10 @@ const Home = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Search Engine Optimization"
             description="Grow your website’s organic search results, drive more traffic to your website and generate leads."
@@ -136,7 +142,10 @@ const Home = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Paid Search Advertising"
             description="Boost your brand awareness, sales, and revenue."
@@ -157,7 +166,10 @@ const Home = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Social Media Optimization"
             description="Build your brand awareness, grow your audience and increase engagement through organic or paid content."
@@ -178,7 +190,10 @@ const Home = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Web Analytics Consultation"
             description="Understand your website visitors and spend
@@ -200,7 +215,10 @@ const Home = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Web Design & Development"
             description="Offer an engaging experience for your website visitors with modern web design using the latest technology and best practices."
@@ -221,7 +239,10 @@ const Home = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="A/B Testing"
             description="Optimize your website's engagement by testing 
@@ -258,7 +279,10 @@ const Home = () => {
                 alt="Adobe logo"
                 width={330}
                 height={83}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="flex-center">
               <Image
@@ -266,7 +290,10 @@ const Home = () => {
                 alt="Asana logo"
                 width={283}
                 height={65}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="flex-center">
               <Image
@@ -274,7 +301,10 @@ const Home = () => {
                 alt="Coleman logo"
                 width={300}
                 height={98}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="flex-center">
               <Image
@@ -282,7 +312,10 @@ const Home = () => {
                 alt="Discovery logo"
                 width={340}
                 height={70}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="flex-center">
               <Image
@@ -290,7 +323,10 @@ const Home = () => {
                 alt="HP logo"
                 width={130}
                 height={130}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="flex-center">
               <Image
@@ -298,7 +334,10 @@ const Home = () => {
                 alt="Post logo"
                 width={200}
                 height={140}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="flex-center">
               <Image
@@ -306,7 +345,10 @@ const Home = () => {
                 alt="Total Wine logo"
                 width={300}
                 height={70}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="flex-center">
               <Image
@@ -314,7 +356,10 @@ const Home = () => {
                 alt="University of San Francisco logo"
                 width={330}
                 height={90}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </div>

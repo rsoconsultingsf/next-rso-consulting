@@ -64,7 +64,15 @@ const SocialMediaOptimization = () => {
       <section>
         <div className="col-2 unset container">
           <div className="img-center">
-            <Image src="/images/rso_smo.png" alt="" width={705} height={461} />
+            <Image
+              src="/images/rso_smo.png"
+              alt=""
+              width={705}
+              height={461}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="sub-intro">
             <SectionLabel red>Successful Social Media</SectionLabel>
@@ -104,7 +112,10 @@ const SocialMediaOptimization = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Platform Selection"
             description="The first step to successful social media marketing is understanding your audience and knowing where to reach them."
@@ -116,7 +127,10 @@ const SocialMediaOptimization = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Content Strategy & Creation"
             description="Whether it’s brand awareness or product sales, your social media marketing goals are key to building a successful content strategy. Our goal is to post with intent while still keeping the content on brand with your business."
@@ -128,7 +142,10 @@ const SocialMediaOptimization = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Schedule & Managing Engagement"
             description="To ensure timely posting, the approved content will be scheduled for publishing through our social media management platform. In addition to managing content, we are here to help manage engagement. Social media encourages two-way communication, so it’s important to stay connected and responsive."
@@ -140,7 +157,10 @@ const SocialMediaOptimization = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Analytics & Reporting"
             description="Last, but certainly not least, is measuring the social media metrics. This vital step allows us to see what is working well and what can be improved. From here we will analyze, adjust and continue to monitor."

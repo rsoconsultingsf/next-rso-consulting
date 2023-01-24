@@ -66,7 +66,10 @@ const ABTesting = () => {
               alt=""
               width={705}
               height={461}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="sub-intro">
             <SectionLabel red>What Is A/B Testing?</SectionLabel>
@@ -99,7 +102,10 @@ const ABTesting = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Methodology:"
             details={
@@ -125,7 +131,10 @@ const ABTesting = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Testing Options:"
             details={
@@ -143,7 +152,10 @@ const ABTesting = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Testing Opportunities:"
             details={
@@ -161,7 +173,10 @@ const ABTesting = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Management:"
             details={

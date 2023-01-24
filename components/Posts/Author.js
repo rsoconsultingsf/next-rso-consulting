@@ -23,7 +23,7 @@ const richTextOptions = (content) => ({
         const internalLink = data.uri.split("rso-consulting.com");
         return (
           <Link href={internalLink[1] || "/"} passHref>
-            <a>{children}</a>
+            {children}
           </Link>
         );
       } else {
@@ -49,7 +49,10 @@ export default function Author({ bio, image, name }) {
           width={75}
           height={75}
           alt={image ? name : "author placeholder image"}
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
         <span className={styles["author-name"]}>{name}</span>
       </div>
     </div>

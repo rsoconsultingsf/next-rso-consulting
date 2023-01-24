@@ -19,8 +19,11 @@ const Testimonials = () => {
               className={styles["background-image"]}
               src={background}
               alt="RSO Testimonials"
-              objectFit="cover"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                objectFit: "cover"
+              }} />
           </div>
           <div className={styles.content}>
             <SectionLabel green>What People Have To Say</SectionLabel>

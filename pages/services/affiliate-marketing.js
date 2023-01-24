@@ -124,7 +124,10 @@ const AffiliateMarketing = () => {
               alt=""
               width={705}
               height={461}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="sub-intro">
             <SectionLabel red>What Is Affiliate Marketing?</SectionLabel>
@@ -170,7 +173,10 @@ const AffiliateMarketing = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Outreach"
             details={
@@ -196,7 +202,10 @@ const AffiliateMarketing = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Affiliate Development"
             details={
@@ -220,7 +229,10 @@ const AffiliateMarketing = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="End-to-End Management "
             details={

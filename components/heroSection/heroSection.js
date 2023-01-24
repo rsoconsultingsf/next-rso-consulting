@@ -67,21 +67,27 @@ const Hero = (props) => {
             <Image
               src={image}
               alt={alt}
-              objectFit="cover"
               priority
-              placeholder="blur"
+              loading="eager"
+              style={{
+                objectFit: "cover",
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
             <div className={`${styles.header} container`}>
-              <Link href="/" passHref>
-                <a>
-                  <Image
-                    src="/images/logos/san-francisco-digital-marketing-agency_white.svg"
-                    alt="RSO Logo - San Francisco Digital Marketing Agency"
-                    className="header-logo-link"
-                    width={145}
-                    height={54}
-                  />
-                </a>
+              <Link href="/">
+                <Image
+                  src="/images/logos/san-francisco-digital-marketing-agency_white.svg"
+                  alt="RSO Logo - San Francisco Digital Marketing Agency"
+                  className="header-logo-link"
+                  width={145}
+                  height={54}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
+                />
               </Link>
               <div className="desktop">
                 <NavMenu white />

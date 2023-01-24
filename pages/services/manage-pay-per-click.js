@@ -105,7 +105,10 @@ const ManagePayPerClick = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Consider these important questions:"
             details={
@@ -132,7 +135,10 @@ const ManagePayPerClick = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Our initial analysis includes:"
             details={
@@ -156,7 +162,10 @@ const ManagePayPerClick = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Our ongoing management includes: "
             details={

@@ -24,7 +24,7 @@ const richTextOptions = (content) => ({
         const internalLink = data.uri.split("rso-consulting.com");
         return (
           <Link href={internalLink[1] || "/"} passHref>
-            <a>{children}</a>
+            {children}
           </Link>
         );
       } else {
@@ -57,9 +57,12 @@ export default function PostItem({
             alt={featuredImage.title}
             width={featuredImage.width}
             height={featuredImage.height}
-            layout="responsive"
             priority
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
           <p
             dangerouslySetInnerHTML={{ __html: featuredImage.description }}
             style={{ marginTop: "0", fontStyle: "italic" }}
@@ -87,11 +90,9 @@ export default function PostItem({
                     lower: true,
                     strict: true,
                   })}`}
-                  passHref
+                  className={styles.category}
                 >
-                  <a className={styles.category}>
-                    <span>{category}</span>
-                  </a>
+                  <span>{category}</span>
                 </Link>
               );
             })}
@@ -104,9 +105,12 @@ export default function PostItem({
             alt={featuredImage.title}
             width={featuredImage.width}
             height={featuredImage.height}
-            layout="responsive"
             priority
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         )}
       </div>
       {content &&
