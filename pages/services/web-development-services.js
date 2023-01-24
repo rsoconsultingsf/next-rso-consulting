@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import Button from "../../components/UI/Buttons/Button";
 import Hero from "../../components/heroSection/heroSection";
