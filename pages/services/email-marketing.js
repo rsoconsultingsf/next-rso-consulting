@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Head from "next/head";
 
 import Hero from "../../components/heroSection/heroSection";
@@ -64,7 +64,10 @@ const EmailMarketing = () => {
               alt=""
               width={705}
               height={461}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="sub-intro">
             <SectionLabel red>Marketing Through Email</SectionLabel>
@@ -106,7 +109,10 @@ const EmailMarketing = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Prioritize the opportunities that 
             drive revenue"
@@ -135,7 +141,10 @@ const EmailMarketing = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Elevate your brand and drive conversion"
             details={
@@ -162,7 +171,10 @@ const EmailMarketing = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="RSO Full Service"
             details={

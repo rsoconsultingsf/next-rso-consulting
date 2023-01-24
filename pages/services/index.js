@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Head from "next/head";
 
 import Button from "../../components/UI/Buttons/Button";
@@ -78,7 +78,10 @@ const Services = () => {
               alt="rso success"
               width={705}
               height={461}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="sub-intro">
             <SectionLabel red>We Get The Job Done!</SectionLabel>
@@ -120,7 +123,10 @@ const Services = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Search Engine Optimization"
             description="Drive more traffic to your website, generate leads, and grow your business."
@@ -141,7 +147,10 @@ const Services = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Paid Search Advertising"
             description="Boost your brand awareness, sales, and revenue."
@@ -162,7 +171,10 @@ const Services = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Social Media Optimization"
             description="Build your brand awareness, expand online
@@ -185,7 +197,10 @@ const Services = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Web Analytics Consultation"
             description="Understand your website behavior and learn how 
@@ -207,7 +222,10 @@ const Services = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Web Design & Development"
             description="Offer an engaging experience for your 
@@ -230,7 +248,10 @@ const Services = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="A/B Testing"
             description="Optimize your website's engagement by testing 
@@ -253,7 +274,10 @@ const Services = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Email Marketing"
             description="Email delivery based on best practices that will 
@@ -276,7 +300,10 @@ const Services = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Affiliate Marketing"
             description="Promote your product or service through partners 

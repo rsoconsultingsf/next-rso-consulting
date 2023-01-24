@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import PreviewCard from "../UI/Cards/PreviewCard";
@@ -37,6 +37,8 @@ const PostPreview = (props) => {
                     ) > -1
                       ? "contain"
                       : "cover",
+
+                  maxWidth: "100%",
                 }}
               />
             }

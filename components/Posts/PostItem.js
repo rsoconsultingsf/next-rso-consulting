@@ -3,7 +3,7 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import RichTextAsset from "./RichTextAsset";
 import slugify from "slugify";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./PostItem.module.css";
@@ -57,9 +57,12 @@ export default function PostItem({
             alt={featuredImage.title}
             width={featuredImage.width}
             height={featuredImage.height}
-            layout="responsive"
             priority
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
           <p
             dangerouslySetInnerHTML={{ __html: featuredImage.description }}
             style={{ marginTop: "0", fontStyle: "italic" }}
@@ -102,9 +105,12 @@ export default function PostItem({
             alt={featuredImage.title}
             width={featuredImage.width}
             height={featuredImage.height}
-            layout="responsive"
             priority
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         )}
       </div>
       {content &&

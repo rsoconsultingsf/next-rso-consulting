@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import SectionLabel from "../UI/Labels/SectionLabel";
 import TestimonialSlider from "../Sliders/TestimonialSlider";
@@ -19,8 +19,11 @@ const Testimonials = () => {
               className={styles["background-image"]}
               src={background}
               alt="RSO Testimonials"
-              objectFit="cover"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                objectFit: "cover"
+              }} />
           </div>
           <div className={styles.content}>
             <SectionLabel green>What People Have To Say</SectionLabel>

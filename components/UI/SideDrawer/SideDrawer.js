@@ -2,7 +2,7 @@ import React from "react";
 import { createPortal } from "react-dom";
 
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -37,7 +37,10 @@ const SideDrawer = (props) => {
                   alt="RSO Consulting logo"
                   width={200}
                   height={125}
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               </Link>
             </div>
             {props.children}

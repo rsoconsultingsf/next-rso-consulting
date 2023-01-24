@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import Button from "../../components/UI/Buttons/Button";
 import Hero from "../../components/heroSection/heroSection";
@@ -68,7 +68,10 @@ const WebDevelopmentServices = () => {
               alt="rso website development"
               width={705}
               height={461}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="sub-intro">
             <SectionLabel red>Delight Your Customers</SectionLabel>
@@ -106,7 +109,10 @@ const WebDevelopmentServices = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Full Website Builds"
             details={
@@ -124,7 +130,10 @@ const WebDevelopmentServices = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Web Hosting:"
             details={
@@ -142,7 +151,10 @@ const WebDevelopmentServices = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Maintenance/Management:"
             details={
@@ -169,8 +181,11 @@ const WebDevelopmentServices = () => {
                   alt="Alsco website"
                   width={454}
                   height={562}
-                  layout="responsive"
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
               }
               title="Alsco"
               link="https://alsco.com/"
@@ -182,8 +197,11 @@ const WebDevelopmentServices = () => {
                   alt="The Ama Foundation website"
                   width={454}
                   height={562}
-                  layout="responsive"
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
               }
               title="Ama Foundation"
               link="https://ama-foundation.org/"
@@ -195,8 +213,11 @@ const WebDevelopmentServices = () => {
                   alt="HRO Resources website"
                   width={454}
                   height={562}
-                  layout="responsive"
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
               }
               title="HRO Resources"
               link="https://hroresources.com/"
@@ -208,8 +229,11 @@ const WebDevelopmentServices = () => {
                   alt="Paul Ekman Group website"
                   width={454}
                   height={562}
-                  layout="responsive"
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
               }
               title="Paul Ekman Group"
               link="https://www.paulekman.com/"
@@ -221,8 +245,11 @@ const WebDevelopmentServices = () => {
                   alt="Valley Fig Growers website"
                   width={454}
                   height={562}
-                  layout="responsive"
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
               }
               title="Valley Fig Growers"
               link="https://valleyfig.com/"
@@ -234,8 +261,11 @@ const WebDevelopmentServices = () => {
                   alt="Alpec website"
                   width={454}
                   height={562}
-                  layout="responsive"
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
               }
               title="Alpec"
               link="https://www.alpec.com/"

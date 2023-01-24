@@ -2,7 +2,7 @@ import React from "react";
 
 import Slider from "react-slick";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import styles from "./PPCSlider.module.css";
 
@@ -26,7 +26,10 @@ const PPCSlider = () => {
             alt="Google Ads platform"
             width={705}
             height={461}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div>
           <Image
@@ -34,7 +37,10 @@ const PPCSlider = () => {
             alt="LinkedIn Ads platform"
             width={705}
             height={461}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div>
           <Image
@@ -42,7 +48,10 @@ const PPCSlider = () => {
             alt="Facebook Ads platform"
             width={705}
             height={461}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
       </Slider>
     </div>

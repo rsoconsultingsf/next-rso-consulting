@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Head from "next/head";
 
 import Hero from "../../components/heroSection/heroSection";
@@ -67,7 +67,10 @@ const WebAnalytricsConsultation = () => {
               alt=""
               width={705}
               height={461}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="sub-intro">
             <SectionLabel red>What are your visitors doing?</SectionLabel>
@@ -111,7 +114,10 @@ const WebAnalytricsConsultation = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Configuration:"
             details={
@@ -129,7 +135,10 @@ const WebAnalytricsConsultation = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Analysis:"
             details={
@@ -149,7 +158,10 @@ const WebAnalytricsConsultation = () => {
                 alt=""
                 height={160}
                 width={160}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             }
             title="Management:"
             details={

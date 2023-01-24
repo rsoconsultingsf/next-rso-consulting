@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import { FaFacebookF } from "react-icons/fa";
@@ -34,7 +34,10 @@ const Footer = () => {
             alt="Google Partner Badge"
             width={140}
             height={140}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
 
         <a
@@ -47,7 +50,10 @@ const Footer = () => {
             alt=""
             width={200}
             height={76}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
 
         <a
@@ -60,7 +66,10 @@ const Footer = () => {
             alt="Top Service Provider"
             width={160}
             height={173}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
       </div>
       <div className={`${styles["footer__bottom__desktop"]} container`}>
@@ -70,7 +79,10 @@ const Footer = () => {
             alt="RSO Logo - San Francisco Digital Marketing Agency"
             width={100}
             height={37}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className={`${styles["footer__col"]} ${styles.social}`}>
           <div className={`${styles["social__icons"]} col-3`}>
@@ -153,7 +165,10 @@ const Footer = () => {
             alt="RSO Logo - San Francisco Digital Marketing Agency"
             width={100}
             height={37}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className={`${styles["footer__col"]} ${styles.copyright}`}>
           <span>

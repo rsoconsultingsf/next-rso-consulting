@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 import Button from "../UI/Buttons/Button";
@@ -68,8 +68,12 @@ const Hero = (props) => {
               src={image}
               alt={alt}
               priority
-              placeholder="blur"
-              style={{ objectFit: "cover" }}
+              loading="eager"
+              style={{
+                objectFit: "cover",
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
             <div className={`${styles.header} container`}>
               <Link href="/">
@@ -79,6 +83,10 @@ const Hero = (props) => {
                   className="header-logo-link"
                   width={145}
                   height={54}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
                 />
               </Link>
               <div className="desktop">
