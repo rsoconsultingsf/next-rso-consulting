@@ -72,7 +72,7 @@ const Hero = (props) => {
               style={{
                 objectFit: "cover",
                 maxWidth: "100%",
-                height: "auto",
+                height: "100vh",
               }}
             />
             <div className={`${styles.header} container`}>
