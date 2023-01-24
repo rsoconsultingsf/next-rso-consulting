@@ -27,22 +27,21 @@ const NavItem = (props) => {
         hideSubMenuHandler();
       }}
     >
-      <Link href={props.link}>
-        <a
-          className={
-            props.className === "underline-white"
-              ? styles["link-item-white"]
-              : styles["link-item"]
-          }
-          style={{
-            color: router.asPath.indexOf(props.link) > -1 ? "#ff6633" : null,
-          }}
-          onMouseEnter={() => {
-            showSubMenuHandler();
-          }}
-        >
-          {props.children}
-        </a>
+      <Link
+        href={props.link}
+        className={
+          props.className === "underline-white"
+            ? styles["link-item-white"]
+            : styles["link-item"]
+        }
+        style={{
+          color: router.asPath.indexOf(props.link) > -1 ? "#ff6633" : null,
+        }}
+        onMouseEnter={() => {
+          showSubMenuHandler();
+        }}
+      >
+        {props.children}
       </Link>
       {props.subMenu && props.subMenu.length > 0 && subMenuVisible ? (
         <SubMenu

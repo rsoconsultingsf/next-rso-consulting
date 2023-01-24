@@ -97,21 +97,11 @@ const Footer = () => {
             </a>
           </div>
           <div className={`${styles["footer__menu"]} col-5`}>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-            <Link href="/services/">
-              <a>Services</a>
-            </Link>
-            <Link href="/digital-marketing-blogs/">
-              <a>Blog</a>
-            </Link>
-            <Link href="/news-about-digital-marketing/">
-              <a>News</a>
-            </Link>
-            <Link href="/digital-marketing-consultation/">
-              <a>Contact</a>
-            </Link>
+            <Link href="/">Home</Link>
+            <Link href="/services/">Services</Link>
+            <Link href="/digital-marketing-blogs/">Blog</Link>
+            <Link href="/news-about-digital-marketing/">News</Link>
+            <Link href="/digital-marketing-consultation/">Contact</Link>
           </div>
         </div>
         <div className={`${styles["footer__col"]} ${styles.copyright}`}>
@@ -120,9 +110,7 @@ const Footer = () => {
             Reserved.
           </span>
           <span>
-            <Link href="/privacy-policy/">
-              <a>Privacy Policy</a>
-            </Link>
+            <Link href="/privacy-policy/">Privacy Policy</Link>
           </span>
         </div>
       </div>
@@ -153,21 +141,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={`${styles["footer__menu"]} col-5`}>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-          <Link href="/services/">
-            <a>Services</a>
-          </Link>
-          <Link href="/digital-marketing-blogs/">
-            <a>Blog</a>
-          </Link>
-          <Link href="/news-about-digital-marketing/">
-            <a>News</a>
-          </Link>
-          <Link href="/digital-marketing-consultation/">
-            <a>Contact</a>
-          </Link>
+          <Link href="/">Home</Link>
+          <Link href="/services/">Services</Link>
+          <Link href="/digital-marketing-blogs/">Blog</Link>
+          <Link href="/news-about-digital-marketing/">News</Link>
+          <Link href="/digital-marketing-consultation/">Contact</Link>
         </div>
         <div className={`${styles["footer__col"]} ${styles.logo}`}>
           <Image
@@ -183,9 +161,7 @@ const Footer = () => {
             Reserved.
           </span>
           <span>
-            <Link href="/privacy-policy/">
-              <a>Privacy Policy</a>
-            </Link>
+            <Link href="/privacy-policy/">Privacy Policy</Link>
           </span>
         </div>
       </div>

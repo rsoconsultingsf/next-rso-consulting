@@ -23,7 +23,7 @@ const richTextOptions = (content) => ({
         const internalLink = data.uri.split("rso-consulting.com");
         return (
           <Link href={internalLink[1] || "/"} passHref>
-            <a>{children}</a>
+            {children}
           </Link>
         );
       } else {

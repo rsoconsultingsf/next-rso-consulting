@@ -50,15 +50,13 @@ const Header = () => {
       <header className={styles["normal-header"]}>
         <div className={`${styles.header} container`}>
           <Link href="/" passHref>
-            <a>
-              <Image
-                src="/images/logos/san-francisco-digital-marketing-agency_color.svg"
-                alt="RSO Logo - San Francisco Digital Marketing Agency"
-                className="header-logo-link"
-                width={145}
-                height={54}
-              />
-            </a>
+            <Image
+              src="/images/logos/san-francisco-digital-marketing-agency_color.svg"
+              alt="RSO Logo - San Francisco Digital Marketing Agency"
+              className="header-logo-link"
+              width={145}
+              height={54}
+            />
           </Link>
           <div className="desktop">
             <DesktopNav />

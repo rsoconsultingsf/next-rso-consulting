@@ -18,8 +18,8 @@ const SubMenu = (props) => {
       <ul className={styles["sub-menu"]} aria-label="submenu">
         {props.menu.map((subLink, key) => (
           <li key={key} className={styles["sub-menu-item"]}>
-            <Link href={subLink.path}>
-              <a className={styles["sub-menu-link"]}>{subLink.name}</a>
+            <Link href={subLink.path} className={styles["sub-menu-link"]}>
+              {subLink.name}
             </Link>
           </li>
         ))}

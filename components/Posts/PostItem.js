@@ -24,7 +24,7 @@ const richTextOptions = (content) => ({
         const internalLink = data.uri.split("rso-consulting.com");
         return (
           <Link href={internalLink[1] || "/"} passHref>
-            <a>{children}</a>
+            {children}
           </Link>
         );
       } else {
@@ -87,11 +87,9 @@ export default function PostItem({
                     lower: true,
                     strict: true,
                   })}`}
-                  passHref
+                  className={styles.category}
                 >
-                  <a className={styles.category}>
-                    <span>{category}</span>
-                  </a>
+                  <span>{category}</span>
                 </Link>
               );
             })}

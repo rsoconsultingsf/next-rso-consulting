@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 
 import React from "react";
-import { Facebook, Twitter, Linkedin, Mail } from "react-social-sharing";
 import {
   FaFacebookF,
   FaTwitter,
