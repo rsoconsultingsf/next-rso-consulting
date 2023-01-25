@@ -24,7 +24,7 @@ const AboutUs = () => {
       <Hero
         image={heroImage}
         alt="Digital Marketing Agency Graphic"
-        anchor="/services/#intro"
+        anchor="#intro"
       >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>RSO: The Digital Marketing Agency Near Me</b>
