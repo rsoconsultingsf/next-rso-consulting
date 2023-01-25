@@ -32,7 +32,7 @@ const AboutUs = () => {
         </h1>
       </Hero>
       <section>
-        <div id="intro"></div>
+        <div id="intro" style={{ top: "-100px" }}></div>
         <div className="container">
           <h2 className="intro sub-headline">
             In a sea of web <b>analytics consulting companies</b>, you need the
