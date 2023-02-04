@@ -1,11 +1,11 @@
 .background-image {
   position: absolute;
-  display:inherit;
+  display: inherit;
 }
 
 .background-image-container {
   visibility: hidden;
-  display:none;
+  display: none;
 }
 
 .content {
@@ -13,19 +13,45 @@
 }
 
 .inner {
-  position: relative
+  position: relative;
+}
+
+.testimonials-container {
+  height: 500px;
+}
+
+@media (min-width: 375px) {
+  .testimonials-container {
+    height: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .testimonials-container {
+    height: 300px;
+  }
 }
 
 @media (min-width: 1024px) {
   .background-image-container {
     visibility: inherit;
-    display:inherit;
+    display: inherit;
   }
 
   .content {
     position: absolute;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     top: 130px;
+  }
+
+  .testimonials-container {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .testimonials-container {
+    height: 650px;
   }
 }
