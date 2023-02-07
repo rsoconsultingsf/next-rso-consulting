@@ -46,6 +46,10 @@ const navLinks = [
     path: "/news-about-digital-marketing/",
   },
   {
+    name: "About",
+    path: "/about-us/",
+  },
+  {
     name: "Get In Touch",
     path: "/digital-marketing-consultation/",
   },

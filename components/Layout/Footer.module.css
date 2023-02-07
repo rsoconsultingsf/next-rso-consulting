@@ -1,7 +1,7 @@
 .footer {
   min-height: 360px;
-  background-color: #F3F3F3;
-  display:flex;
+  background-color: #f3f3f3;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-top: 30px;
@@ -10,28 +10,28 @@
 }
 
 .badges {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap:50px;
+  gap: 50px;
 }
 
 .badges a,
 .badges div {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex: 0 0 100%;
 }
 
 .footer__bottom__desktop {
-  display:none;
+  display: none;
 }
 
 .footer__bottom__mobile {
   padding-left: 30px;
-  padding-right:30px;
+  padding-right: 30px;
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -39,11 +39,11 @@
 }
 
 .footer__bottom__mobile .copyright {
-  text-align:right;
+  text-align: right;
 }
 
 .footer__bottom__mobile .social__icons {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
@@ -53,24 +53,24 @@
 }
 
 .footer__col {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .footer__menu {
   gap: 20px;
-  text-align:center;
-  font-weight:bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .footer__menu a {
   text-decoration: none;
-  color: #6B7A99;
+  color: #6b7a99;
 }
 
 .copyright {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
@@ -78,7 +78,7 @@
 }
 
 .logo {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
@@ -91,12 +91,11 @@
 }
 
 .social__icons {
-  gap:15px;
+  gap: 15px;
   padding-bottom: 15px;
 }
 
 @media (min-width: 425px) {
-
 }
 
 @media (min-width: 768px) {
@@ -106,35 +105,35 @@
   }
 
   .footer__bottom__mobile .footer__menu {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   .footer__bottom__mobile .social__icons {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .badges a,
   .badges div {
     flex: 0 0 15%;
   }
 
   .footer__bottom__mobile {
-    display:none;
+    display: none;
   }
-  
+
   .footer__bottom__desktop {
     padding-left: 30px;
-    padding-right:30px;
+    padding-right: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .footer {
     padding-top: 20px;
   }

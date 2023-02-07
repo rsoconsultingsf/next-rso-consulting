@@ -1,11 +1,11 @@
 .nav-menu,
 .nav-menu-white {
   list-style: none;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width:400px;
-  font-weight:600;
+  width: 500px;
+  font-weight: 600;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
