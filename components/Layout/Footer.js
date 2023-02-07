@@ -36,8 +36,9 @@ const Footer = () => {
             height={140}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </a>
 
         <a
@@ -52,8 +53,9 @@ const Footer = () => {
             height={76}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </a>
 
         <a
@@ -68,8 +70,9 @@ const Footer = () => {
             height={173}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </a>
       </div>
       <div className={`${styles["footer__bottom__desktop"]} container`}>
@@ -81,8 +84,9 @@ const Footer = () => {
             height={37}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </div>
         <div className={`${styles["footer__col"]} ${styles.social}`}>
           <div className={`${styles["social__icons"]} col-3`}>
@@ -108,11 +112,12 @@ const Footer = () => {
               <FaLinkedinIn size={25} color="#6B7A99" />
             </a>
           </div>
-          <div className={`${styles["footer__menu"]} col-5`}>
+          <div className={`${styles["footer__menu"]} col-6`}>
             <Link href="/">Home</Link>
             <Link href="/services/">Services</Link>
             <Link href="/digital-marketing-blogs/">Blog</Link>
             <Link href="/news-about-digital-marketing/">News</Link>
+            <Link href="/about-us/">About</Link>
             <Link href="/digital-marketing-consultation/">Contact</Link>
           </div>
         </div>
@@ -152,11 +157,12 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className={`${styles["footer__menu"]} col-5`}>
+        <div className={`${styles["footer__menu"]} col-6`}>
           <Link href="/">Home</Link>
           <Link href="/services/">Services</Link>
           <Link href="/digital-marketing-blogs/">Blog</Link>
           <Link href="/news-about-digital-marketing/">News</Link>
+          <Link href="/about-us/">About</Link>
           <Link href="/digital-marketing-consultation/">Contact</Link>
         </div>
         <div className={`${styles["footer__col"]} ${styles.logo}`}>
@@ -167,8 +173,9 @@ const Footer = () => {
             height={37}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </div>
         <div className={`${styles["footer__col"]} ${styles.copyright}`}>
           <span>

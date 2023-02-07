@@ -85,7 +85,8 @@ section {
 .col-2,
 .col-3,
 .col-4,
-.col-5 {
+.col-5,
+.col-6 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
@@ -95,7 +96,8 @@ section {
 .col-2.unset,
 .col-3.unset,
 .col-4.unset,
-.col-5.unset {
+.col-5.unset,
+.col-6.unset {
   grid-auto-rows: auto;
 }
 
@@ -337,7 +339,8 @@ section {
   .col-2,
   .col-3,
   .col-4,
-  .col-5 {
+  .col-5,
+  .col-6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -433,6 +436,10 @@ section {
   .col-5 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .col-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   .col-3.short-grid > div {
