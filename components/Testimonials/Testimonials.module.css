@@ -1,6 +1,7 @@
 .background-image {
-  position: absolute;
+  position: relative;
   display: inherit;
+  margin: 0 auto;
 }
 
 .background-image-container {
