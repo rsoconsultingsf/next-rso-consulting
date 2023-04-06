@@ -9,7 +9,7 @@ const ContactForm = () => {
     <form
       className={styles["contact-form"]}
       action="https://submit-form.com/vCTcQOVT"
-    >
+      data-botpoison-public-key="pk_499bd7e6-c4aa-41b4-a9d8-42392a522e90">
       <input
         type="hidden"
         name="_redirect"
@@ -56,7 +56,9 @@ const ContactForm = () => {
           wrap="soft"
           required
         />
-        <label className="uhohhoney" htmlFor="email2">
+        <label
+          className="uhohhoney"
+          htmlFor="email2">
           <input
             className="uhohhoney"
             autoComplete="off"
