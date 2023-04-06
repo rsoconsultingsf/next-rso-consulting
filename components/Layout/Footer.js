@@ -13,22 +13,32 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={`${styles.badges} container unset`}>
-        <div>
-          <iframe
-            title="Clutch Widget"
-            id="iframe-0.7673761388712543"
-            frameBorder="0"
-            width="auto"
-            height="138px"
-            scrolling="no"
-            src="https://widget.clutch.co/widgets/get/3?ref_domain=www.rso-consulting.com&amp;uid=21061"
-          ></iframe>
-        </div>
+        <a
+          href="https://clutch.co/profile/rso-consulting#summary"
+          target="_blank"
+          rel="noreferrer">
+          <Image
+            src="/images/footer/logo-clutch-sem.png"
+            alt="Clutch Top SEM Company badge"
+            width={140}
+            height={140}
+          />
+        </a>
+        <a
+          href="https://clutch.co/profile/rso-consulting#summary"
+          target="_blank"
+          rel="noreferrer">
+          <Image
+            src="/images/footer/logo-clutch-seo.png"
+            alt="Clutch Top SEO Company badge"
+            width={140}
+            height={140}
+          />
+        </a>
         <a
           href="https://www.google.com/partners/agency?id=1257975749"
           target="_blank"
-          rel="noreferrer"
-        >
+          rel="noreferrer">
           <Image
             src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"
             alt="Google Partner Badge"
@@ -44,8 +54,7 @@ const Footer = () => {
         <a
           href="https://www.bbb.org/greater-san-francisco/business-reviews/marketing-consultants/rso-consulting-in-san-francisco-ca-305599"
           target="_blank"
-          rel="noreferrer"
-        >
+          rel="noreferrer">
           <Image
             src="/images/AB_logo_200x76-1.png"
             alt=""
@@ -61,8 +70,7 @@ const Footer = () => {
         <a
           href="https://wimgo.com/s/ca/san-francisco/business-consultant"
           target="_blank"
-          rel="noreferrer"
-        >
+          rel="noreferrer">
           <Image
             src="/images/footer/wimgo-2020.png"
             alt="Top Service Provider"
@@ -93,23 +101,29 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/RSOConsulting?m2w"
               target="_blank"
-              rel="noreferrer"
-            >
-              <FaFacebookF size={25} color="#6B7A99" />
+              rel="noreferrer">
+              <FaFacebookF
+                size={25}
+                color="#6B7A99"
+              />
             </a>
             <a
               href="https://twitter.com/rso_consulting"
               target="_blank"
-              rel="noreferrer"
-            >
-              <FaTwitter size={25} color="#6B7A99" />
+              rel="noreferrer">
+              <FaTwitter
+                size={25}
+                color="#6B7A99"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/rso-consulting/"
               target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedinIn size={25} color="#6B7A99" />
+              rel="noreferrer">
+              <FaLinkedinIn
+                size={25}
+                color="#6B7A99"
+              />
             </a>
           </div>
           <div className={`${styles["footer__menu"]} col-6`}>
@@ -137,23 +151,29 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/RSOConsulting?m2w"
               target="_blank"
-              rel="noreferrer"
-            >
-              <FaFacebookF size={25} color="#6B7A99" />
+              rel="noreferrer">
+              <FaFacebookF
+                size={25}
+                color="#6B7A99"
+              />
             </a>
             <a
               href="https://twitter.com/rso_consulting"
               target="_blank"
-              rel="noreferrer"
-            >
-              <FaTwitter size={25} color="#6B7A99" />
+              rel="noreferrer">
+              <FaTwitter
+                size={25}
+                color="#6B7A99"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/rso-consulting/"
               target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedinIn size={25} color="#6B7A99" />
+              rel="noreferrer">
+              <FaLinkedinIn
+                size={25}
+                color="#6B7A99"
+              />
             </a>
           </div>
         </div>

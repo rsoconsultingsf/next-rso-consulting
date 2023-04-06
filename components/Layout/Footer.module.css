@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   gap: 50px;
 }
@@ -23,6 +24,12 @@
   justify-content: center;
   align-items: center;
   flex: 0 0 100%;
+}
+
+.clutch__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .footer__bottom__desktop {
@@ -101,7 +108,11 @@
 @media (min-width: 768px) {
   .badges a,
   .badges div {
-    flex: 0 0 40%;
+    flex: 0 0 10%;
+  }
+
+  .clutch__container {
+    flex-direction: row;
   }
 
   .footer__bottom__mobile .footer__menu {
@@ -118,7 +129,7 @@
 @media (min-width: 1024px) {
   .badges a,
   .badges div {
-    flex: 0 0 15%;
+    flex: 0 0 10%;
   }
 
   .footer__bottom__mobile {
