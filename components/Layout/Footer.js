@@ -20,8 +20,8 @@ const Footer = () => {
           <Image
             src="/images/footer/logo-clutch-sem.png"
             alt="Clutch Top SEM Company badge"
-            width={140}
-            height={140}
+            width={138}
+            height={149}
           />
         </a>
         <a
@@ -31,8 +31,8 @@ const Footer = () => {
           <Image
             src="/images/footer/logo-clutch-seo.png"
             alt="Clutch Top SEO Company badge"
-            width={140}
-            height={140}
+            width={138}
+            height={149}
           />
         </a>
         <a
