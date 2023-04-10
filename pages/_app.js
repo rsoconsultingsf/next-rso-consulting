@@ -34,7 +34,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Script id="google-tag-manager" strategy="afterInteractive">
+      <Script
+        id="google-tag-manager"
+        strategy="afterInteractive">
         {`
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -43,6 +45,9 @@ function MyApp({ Component, pageProps }) {
         })(window,document,'script','dataLayer','GTM-M522H9');
       `}
       </Script>
+      <Script
+        src="https://unpkg.com/@botpoison/browser"
+        async></Script>
       <Layout>
         <Component {...pageProps} />
       </Layout>
