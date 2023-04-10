@@ -13,28 +13,11 @@ import "../styles/globals.css";
 // };
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-
-  // Set scrolling to smooth for anchor links
-  // useEffect(() => {
-  //   setSmoothScroll(true);
-  //   const handleStart = () => setSmoothScroll(false);
-  //   const handleStop = () => setSmoothScroll(true);
-
-  //   router.events.on("routeChangeStart", handleStart);
-  //   router.events.on("routeChangeComplete", handleStop);
-  //   router.events.on("routeChangeError", handleStop);
-
-  //   return () => {
-  //     router.events.off("routeChangeStart", handleStart);
-  //     router.events.off("routeChangeComplete", handleStop);
-  //     router.events.off("routeChangeError", handleStop);
-  //   };
-  // }, [router]);
-
   return (
     <>
-      <Script id="google-tag-manager" strategy="afterInteractive">
+      {/* <Script
+        id="google-tag-manager"
+        strategy="afterInteractive">
         {`
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -42,7 +25,7 @@ function MyApp({ Component, pageProps }) {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-M522H9');
       `}
-      </Script>
+      </Script> */}
       <Layout>
         <Component {...pageProps} />
       </Layout>

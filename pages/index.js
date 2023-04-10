@@ -25,20 +25,30 @@ const Home = () => {
       <Hero
         image={heroImage}
         alt="Digital Marketing Agency Graphic"
-        anchor="/services/#cards"
-      >
+        anchor="/services/#cards">
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Make It Easy</b>
           <br /> For Future Customers To Find You
         </h1>
-        <div className="col-3-hero" style={{ gridAutoRows: "auto" }}>
-          <Button color="orange" className="cta cta-hero" link="/services/seo-services/">
+        <div
+          className="col-3-hero"
+          style={{ gridAutoRows: "auto" }}>
+          <Button
+            color="orange"
+            className="cta cta-hero"
+            link="/services/seo-services/">
             Search Engine Optimization
           </Button>
-          <Button color="red" className="cta cta-hero" link="/services/manage-pay-per-click/">
+          <Button
+            color="red"
+            className="cta cta-hero"
+            link="/services/manage-pay-per-click/">
             Paid Advertising
           </Button>
-          <Button color="blue" className="cta cta-hero" link="/services/social-media-optimization/">
+          <Button
+            color="blue"
+            className="cta cta-hero"
+            link="/services/social-media-optimization/">
             Social Media Optimization
           </Button>
           {/* <Button color="green" link="/services/web-analytics-consultation/">
@@ -80,15 +90,15 @@ const Home = () => {
               height={461}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="sub-intro">
             <SectionLabel red>How Do You Measure Success?</SectionLabel>
             <h2
               className="sub-headline"
-              style={{ maxWidth: "515px", margin: "0 auto" }}
-            >
+              style={{ maxWidth: "515px", margin: "0 auto" }}>
               The <b>success</b> of your <b>digital marketing</b> is all about
               the <b>data</b> and the <b>spend</b>.
             </h2>
@@ -104,7 +114,9 @@ const Home = () => {
       <section>
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
-          <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
+          <h2
+            className="sub-headline"
+            style={{ margin: "0 auto 30px auto" }}>
             We offer a <b>full range</b> of data-driven <b>digital marketing</b>{" "}
             services:
           </h2>
@@ -120,8 +132,9 @@ const Home = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Search Engine Optimization"
             description="Grow your website’s organic search results, drive more traffic to your website and generate leads."
@@ -144,8 +157,9 @@ const Home = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Paid Search Advertising"
             description="Boost your brand awareness, sales, and revenue."
@@ -168,8 +182,9 @@ const Home = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Social Media Optimization"
             description="Build your brand awareness, grow your audience and increase engagement through organic or paid content."
@@ -192,8 +207,9 @@ const Home = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Web Analytics Consultation"
             description="Understand your website visitors and spend
@@ -217,8 +233,9 @@ const Home = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Web Design & Development"
             description="Offer an engaging experience for your website visitors with modern web design using the latest technology and best practices."
@@ -241,8 +258,9 @@ const Home = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="A/B Testing"
             description="Optimize your website's engagement by testing 
@@ -263,7 +281,11 @@ const Home = () => {
             Take a look at our <b>complete list</b> of digital marketing
             services.
           </h2>
-          <Button className="cta" link="/services/">SEE ALL SERVICES</Button>
+          <Button
+            className="cta"
+            link="/services/">
+            SEE ALL SERVICES
+          </Button>
         </div>
       </section>
       <section>
@@ -281,8 +303,9 @@ const Home = () => {
                 height={83}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </div>
             <div className="flex-center">
               <Image
@@ -292,8 +315,9 @@ const Home = () => {
                 height={65}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </div>
             <div className="flex-center">
               <Image
@@ -303,8 +327,9 @@ const Home = () => {
                 height={98}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </div>
             <div className="flex-center">
               <Image
@@ -314,8 +339,9 @@ const Home = () => {
                 height={70}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </div>
             <div className="flex-center">
               <Image
@@ -325,8 +351,9 @@ const Home = () => {
                 height={130}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </div>
             <div className="flex-center">
               <Image
@@ -336,8 +363,9 @@ const Home = () => {
                 height={140}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </div>
             <div className="flex-center">
               <Image
@@ -347,8 +375,9 @@ const Home = () => {
                 height={70}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </div>
             <div className="flex-center">
               <Image
@@ -358,8 +387,9 @@ const Home = () => {
                 height={90}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </div>
           </div>
         </div>
@@ -369,8 +399,7 @@ const Home = () => {
         contactHeader={
           <h2
             className="sub-headline"
-            style={{ maxWidth: "800px", margin: "0 auto 40px auto" }}
-          >
+            style={{ maxWidth: "800px", margin: "0 auto 40px auto" }}>
             Reach out with any <b>questions</b> you have regarding{" "}
             <b>projects or estimates</b>, or request any other{" "}
             <b>information</b> you need.
