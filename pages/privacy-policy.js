@@ -1,11 +1,27 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef, useEffect } from "react";
 
 import Head from "next/head";
 import Link from "next/link";
+import Script from "next/script";
 
 import Header from "../components/Layout/Header";
 
 const PrivacyPolicy = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.id = "CookieDeclaration";
+    script.setAttribute(
+      "data-georegions",
+      "{'region':'US-06','cbid':'4e3d269b-0766-46f9-beec-61d4a75119a5'},{'region':'US-51','cbid':'a6c78df2-c7a8-447b-9162-39f20c77c5d3'},{'region':'AT, BE, BG, CY, CZ, DE, DK, EE, ES, FI, FR, GB, GR, HR, HU, IE, IT, LT, LU, LV, MT, NL, PL, PT, RO, SE, SI, SK','cbid':'a6546862-c312-4440-8228-972aa88aa07f'},{'region':'BR','cbid':'86ef25b5-138b-46c5-807d-05666a7d21ff'}"
+    );
+    script.async = true;
+    script.src =
+      "https://consent.cookiebot.com/d447ec29-dc7c-46bc-90e6-68f2cb28826c/cd.js";
+    containerRef.current.appendChild(script);
+  }, []);
+
   return (
     <Fragment>
       <Head>
@@ -65,6 +81,21 @@ const PrivacyPolicy = () => {
             this privacy policy.
           </p>
         </div>
+      </section>
+      <section>
+        <div
+          className="container"
+          ref={containerRef}>
+          <h2 className="slate">
+            <b>Cookies</b>
+          </h2>
+        </div>
+        {/* <Script
+          id="CookieDeclaration"
+          src="https://consent.cookiebot.com/d447ec29-dc7c-46bc-90e6-68f2cb28826c/cd.js"
+          type="text/javascript"
+          async
+          data-georegions="{'region':'US-06','cbid':'4e3d269b-0766-46f9-beec-61d4a75119a5'},{'region':'US-51','cbid':'a6c78df2-c7a8-447b-9162-39f20c77c5d3'},{'region':'AT, BE, BG, CY, CZ, DE, DK, EE, ES, FI, FR, GB, GR, HR, HU, IE, IT, LT, LU, LV, MT, NL, PL, PT, RO, SE, SI, SK','cbid':'a6546862-c312-4440-8228-972aa88aa07f'},{'region':'BR','cbid':'86ef25b5-138b-46c5-807d-05666a7d21ff'}"></Script> */}
       </section>
       <section>
         <div className="container">

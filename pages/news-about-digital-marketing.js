@@ -29,7 +29,9 @@ const News = ({ items }) => {
           content="Stay up-to-date with the latest digital marketing news and trends, including search engine optimization (SEO), paid search (PPC), e-commerce, and more."
         />
       </Head>
-      <Hero image={heroImage} alt="">
+      <Hero
+        image={heroImage}
+        alt="">
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>All About</b> <br />
           Digital Marketing
@@ -41,8 +43,7 @@ const News = ({ items }) => {
             textAlign: "center",
             maxWidth: "1000px",
             margin: "0 auto",
-          }}
-        >
+          }}>
           Read the Latest Trends and Headlines in Digital Marketing.
         </h2>
         <div style={{ textAlign: "center" }}>
@@ -70,14 +71,15 @@ const News = ({ items }) => {
               );
             })}
           </Card>
-          <Card className="right" sticky>
+          <Card
+            className="right"
+            sticky>
             <a
               className="twitter-timeline"
               data-height="450"
               href="https://twitter.com/rso_consulting"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               Tweets by rso_consulting
             </a>{" "}
           </Card>
@@ -88,8 +90,7 @@ const News = ({ items }) => {
         contactHeader={
           <h2
             className="sub-headline"
-            style={{ maxWidth: "800px", margin: "0 auto 40px auto" }}
-          >
+            style={{ maxWidth: "800px", margin: "0 auto 40px auto" }}>
             Reach out with any <b>questions</b> you might have regarding how{" "}
             <b>RSO</b> can help you with <b>digital marketing</b>.
           </h2>

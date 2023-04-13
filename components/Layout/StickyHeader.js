@@ -69,43 +69,49 @@ const StickyHeader = () => {
     }
   }, []);
 
-  return <>
-    {drawerIsOpen && <Backdrop onClick={closeDrawer} />}
-    <SideDrawer
-      show={drawerIsOpen}
-      close={closeDrawer}
-      isClosing={drawerIsClosing}
-    >
-      <MobileNav />
-    </SideDrawer>
-    {showDiv && (
-      <header
-        className={styles["sticky-header"]}
-        style={isMounted ? mountedStyle : unmountedStyle}
-      >
-        <div className={`${styles.header} container`}>
-          <Link href="/">
-            <Image
-              src="/images/logos/san-francisco-digital-marketing-agency_color.svg"
-              alt="RSO Logo - San Francisco Digital Marketing Agency"
-              className="header-logo-link"
-              width={145}
-              height={54}
-              style={{
-                maxWidth: "100%",
-                height: "auto"
-              }} />
-          </Link>
-          <div className="desktop">
-            <DesktopNav />
+  return (
+    <>
+      {drawerIsOpen && <Backdrop onClick={closeDrawer} />}
+      <SideDrawer
+        show={drawerIsOpen}
+        close={closeDrawer}
+        isClosing={drawerIsClosing}>
+        <MobileNav />
+      </SideDrawer>
+      {showDiv && (
+        <header
+          className={styles["sticky-header"]}
+          style={isMounted ? mountedStyle : unmountedStyle}>
+          <div className={`${styles.header} container`}>
+            <Link href="/">
+              <Image
+                src="/images/logos/san-francisco-digital-marketing-agency_color.svg"
+                alt="RSO Logo - San Francisco Digital Marketing Agency"
+                className="header-logo-link"
+                width={145}
+                height={54}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </Link>
+            <div className="desktop">
+              <DesktopNav />
+            </div>
+            <div
+              className="mobile"
+              onClick={openDrawer}>
+              <BiMenu
+                color="#000"
+                size={32}
+              />
+            </div>
           </div>
-          <div className="mobile" onClick={openDrawer}>
-            <BiMenu color="#000" size={32} />
-          </div>
-        </div>
-      </header>
-    )}
-  </>;
+        </header>
+      )}
+    </>
+  );
 };
 
 export default StickyHeader;

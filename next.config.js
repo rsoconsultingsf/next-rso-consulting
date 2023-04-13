@@ -4,7 +4,7 @@ module.exports = {
   images: {
     domains: ["images.ctfassets.net", "www.gstatic.com"],
   },
-  reactStrictMode: true,
+  reactStrictMode: false,
   trailingSlash: true,
   swcMinify: true,
   async redirects() {
