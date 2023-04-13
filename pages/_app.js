@@ -15,7 +15,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* <Script
+      <Script
         id="google-tag-manager"
         strategy="afterInteractive">
         {`
@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-M522H9');
       `}
-      </Script> */}
+      </Script>
       <Layout>
         <Component {...pageProps} />
       </Layout>

@@ -65,11 +65,21 @@ export default function Post({
     <Fragment>
       <Head>
         <title>{seoTitle}</title>
-        <meta name="description" content={metaDescription} />
+        <meta
+          name="description"
+          content={metaDescription}
+        />
 
         {/* Open Graph */}
-        <meta property="og:image" content={metaFeaturedImage} />
-        <meta property="og:title" content={seoTitle} key="ogtitle" />
+        <meta
+          property="og:image"
+          content={metaFeaturedImage}
+        />
+        <meta
+          property="og:title"
+          content={seoTitle}
+          key="ogtitle"
+        />
         <meta
           property="og:description"
           content={metaDescription}
@@ -87,8 +97,16 @@ export default function Post({
         />
 
         {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="rso_consulting" key="twhandle" />
+        <meta
+          name="twitter:card"
+          content="summary"
+          key="twcard"
+        />
+        <meta
+          name="twitter:creator"
+          content="rso_consulting"
+          key="twhandle"
+        />
 
         {/* Schema */}
         <script
@@ -101,7 +119,10 @@ export default function Post({
 
       <section>
         <div className={styles["post-layout"]}>
-          <Card className="left" sticky desktop>
+          <Card
+            className="left"
+            sticky
+            desktop>
             <SocialShare />
           </Card>
           <div>
@@ -145,7 +166,10 @@ export default function Post({
               </div>
             </article>
           </div>
-          <Card className="right" sticky desktop>
+          <Card
+            className="right"
+            sticky
+            desktop>
             <div>
               <h2 className="sidebar-title">Categories</h2>
               <Categories categories={uniqueCategories} />
@@ -159,8 +183,7 @@ export default function Post({
         contactHeader={
           <h2
             className="sub-headline"
-            style={{ maxWidth: "900px", margin: "0 auto 40px auto" }}
-          >
+            style={{ maxWidth: "900px", margin: "0 auto 40px auto" }}>
             Reach out with any <b>questions</b> you might have regarding how{" "}
             <b>RSO</b> can help you with your <b>digital marketing</b>.
           </h2>
@@ -218,9 +241,10 @@ export async function getStaticProps({ params, preview = false }) {
 export async function getStaticPaths() {
   const allPosts = await getAllPostSlugs();
 
-  allPosts.items.map((item) => {
-    return null;
-  });
+  // allPosts.items.map((item) => {
+  //   console.log(item);
+  //   return null;
+  // });
 
   return {
     paths:
