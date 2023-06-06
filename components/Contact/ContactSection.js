@@ -23,7 +23,7 @@ const ContactSection = (props) => {
       <div className="container col-2">
         <div className="desktop">
           <Card>
-            <ContactForm />
+            <ContactForm formId={props.formId} />
           </Card>
         </div>
         <div
@@ -33,9 +33,12 @@ const ContactSection = (props) => {
           }}
         >
           <div style={{ width: "100%" }}>
-            <div className="mobile" style={{ paddingBottom: "30px" }}>
+            <div
+              className="mobile"
+              style={{ paddingBottom: "30px" }}
+            >
               <Card>
-                <ContactForm />
+                <ContactForm formId={props.formId} />
               </Card>
             </div>
             <Card>
@@ -52,7 +55,10 @@ const ContactSection = (props) => {
                 </div>
                 <div className="contact-meta-inner">
                   <FaPhoneAlt />
-                  <a className="medium" href="tel:4159927711">
+                  <a
+                    className="medium"
+                    href="tel:4159927711"
+                  >
                     +1 415-992-7711
                   </a>
                 </div>
