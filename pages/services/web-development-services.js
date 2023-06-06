@@ -22,10 +22,14 @@ const WebDevelopmentServices = () => {
         </title>
         <meta
           name="description"
-          content="RSO provides professional custom web development services. Over 30 years of experience in designing and developing websites, web portals, and more."
+          content="RSO has partnered with Alkalyne Solutions to provide professional custom web development services. Over 30 years of experience in designing and developing websites, web portals, and more."
         />
       </Head>
-      <Hero image={heroImage} alt="" anchor="#cards">
+      <Hero
+        image={heroImage}
+        alt=""
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Professional Web Design</b> <br />& Development Services
         </h1>
@@ -54,8 +58,17 @@ const WebDevelopmentServices = () => {
         <div id="intro"></div>
         <div className="container">
           <h2 className="intro sub-headline">
-            <b>RSO</b> has partnered with <b>Alkalyne Solutions</b> for both{" "}
-            <b>ground up builds</b> and <b>site rebuilds</b> using the{" "}
+            <b>RSO</b> has partnered with{" "}
+            <b>
+              <a
+                style={{ textDecoration: "underline" }}
+                href="https://alkalyne.solutions"
+                target="_blank"
+              >
+                Alkalyne Solutions
+              </a>
+            </b>{" "}
+            for both <b>ground up builds</b> and <b>site rebuilds</b> using the{" "}
             <b>latest technology</b> and <b>best practices</b>.
           </h2>
         </div>
@@ -70,8 +83,9 @@ const WebDevelopmentServices = () => {
               height={461}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="sub-intro">
             <SectionLabel red>Delight Your Customers</SectionLabel>
@@ -85,10 +99,10 @@ const WebDevelopmentServices = () => {
             <p className="sub-intro-details">
               Creating the best experience for your visitors, whether they be
               returning or new, is just as important as getting them to your
-              site in the first place. Our web design and development services
-              complement our digital marketing services and take into account
-              the latest in technology, trends and web standards in order to
-              ensure an engaging experience.
+              site in the first place. Alkalyne Solutions web design and
+              development services complement our digital marketing services and
+              take into account the latest in technology, trends and web
+              standards in order to ensure an engaging experience.
             </p>
           </div>
         </div>
@@ -96,8 +110,11 @@ const WebDevelopmentServices = () => {
       <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
-          <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
-            We offer a <b>full range</b> of various{" "}
+          <h2
+            className="sub-headline"
+            style={{ margin: "0 auto 30px auto" }}
+          >
+            Alaklyne Solutions offers a <b>full range</b> of various{" "}
             <b>web design and development</b> services:
           </h2>
         </div>
@@ -111,8 +128,9 @@ const WebDevelopmentServices = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Full Website Builds"
             details={
@@ -132,8 +150,9 @@ const WebDevelopmentServices = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Web Hosting:"
             details={
@@ -153,8 +172,9 @@ const WebDevelopmentServices = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Maintenance/Management:"
             details={
@@ -184,8 +204,9 @@ const WebDevelopmentServices = () => {
                   sizes="100vw"
                   style={{
                     width: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               }
               title="Alsco"
               link="https://alsco.com/"
@@ -200,8 +221,9 @@ const WebDevelopmentServices = () => {
                   sizes="100vw"
                   style={{
                     width: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               }
               title="Ama Foundation"
               link="https://ama-foundation.org/"
@@ -216,8 +238,9 @@ const WebDevelopmentServices = () => {
                   sizes="100vw"
                   style={{
                     width: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               }
               title="HRO Resources"
               link="https://hroresources.com/"
@@ -232,8 +255,9 @@ const WebDevelopmentServices = () => {
                   sizes="100vw"
                   style={{
                     width: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               }
               title="Paul Ekman Group"
               link="https://www.paulekman.com/"
@@ -248,8 +272,9 @@ const WebDevelopmentServices = () => {
                   sizes="100vw"
                   style={{
                     width: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               }
               title="Valley Fig Growers"
               link="https://valleyfig.com/"
@@ -264,8 +289,9 @@ const WebDevelopmentServices = () => {
                   sizes="100vw"
                   style={{
                     width: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               }
               title="Alpec"
               link="https://www.alpec.com/"
@@ -274,6 +300,7 @@ const WebDevelopmentServices = () => {
         </div>
       </section>
       <ContactSection
+        formId="sOtdY4S7"
         contactHeader={
           <h2
             className="sub-headline"

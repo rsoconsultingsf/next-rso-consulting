@@ -4,12 +4,17 @@ import Button from "../UI/Buttons/Button";
 
 import styles from "./ContactForm.module.css";
 
-const ContactForm = () => {
+const ContactForm = (props) => {
   return (
     <form
       className={styles["contact-form"]}
-      action="https://submit-form.com/vCTcQOVT"
-      data-botpoison-public-key="pk_499bd7e6-c4aa-41b4-a9d8-42392a522e90">
+      action={
+        props.formId
+          ? `https://submit-form.com/${props.formId}`
+          : `https://submit-form.com/vCTcQOVT`
+      }
+      data-botpoison-public-key="pk_499bd7e6-c4aa-41b4-a9d8-42392a522e90"
+    >
       <input
         type="hidden"
         name="_redirect"
@@ -58,7 +63,8 @@ const ContactForm = () => {
         />
         <label
           className="uhohhoney"
-          htmlFor="email2">
+          htmlFor="email2"
+        >
           <input
             className="uhohhoney"
             autoComplete="off"
