@@ -244,9 +244,7 @@ section {
 }
 
 .news > div:nth-child(3) {
-  display: flex;
-  flex: 0 0 calc(40vw - 110px);
-  height: 500px;
+  flex: 0 0 0;
 }
 
 .news > div:nth-child(2) {
@@ -399,9 +397,7 @@ section {
   }
 
   .news > div:nth-child(3) {
-    display: flex;
-    flex: 0 0 calc(35vw - 40px);
-    height: 500px;
+    flex: 0 0 0;
   }
 
   .sub-intro {
@@ -475,9 +471,7 @@ section {
   }
 
   .news > div:nth-child(3) {
-    display: flex;
-    flex: 0 0 calc(28vw - 40px);
-    height: 500px;
+    flex: 0 0 0;
   }
 
   .news > div:nth-child(2) {
