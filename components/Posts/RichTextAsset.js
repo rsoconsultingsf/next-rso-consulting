@@ -15,8 +15,9 @@ export default function RichTextAsset({ id, assets }) {
           height={asset.height}
           style={{
             maxWidth: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
         <p
           dangerouslySetInnerHTML={{ __html: asset.description }}
           style={{ margin: "0", fontStyle: "italic" }}

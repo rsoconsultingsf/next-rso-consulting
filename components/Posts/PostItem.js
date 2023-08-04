@@ -16,6 +16,13 @@ const richTextOptions = (content) => ({
         assets={content.links.assets.block}
       />
     ),
+    [BLOCKS.EMBEDDED_ENTRY]: (node) => {
+      const embed = content.links.entries.block.filter(
+        (item) => item.sys.id === node.data.target.sys.id
+      );
+
+      return <div dangerouslySetInnerHTML={{ __html: embed[0].content }}></div>;
+    },
     [BLOCKS.HEADING_2]: (node, children) => (
       <h2 className={styles["section-title"]}>{children}</h2>
     ),
@@ -23,13 +30,20 @@ const richTextOptions = (content) => ({
       if (data.uri.indexOf("rso-consulting.com") > 0) {
         const internalLink = data.uri.split("rso-consulting.com");
         return (
-          <Link href={internalLink[1] || "/"} passHref>
+          <Link
+            href={internalLink[1] || "/"}
+            passHref
+          >
             {children}
           </Link>
         );
       } else {
         return (
-          <a href={data.uri} target="_blank" rel={"noopener noreferrer"}>
+          <a
+            href={data.uri}
+            target="_blank"
+            rel={"noopener noreferrer"}
+          >
             {children}
           </a>
         );
@@ -48,6 +62,7 @@ export default function PostItem({
   categories,
   content,
 }) {
+  console.log(content);
   return (
     <div className={styles["post-body"]}>
       {featuredImage && (
@@ -61,8 +76,9 @@ export default function PostItem({
             sizes="100vw"
             style={{
               width: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <p
             dangerouslySetInnerHTML={{ __html: featuredImage.description }}
             style={{ marginTop: "0", fontStyle: "italic" }}
@@ -109,8 +125,9 @@ export default function PostItem({
             sizes="100vw"
             style={{
               width: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         )}
       </div>
       {content &&
