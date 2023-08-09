@@ -62,7 +62,6 @@ export default function PostItem({
   categories,
   content,
 }) {
-  console.log(content);
   return (
     <div className={styles["post-body"]}>
       {featuredImage && (

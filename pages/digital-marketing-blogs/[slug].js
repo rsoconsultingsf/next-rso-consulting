@@ -122,7 +122,8 @@ export default function Post({
           <Card
             className="left"
             sticky
-            desktop>
+            desktop
+          >
             <SocialShare />
           </Card>
           <div>
@@ -169,7 +170,8 @@ export default function Post({
           <Card
             className="right"
             sticky
-            desktop>
+            desktop
+          >
             <div>
               <h2 className="sidebar-title">Categories</h2>
               <Categories categories={uniqueCategories} />
@@ -183,7 +185,8 @@ export default function Post({
         contactHeader={
           <h2
             className="sub-headline"
-            style={{ maxWidth: "900px", margin: "0 auto 40px auto" }}>
+            style={{ maxWidth: "900px", margin: "0 auto 40px auto" }}
+          >
             Reach out with any <b>questions</b> you might have regarding how{" "}
             <b>RSO</b> can help you with your <b>digital marketing</b>.
           </h2>
@@ -240,11 +243,6 @@ export async function getStaticProps({ params, preview = false }) {
 
 export async function getStaticPaths() {
   const allPosts = await getAllPostSlugs();
-
-  // allPosts.items.map((item) => {
-  //   console.log(item);
-  //   return null;
-  // });
 
   return {
     paths:
