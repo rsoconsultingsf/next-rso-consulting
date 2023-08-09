@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import RichTextAsset from "./RichTextAsset";
@@ -17,6 +19,21 @@ const richTextOptions = (content) => ({
       />
     ),
     [BLOCKS.EMBEDDED_ENTRY]: (node) => {
+      useEffect(() => {
+        const script = document.createElement("script");
+        script.id = "instagram-embed";
+        script.src = "//www.instagram.com/embed.js";
+        script.defer = true;
+        document.head.appendChild(script);
+
+        return () => {
+          script.remove();
+
+          // Remove the property added by the IG embed script
+          // so the embed will work again on re-mount.
+          if (window.instgrm) delete window.instgrm;
+        };
+      });
       const embed = content.links.entries.block.filter(
         (item) => item.sys.id === node.data.target.sys.id
       );
