@@ -22,7 +22,7 @@ const SocialShare = () => {
       <h2 className="sidebar-title">Share This Article:</h2>
       <div className={styles["social-grid"]}>
         <a
-          href={`https://www.facebook.com/sharer.php?u=${process.env.SITE_URL}${router.asPath}`}
+          href={`https://www.facebook.com/sharer.php?u=${process.env.NEXT_PUBLIC_SITE_URL}${router.asPath}`}
           target="_blank"
           rel="noreferrer noopener"
           className={styles["social-icon"]}
