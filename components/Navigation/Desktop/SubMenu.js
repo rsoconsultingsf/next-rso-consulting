@@ -24,8 +24,11 @@ const SubMenu = (props) => {
             key={key}
             className={styles["sub-menu-item"]}
           >
-            <Link href={subLink.path}>
-              <span className={styles["sub-menu-link"]}>{subLink.name}</span>
+            <Link
+              className={styles["sub-menu-link"]}
+              href={subLink.path}
+            >
+              <span>{subLink.name}</span>
             </Link>
           </li>
         ))}
