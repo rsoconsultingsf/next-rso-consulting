@@ -2,7 +2,7 @@ import React from "react";
 
 import Slider from "react-slick";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import styles from "./PPCSlider.module.css";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 import PreviewCard from "../UI/Cards/PreviewCard";
@@ -57,8 +57,11 @@ const PostPreview = (props) => {
           </div>
         </div>
         <div className={styles["btn-container"]}>
-          <Link href={`/digital-marketing-blogs/${link}`}>
-            <span className={styles["read-more"]}>Read More</span>
+          <Link
+            className={styles["read-more"]}
+            href={`/digital-marketing-blogs/${link}`}
+          >
+            <span>Read More</span>
           </Link>
         </div>
       </article>
