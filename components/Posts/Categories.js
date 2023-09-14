@@ -16,10 +16,13 @@ const Categories = (props) => {
           : styles["category-container"]
       }
     >
-      <Link href="/digital-marketing-blogs" passHref>
-        <a className={styles.category}>
+      <Link
+        href="/digital-marketing-blogs"
+        passHref
+      >
+        <span className={styles.category}>
           <span>All</span>
-        </a>
+        </span>
       </Link>
       {categories &&
         categories.sort().map((item, index) => {
@@ -32,9 +35,9 @@ const Categories = (props) => {
               })}`}
               passHref
             >
-              <a className={styles.category}>
+              <span className={styles.category}>
                 <span>{item}</span>
-              </a>
+              </span>
             </Link>
           );
         })}

@@ -7,15 +7,19 @@ import styles from "./WebsiteCard.module.css";
 const WebsiteCard = (props) => {
   if (props.link) {
     return (
-      <Link className={styles.link} href={props.link} passRef>
-        <a target="_blank" rel="noopener noreferrer">
+      <Link
+        className={styles.link}
+        href={props.link}
+        passRef
+      >
+        <span>
           <div
             className={`${styles["website__contents"]} ${styles["link-card"]}`}
           >
             {props.image}
             <span className={styles.title}>{props.title}</span>
           </div>
-        </a>
+        </span>
       </Link>
     );
   } else {

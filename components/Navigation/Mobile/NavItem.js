@@ -6,10 +6,13 @@ import styles from "./NavItem.module.css";
 
 const NavItem = (props) => {
   return (
-    <Link href={props.link} passRef>
-      <a className="link-item">
+    <Link
+      href={props.link}
+      passRef
+    >
+      <span className="link-item">
         <li className={`${styles[props.className]}`}>{props.children}</li>
-      </a>
+      </span>
     </Link>
   );
 };

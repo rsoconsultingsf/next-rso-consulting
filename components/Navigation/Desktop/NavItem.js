@@ -28,7 +28,7 @@ const NavItem = (props) => {
       }}
     >
       <Link href={props.link}>
-        <a
+        <span
           className={
             props.className === "underline-white"
               ? styles["link-item-white"]
@@ -42,7 +42,7 @@ const NavItem = (props) => {
           }}
         >
           {props.children}
-        </a>
+        </span>
       </Link>
       {props.subMenu && props.subMenu.length > 0 && subMenuVisible ? (
         <SubMenu

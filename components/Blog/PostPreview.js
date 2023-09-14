@@ -52,8 +52,11 @@ const PostPreview = (props) => {
           </div>
         </div>
         <div className={styles["btn-container"]}>
-          <Link href={`/digital-marketing-blogs/${link}`} passHref>
-            <a className={styles["read-more"]}>Read More</a>
+          <Link
+            href={`/digital-marketing-blogs/${link}`}
+            passHref
+          >
+            <span className={styles["read-more"]}>Read More</span>
           </Link>
         </div>
       </article>

@@ -22,19 +22,13 @@ const PageNotFound = () => {
           <div>
             <ul>
               <li>
-                <Link href="/services/">
-                  <a>Services</a>
-                </Link>
+                <Link href="/services/">Services</Link>
               </li>
               <li>
-                <Link href="/digital-marketing-blogs/">
-                  <a>Blog</a>
-                </Link>
+                <Link href="/digital-marketing-blogs/">Blog</Link>
               </li>
               <li>
-                <Link href="/news-about-digital-marketing/">
-                  <a>News</a>
-                </Link>
+                <Link href="/news-about-digital-marketing/">News</Link>
               </li>
             </ul>
           </div>

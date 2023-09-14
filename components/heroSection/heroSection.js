@@ -72,22 +72,29 @@ const Hero = (props) => {
               placeholder="blur"
             />
             <div className={`${styles.header} container`}>
-              <Link href="/" passHref>
-                <a>
-                  <Image
-                    src="/images/logos/san-francisco-digital-marketing-agency_white.svg"
-                    alt="RSO Logo - San Francisco Digital Marketing Agency"
-                    className="header-logo-link"
-                    width={145}
-                    height={54}
-                  />
-                </a>
+              <Link
+                href="/"
+                passHref
+              >
+                <Image
+                  src="/images/logos/san-francisco-digital-marketing-agency_white.svg"
+                  alt="RSO Logo - San Francisco Digital Marketing Agency"
+                  className="header-logo-link"
+                  width={145}
+                  height={54}
+                />
               </Link>
               <div className="desktop">
                 <NavMenu white />
               </div>
-              <div className="mobile" onClick={openDrawer}>
-                <BiMenu color="#fff" size={32} />
+              <div
+                className="mobile"
+                onClick={openDrawer}
+              >
+                <BiMenu
+                  color="#fff"
+                  size={32}
+                />
               </div>
             </div>
             <div
@@ -104,7 +111,10 @@ const Hero = (props) => {
 
           {!props.noAnchor && (
             <div className={styles["btn-container"]}>
-              <Button heroAnchor anchor={anchor}>
+              <Button
+                heroAnchor
+                anchor={anchor}
+              >
                 Learn More
               </Button>
             </div>

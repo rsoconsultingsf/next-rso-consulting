@@ -22,13 +22,20 @@ const richTextOptions = (content) => ({
       if (data.uri.indexOf("rso-consulting.com") > 0) {
         const internalLink = data.uri.split("rso-consulting.com");
         return (
-          <Link href={internalLink[1] || "/"} passHref>
-            <a>{children}</a>
+          <Link
+            href={internalLink[1] || "/"}
+            passHref
+          >
+            {children}
           </Link>
         );
       } else {
         return (
-          <a href={data.uri} target="_blank" rel={"noopener noreferrer"}>
+          <a
+            href={data.uri}
+            target="_blank"
+            rel={"noopener noreferrer"}
+          >
             {children}
           </a>
         );
