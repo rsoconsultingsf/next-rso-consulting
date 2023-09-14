@@ -10,7 +10,6 @@ const ServiceCard = (props) => {
       <Link
         className={styles.link}
         href={props.link}
-        passRef
       >
         <div>
           <div

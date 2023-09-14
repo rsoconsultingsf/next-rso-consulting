@@ -12,9 +12,10 @@
   "dependencies": {
     "@botpoison/browser": "^0.1.30",
     "@contentful/rich-text-react-renderer": "^15.16.3",
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/material": "^5.11.16",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.9",
     "date-fns": "^2.29.2",
     "framer-motion": "^10.10.0",
     "next": "^13.2.4",

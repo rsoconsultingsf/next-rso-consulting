@@ -40,10 +40,7 @@ const Button = (props) => {
 
   if (props.link) {
     return (
-      <Link
-        href={props.link}
-        passRef
-      >
+      <Link href={props.link}>
         <span className={`${styles.btn} ${styles[props.color]}`}>
           {props.children}
         </span>
