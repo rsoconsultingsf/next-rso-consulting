@@ -2,7 +2,7 @@ import React from "react";
 
 import Card from "../UI/Cards/Card";
 import SectionLabel from "../UI/Labels/SectionLabel";
-// import TrainingContactForm from "../Forms/TrainingContactForm";
+import TrainingContactForm from "../Forms/TrainingContactForm";
 
 const TrainingContactSection = (props) => {
   return (
@@ -15,7 +15,9 @@ const TrainingContactSection = (props) => {
       </div>
       <div className="container">
         <div className="desktop">
-          <Card>{/* <TrainingContactForm /> */}</Card>
+          <Card>
+            <TrainingContactForm />
+          </Card>
         </div>
         <div
           style={{
@@ -28,7 +30,9 @@ const TrainingContactSection = (props) => {
               className="mobile"
               style={{ paddingBottom: "30px" }}
             >
-              <Card>{/* <TrainingContactForm /> */}</Card>
+              <Card>
+                <TrainingContactForm />
+              </Card>
             </div>
           </div>
         </div>
