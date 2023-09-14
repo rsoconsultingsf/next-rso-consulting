@@ -11,7 +11,7 @@ import TrainingTestimonials from "../components/Sliders/TrainingTestimonialsSlid
 import Card from "../components/UI/Cards/Card";
 import TrainingAccordion from "../components/UI/Accordions/TrainingAccordion";
 
-import heroImage from "../public/images/hero/rso-hero_google-marketing-platform.png";
+import heroImage from "/public/images/hero/rso-hero_google-marketing-platform.png";
 
 const GoogleMarketingPlatformTraining = () => {
   return (
