@@ -46,12 +46,10 @@ const richTextOptions = (content) => ({
     [INLINES.HYPERLINK]: ({ data }, children) => {
       if (data.uri.indexOf("rso-consulting.com") > 0) {
         const internalLink = data.uri.split("rso-consulting.com");
+        console.log(children[0].props.children);
         return (
-          <Link
-            href={internalLink[1] || "/"}
-            passHref
-          >
-            {children}
+          <Link href={internalLink[1] || "/"}>
+            {children[0].props.children}
           </Link>
         );
       } else {
@@ -61,7 +59,7 @@ const richTextOptions = (content) => ({
             target="_blank"
             rel={"noopener noreferrer"}
           >
-            {children}
+            {children[0].props.children}
           </a>
         );
       }
@@ -122,9 +120,8 @@ export default function PostItem({
                     lower: true,
                     strict: true,
                   })}`}
-                  className={styles.category}
                 >
-                  <span>{category}</span>
+                  <span className={styles.category}>{category}</span>
                 </Link>
               );
             })}

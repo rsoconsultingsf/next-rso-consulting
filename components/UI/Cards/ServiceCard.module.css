@@ -1,15 +1,23 @@
-.card,
+.card {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(54, 61, 77, 0.3);
+  transition: 300ms;
+}
+
 .link-card {
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
-  box-shadow: 0px 2px 5px 0px rgba(54,61,77,0.3);
+  box-shadow: 0px 2px 5px 0px rgba(54, 61, 77, 0.3);
   transition: 300ms;
+  height: 100% !important;
 }
 
 .link-card:hover {
   transition: var(--transition);
-  background-color: #0E75BC;
+  background-color: #0e75bc;
   transform: translateY(-20px);
   cursor: pointer;
 }
@@ -22,7 +30,7 @@
 .link-card:hover .title,
 .link-card:hover .description,
 .link-card:hover .details ul {
-  color:#fff;
+  color: #fff;
 }
 
 .icon {
@@ -35,7 +43,7 @@
 }
 
 .title {
-  font-weight:bold;
+  font-weight: bold;
   color: var(--dark-slate);
   font-size: 18px;
   margin-bottom: 20px;
@@ -44,7 +52,7 @@
 
 .description {
   color: var(--slate);
-  line-height:1.6;
+  line-height: 1.6;
   margin-bottom: 20px;
   transition: var(--transition);
   font-weight: 600;
@@ -53,10 +61,10 @@
 .details ul {
   text-align: left;
   color: var(--slate);
-  line-height:1.6; 
+  line-height: 1.6;
   transition: var(--transition);
   font-weight: 600;
-  font-size:16px
+  font-size: 16px;
 }
 
 .service__contents {
@@ -64,5 +72,5 @@
   flex-direction: column;
   align-items: stretch;
   padding: 30px 20px;
+  height: auto;
 }
-
