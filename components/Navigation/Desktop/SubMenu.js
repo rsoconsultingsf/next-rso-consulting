@@ -15,11 +15,20 @@ const SubMenu = (props) => {
           : styles["sub-menu-container"]
       }
     >
-      <ul className={styles["sub-menu"]} aria-label="submenu">
+      <ul
+        className={styles["sub-menu"]}
+        aria-label="submenu"
+      >
         {props.menu.map((subLink, key) => (
-          <li key={key} className={styles["sub-menu-item"]}>
-            <Link href={subLink.path} className={styles["sub-menu-link"]}>
-              {subLink.name}
+          <li
+            key={key}
+            className={styles["sub-menu-item"]}
+          >
+            <Link
+              className={styles["sub-menu-link"]}
+              href={subLink.path}
+            >
+              <span>{subLink.name}</span>
             </Link>
           </li>
         ))}

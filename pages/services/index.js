@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Head from "next/head";
 
 import Button from "../../components/UI/Buttons/Button";

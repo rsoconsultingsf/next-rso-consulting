@@ -5,7 +5,7 @@ import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import RichTextAsset from "./RichTextAsset";
 import slugify from "slugify";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 import styles from "./PostItem.module.css";
@@ -46,14 +46,8 @@ const richTextOptions = (content) => ({
     [INLINES.HYPERLINK]: ({ data }, children) => {
       if (data.uri.indexOf("rso-consulting.com") > 0) {
         const internalLink = data.uri.split("rso-consulting.com");
-        return (
-          <Link
-            href={internalLink[1] || "/"}
-            passHref
-          >
-            {children}
-          </Link>
-        );
+
+        return <Link href={internalLink[1] || "/"}>{children}</Link>;
       } else {
         return (
           <a
@@ -122,9 +116,8 @@ export default function PostItem({
                     lower: true,
                     strict: true,
                   })}`}
-                  className={styles.category}
                 >
-                  <span>{category}</span>
+                  <span className={styles.category}>{category}</span>
                 </Link>
               );
             })}
