@@ -32,16 +32,13 @@ const PostPreview = (props) => {
                 width={357}
                 height={175}
                 layout="responsive"
-                style={{
-                  objectFit:
-                    props.imageURL.indexOf(
-                      "san-francisco-digital-marketing-agency_color.svg"
-                    ) > -1
-                      ? "contain"
-                      : "cover",
-
-                  maxWidth: "100%",
-                }}
+                objectFit={
+                  props.imageURL.indexOf(
+                    "san-francisco-digital-marketing-agency_color.svg"
+                  ) > -1
+                    ? "contain"
+                    : "cover"
+                }
               />
             }
           </div>
