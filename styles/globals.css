@@ -244,7 +244,8 @@ section {
 }
 
 .news > div:nth-child(3) {
-  flex: 0 0 0;
+  flex: 1 0 auto;
+  height: 800px;
 }
 
 .news > div:nth-child(2) {
@@ -396,8 +397,12 @@ section {
     flex: 0 0 0;
   }
 
+  .news > div:nth-child(2) {
+    flex: 1 1 auto;
+  }
+
   .news > div:nth-child(3) {
-    flex: 0 0 0;
+    flex: 0 0 auto;
   }
 
   .sub-intro {
@@ -471,11 +476,11 @@ section {
   }
 
   .news > div:nth-child(3) {
-    flex: 0 0 0;
+    flex: 0 0 auto;
   }
 
   .news > div:nth-child(2) {
-    flex: 0 0 calc(70vw - 40px);
+    flex: 0 1 auto;
   }
 
   .intro {
@@ -495,15 +500,16 @@ section {
     padding: 0 35px;
   }
 
-  .news > div:nth-child(1),
+  .news > div:nth-child(1) {
+    flex: 0 1 auto;
+    width: 344px;
+  }
   .news > div:nth-child(3) {
-    display: flex;
-    flex: 0 0 calc(20vw - 50px);
-    height: 500px;
+    flex: 0 0 auto;
   }
 
   .news > div:nth-child(2) {
-    flex: 0 0 calc(60vw - 20px);
+    flex: 1 1 auto;
   }
 }
 
