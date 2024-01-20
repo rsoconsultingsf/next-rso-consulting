@@ -7,6 +7,7 @@ import Card from "../components/UI/Cards/Card";
 import ContactSection from "../components/Contact/ContactSection";
 import Button from "../components/UI/Buttons/Button";
 import RssItem from "../components/RSS/RssItem";
+import MastodonFeed from "../components/RSS/MastodonFeed";
 
 import heroImage from "../public/images/hero/rso-hero_news.png";
 
@@ -73,7 +74,6 @@ const News = ({ items }) => {
               );
             })}
           </Card>
-          <div></div>
           <Card
             className="right"
             sticky
@@ -81,8 +81,6 @@ const News = ({ items }) => {
             <iframe
               allowFullScreen
               sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox"
-              width="400"
-              height="800"
               src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2F%2Fusers%2FRSOConsulting&theme=light&size=100&header=true&replies=false&boosts=false"
             ></iframe>
           </Card>
