@@ -61,7 +61,7 @@ const News = ({ items }) => {
           </h2>
         </div>
         <div className="news">
-          <div></div>
+          <div className="news-spacer"></div>
           <Card style={{ paddingTop: "40px" }}>
             {items.map((item) => {
               return (
