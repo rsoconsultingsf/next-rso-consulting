@@ -7,6 +7,7 @@ import Card from "../components/UI/Cards/Card";
 import ContactSection from "../components/Contact/ContactSection";
 import Button from "../components/UI/Buttons/Button";
 import RssItem from "../components/RSS/RssItem";
+import MastodonFeed from "../components/RSS/MastodonFeed";
 
 import heroImage from "../public/images/hero/rso-hero_news.png";
 
@@ -60,7 +61,7 @@ const News = ({ items }) => {
           </h2>
         </div>
         <div className="news">
-          <div></div>
+          <div className="news-spacer"></div>
           <Card style={{ paddingTop: "40px" }}>
             {items.map((item) => {
               return (
@@ -73,19 +74,17 @@ const News = ({ items }) => {
               );
             })}
           </Card>
-          <div></div>
-          {/* <Card
+          <Card
             className="right"
-            sticky>
-            <a
-              className="twitter-timeline"
-              data-height="450"
-              href="https://twitter.com/rso_consulting"
-              target="_blank"
-              rel="noreferrer">
-              Tweets by rso_consulting
-            </a>{" "}
-          </Card> */}
+            sticky
+          >
+            <iframe
+              allowFullScreen
+              style={{ width: "100%", height: "100%" }}
+              sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox"
+              src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2F%2Fusers%2FRSOConsulting&theme=light&size=100&header=true&replies=false&boosts=false"
+            ></iframe>
+          </Card>
         </div>
       </section>
       <ContactSection
