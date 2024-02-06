@@ -73,19 +73,17 @@ const News = ({ items }) => {
               );
             })}
           </Card>
-          <div></div>
-          {/* <Card
+          <Card
             className="right"
-            sticky>
-            <a
-              className="twitter-timeline"
-              data-height="450"
-              href="https://twitter.com/rso_consulting"
-              target="_blank"
-              rel="noreferrer">
-              Tweets by rso_consulting
-            </a>{" "}
-          </Card> */}
+            sticky
+          >
+            <iframe
+              allowFullScreen
+              style={{ width: "100%", height: "100%" }}
+              sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox"
+              src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fmastodon.social%2F%2Fusers%2FRSOConsulting&theme=light&size=100&header=true&replies=false&boosts=false"
+            ></iframe>
+          </Card>
         </div>
       </section>
       <ContactSection
