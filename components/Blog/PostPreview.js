@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 import PreviewCard from "../UI/Cards/PreviewCard";
@@ -29,17 +29,16 @@ const PostPreview = (props) => {
               <Image
                 src={imageURL}
                 alt={imageTitle}
-                fill
-                style={{
-                  objectFit:
-                    props.imageURL.indexOf(
-                      "san-francisco-digital-marketing-agency_color.svg"
-                    ) > -1
-                      ? "contain"
-                      : "cover",
-
-                  maxWidth: "100%",
-                }}
+                width={357}
+                height={175}
+                layout="responsive"
+                objectFit={
+                  props.imageURL.indexOf(
+                    "san-francisco-digital-marketing-agency_color.svg"
+                  ) > -1
+                    ? "contain"
+                    : "cover"
+                }
               />
             }
           </div>
@@ -56,10 +55,10 @@ const PostPreview = (props) => {
         </div>
         <div className={styles["btn-container"]}>
           <Link
-            href={`/digital-marketing-blogs/${link}`}
             className={styles["read-more"]}
+            href={`/digital-marketing-blogs/${link}`}
           >
-            Read More
+            <span>Read More</span>
           </Link>
         </div>
       </article>

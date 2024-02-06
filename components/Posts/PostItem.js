@@ -1,9 +1,11 @@
+import { useState, useEffect } from "react";
+
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import RichTextAsset from "./RichTextAsset";
 import slugify from "slugify";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 import styles from "./PostItem.module.css";
@@ -16,20 +18,43 @@ const richTextOptions = (content) => ({
         assets={content.links.assets.block}
       />
     ),
+    [BLOCKS.EMBEDDED_ENTRY]: (node) => {
+      useEffect(() => {
+        const script = document.createElement("script");
+        script.id = "instagram-embed";
+        script.src = "//www.instagram.com/embed.js";
+        script.defer = true;
+        document.head.appendChild(script);
+
+        return () => {
+          script.remove();
+
+          // Remove the property added by the IG embed script
+          // so the embed will work again on re-mount.
+          if (window.instgrm) delete window.instgrm;
+        };
+      });
+      const embed = content.links.entries.block.filter(
+        (item) => item.sys.id === node.data.target.sys.id
+      );
+
+      return <div dangerouslySetInnerHTML={{ __html: embed[0].content }}></div>;
+    },
     [BLOCKS.HEADING_2]: (node, children) => (
       <h2 className={styles["section-title"]}>{children}</h2>
     ),
     [INLINES.HYPERLINK]: ({ data }, children) => {
       if (data.uri.indexOf("rso-consulting.com") > 0) {
         const internalLink = data.uri.split("rso-consulting.com");
-        return (
-          <Link href={internalLink[1] || "/"} passHref>
-            {children}
-          </Link>
-        );
+
+        return <Link href={internalLink[1] || "/"}>{children}</Link>;
       } else {
         return (
-          <a href={data.uri} target="_blank" rel={"noopener noreferrer"}>
+          <a
+            href={data.uri}
+            target="_blank"
+            rel={"noopener noreferrer"}
+          >
             {children}
           </a>
         );
@@ -61,8 +86,9 @@ export default function PostItem({
             sizes="100vw"
             style={{
               width: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
           <p
             dangerouslySetInnerHTML={{ __html: featuredImage.description }}
             style={{ marginTop: "0", fontStyle: "italic" }}
@@ -90,9 +116,8 @@ export default function PostItem({
                     lower: true,
                     strict: true,
                   })}`}
-                  className={styles.category}
                 >
-                  <span>{category}</span>
+                  <span className={styles.category}>{category}</span>
                 </Link>
               );
             })}
@@ -109,8 +134,9 @@ export default function PostItem({
             sizes="100vw"
             style={{
               width: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         )}
       </div>
       {content &&

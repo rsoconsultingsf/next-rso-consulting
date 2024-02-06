@@ -2,7 +2,7 @@ import React from "react";
 import { createPortal } from "react-dom";
 
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import { IoCloseSharp } from "react-icons/io5";
 

@@ -7,7 +7,10 @@ import styles from "./Button.module.css";
 const Button = (props) => {
   if (props.heroAnchor) {
     return (
-      <a className={styles["hero-anchor"]} href={`${props.anchor}`}>
+      <a
+        className={styles["hero-anchor"]}
+        href={`${props.anchor}`}
+      >
         {props.children}
       </a>
     );
@@ -15,7 +18,10 @@ const Button = (props) => {
 
   if (props.anchor) {
     return (
-      <a className={`${styles.anchor} ${styles.btn}`} href={`#${props.anchor}`}>
+      <a
+        className={`${styles.anchor} ${styles.btn}`}
+        href={`#${props.anchor}`}
+      >
         {props.children}
       </a>
     );
@@ -23,7 +29,10 @@ const Button = (props) => {
 
   if (props.hero) {
     return (
-      <a className={`${styles.hero}  ${props.color}`} href={`#${props.anchor}`}>
+      <a
+        className={`${styles.hero}  ${props.color}`}
+        href={`#${props.anchor}`}
+      >
         {props.children}
       </a>
     );
@@ -31,11 +40,10 @@ const Button = (props) => {
 
   if (props.link) {
     return (
-      <Link
-        href={props.link}
-        className={`${styles.btn} ${styles[props.color]} ${props.className}`}
-      >
-        {props.children}
+      <Link href={props.link}>
+        <span className={`${styles.btn} ${styles[props.color]}`}>
+          {props.children}
+        </span>
       </Link>
     );
   }
@@ -43,7 +51,7 @@ const Button = (props) => {
   return (
     <button
       type={props.type}
-      className={`${styles.btn} ${props.className}`}
+      className={styles.btn}
       onClick={props.onClick}
     >
       {props.children}

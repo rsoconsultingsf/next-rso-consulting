@@ -16,8 +16,8 @@ const Categories = (props) => {
           : styles["category-container"]
       }
     >
-      <Link href="/digital-marketing-blogs" className={styles.category}>
-        <span>All</span>
+      <Link href="/digital-marketing-blogs">
+        <span className={styles.category}>All</span>
       </Link>
       {categories &&
         categories.sort().map((item, index) => {
@@ -28,9 +28,8 @@ const Categories = (props) => {
                 lower: true,
                 strict: true,
               })}`}
-              className={styles.category}
             >
-              <span>{item}</span>
+              <span className={styles.category}>{item}</span>
             </Link>
           );
         })}
