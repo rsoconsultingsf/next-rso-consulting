@@ -16,7 +16,8 @@ const Footer = () => {
         <a
           href="https://clutch.co/profile/rso-consulting#summary"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           <Image
             src="/images/footer/logo-clutch-sem.png"
             alt="Clutch Top SEM Company badge"
@@ -27,7 +28,8 @@ const Footer = () => {
         <a
           href="https://clutch.co/profile/rso-consulting#summary"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           <Image
             src="/images/footer/logo-clutch-seo.png"
             alt="Clutch Top SEO Company badge"
@@ -38,9 +40,10 @@ const Footer = () => {
         <a
           href="https://www.google.com/partners/agency?id=1257975749"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           <Image
-            src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"
+            src="https://www.gstatic.com/partners/badge/images/2024/PremierBadgeClickable.svg"
             alt="Google Partner Badge"
             width={140}
             height={140}
@@ -54,7 +57,8 @@ const Footer = () => {
         <a
           href="https://www.bbb.org/greater-san-francisco/business-reviews/marketing-consultants/rso-consulting-in-san-francisco-ca-305599"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           <Image
             src="/images/AB_logo_200x76-1.png"
             alt=""
@@ -70,7 +74,8 @@ const Footer = () => {
         <a
           href="https://wimgo.com/s/ca/san-francisco/business-consultant"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+        >
           <Image
             src="/images/footer/wimgo-2020.png"
             alt="Top Service Provider"
@@ -101,7 +106,8 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/RSOConsulting?m2w"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaFacebookF
                 size={25}
                 color="#6B7A99"
@@ -110,7 +116,8 @@ const Footer = () => {
             <a
               href="https://twitter.com/rso_consulting"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaTwitter
                 size={25}
                 color="#6B7A99"
@@ -119,7 +126,8 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/company/rso-consulting/"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaLinkedinIn
                 size={25}
                 color="#6B7A99"
@@ -151,7 +159,8 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/RSOConsulting?m2w"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaFacebookF
                 size={25}
                 color="#6B7A99"
@@ -160,7 +169,8 @@ const Footer = () => {
             <a
               href="https://twitter.com/rso_consulting"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaTwitter
                 size={25}
                 color="#6B7A99"
@@ -169,7 +179,8 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/company/rso-consulting/"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FaLinkedinIn
                 size={25}
                 color="#6B7A99"
