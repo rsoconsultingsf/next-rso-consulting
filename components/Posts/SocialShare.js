@@ -10,10 +10,6 @@ import {
 
 import styles from "./SocialShare.module.css";
 
-const style = {
-  padding: "0.5em 0.5em",
-};
-
 const SocialShare = () => {
   const router = useRouter();
 
