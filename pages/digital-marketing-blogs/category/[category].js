@@ -83,7 +83,8 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
       <Hero
         image={heroImage}
         alt=""
-        anchor="#cards">
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Blog Category:</b> <br />
           {category}
@@ -95,7 +96,8 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
             textAlign: "center",
             maxWidth: "1000px",
             margin: "0 auto",
-          }}>
+          }}
+        >
           Read about the latest {category} trends and tips.
         </h2>
       </Hero>
@@ -103,7 +105,8 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
         <div id="intro"></div>
         <div
           ref={myRef}
-          className={styles["blog-archive"]}>
+          className={styles["blog-archive"]}
+        >
           <div></div>
           <div className={visible ? "fade-in" : "fade-out"}>
             <Archive posts={archivePosts} />
@@ -117,7 +120,8 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
             </div>
             <div
               className={styles["categories-mobile"]}
-              style={{ paddingTop: "50px" }}>
+              style={{ paddingTop: "50px" }}
+            >
               <Card>
                 <h2 className="sidebar-title">Categories</h2>
                 <Categories
@@ -130,7 +134,8 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
           <Card
             className="right"
             sticky
-            desktop>
+            desktop
+          >
             <div>
               <h2 className="sidebar-title">Categories</h2>
               <Categories categories={categories} />
@@ -143,7 +148,8 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
         contactHeader={
           <h2
             className="sub-headline"
-            style={{ maxWidth: "900px", margin: "0 auto 40px auto" }}>
+            style={{ maxWidth: "900px", margin: "0 auto 40px auto" }}
+          >
             Reach out with any <b>questions</b> you might have regarding how{" "}
             <b>RSO</b> can help you with your <b>digital marketing</b>.
           </h2>
