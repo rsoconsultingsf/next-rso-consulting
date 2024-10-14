@@ -3,7 +3,7 @@ import Parser from "rss-parser";
 export const FEEDS = [
   {
     title: "Search Engine Land",
-    url: "https://searchengineland.com/feed",
+    url: "http://feeds.searchengineland.com/searchengineland",
   },
 ];
 
