@@ -61,7 +61,7 @@ const IncidentResponsePlan = () => {
               <ul>
                 <li>
                   <b>Incident Response Manager:</b> Oversees the incident, makes
-                  critical decisions, and coordinates the team's efforts.
+                  critical decisions, and coordinates the team&apos;s efforts.
                 </li>
                 <li>
                   <b>IT Security:</b> Leads technical analysis and remediation
