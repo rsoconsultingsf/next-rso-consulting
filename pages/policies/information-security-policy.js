@@ -151,7 +151,7 @@ const InformationSecurityPolicy = () => {
           </p>
         </div>
       </section>
-      <section>
+      <section id="backups">
         <div className="container">
           <h2 className="slate">
             <b>Backups and Disaster Recovery</b>
