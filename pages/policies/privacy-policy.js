@@ -2,7 +2,6 @@ import React, { Fragment, useRef, useEffect } from "react";
 
 import Head from "next/head";
 import Link from "next/link";
-import Script from "next/script";
 
 import Header from "../../components/Layout/Header";
 
