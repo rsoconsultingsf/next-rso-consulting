@@ -149,7 +149,7 @@ const Footer = () => {
             Reserved.
           </span>
           <span>
-            <Link href="/privacy-policy/">Privacy Policy</Link>
+            <Link href="/policies/privacy-policy/">Privacy Policy</Link>
           </span>
         </div>
       </div>

@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Script from "next/script";
 
-import Header from "../components/Layout/Header";
+import Header from "../../components/Layout/Header";
 
 const PrivacyPolicy = () => {
   const containerRef = useRef(null);
@@ -85,7 +85,8 @@ const PrivacyPolicy = () => {
       <section>
         <div
           className="container"
-          ref={containerRef}>
+          ref={containerRef}
+        >
           <h2 className="slate">
             <b>Cookies</b>
           </h2>
