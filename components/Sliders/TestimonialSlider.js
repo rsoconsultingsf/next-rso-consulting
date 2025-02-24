@@ -16,6 +16,60 @@ const TestimonialSlider = () => {
       <Slider {...settings}>
         <div>
           <p>
+            Partnering with RSO has been a game changer for our marketing
+            efforts. Their data-driven approach to demand generation, web and
+            SEO has consistently resulted in measurable improvements to traffic,
+            leads, and pipeline quarter over quarter. Beyond their expertise,
+            they truly act as an extension of our team, bringing strategy and
+            efficiency to our marketing team, driving better outcomes each
+            quarter.
+          </p>
+          <p>
+            <b>Matt Diamond</b>
+          </p>
+          <p>Sr. Director, Brand, Web, and Comms</p>
+          <p>
+            <span className="light">ThreatDown/Malwarebytes</span>
+          </p>
+        </div>
+        <div>
+          <p>
+            Their team is incredibly knowledgeable and often went above and
+            beyond to ensure our campaigns were optimized for performance. As we
+            managed our PPC efforts and locations all across North America,
+            RSO’s strategic approach and collaboration made a significant
+            difference in our success. They are true experts in their field, and
+            we highly recommend their services to anyone looking to grow their
+            advertising efforts with a skilled and reliable PPC partner.
+          </p>
+          <p>
+            <b>Austin Maynes</b>
+          </p>
+          <p>Digital Marketing & Brand Manager</p>
+          <p>
+            <span className="light">Alsco Uniforms</span>
+          </p>
+        </div>
+        <div>
+          <p>
+            The team at RSO has been invaluable as we have gone from having zero
+            paid advertising in the market to establishing a robust,
+            multi-channel PPC engine that has been the key catalyst for our
+            pipeline development efforts. I deeply appreciate our partnership
+            with Rob and team and how I can always count on them to be looking
+            around the corner to identify new programs that will extend our
+            reach and keep the leads flowing.
+          </p>
+          <p>
+            <b>Zach Bosin</b>
+          </p>
+          <p>Head of Global GTM</p>
+          <p>
+            <span className="light">Josys</span>
+          </p>
+        </div>
+        <div>
+          <p>
             RSO consulting has helped our clients reach their maximum goals with
             a proven strategy in the ever competitive Social Media arena. Rob
             Sanders has a firm grasp on the analytics to make any product stand
@@ -35,7 +89,11 @@ const TestimonialSlider = () => {
             Rob has been flexible, personable, and fantastic to work with
             throughout the years. Not only has he helped us with AdWords
             campaigns for{" "}
-            <a href="http://www.academyx.com/" target="_blank" rel="noreferrer">
+            <a
+              href="http://www.academyx.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               www.academyx.com
             </a>
             , he has been one of our go-to instructors for SEO & PPC. Students

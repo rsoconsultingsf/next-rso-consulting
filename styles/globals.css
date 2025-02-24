@@ -114,10 +114,6 @@ section {
   flex: 0 0 calc(100% - 20px);
 }
 
-.col-3.short-grid > div > a {
-  font-size: 4vw;
-}
-
 .col-3.short-service-grid {
   display: flex;
   flex-wrap: wrap;
@@ -148,10 +144,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.col-2-hero a {
-  flex: 0 0 calc(35% - 20px);
 }
 
 .contact-meta {
@@ -320,6 +312,51 @@ section {
   height: 0;
   width: 0;
   z-index: -1;
+}
+
+/* Logo grid layouts */
+.logo-grid-top,
+.logo-grid-bottom {
+  display: grid;
+  gap: 30px;
+  grid-auto-rows: auto;
+  margin-bottom: 30px;
+}
+
+/* Mobile layout - single column */
+.logo-grid-top,
+.logo-grid-bottom {
+  grid-template-columns: 1fr;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .logo-grid-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo-grid-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .logo-grid-bottom .flex-center {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .logo-grid-top {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .logo-grid-bottom {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media (min-width: 426px) {

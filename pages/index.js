@@ -25,30 +25,35 @@ const Home = () => {
       <Hero
         image={heroImage}
         alt="Digital Marketing Agency Graphic"
-        anchor="/services/#cards">
+        anchor="/services/#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Make It Easy</b>
           <br /> For Future Customers To Find You
         </h1>
         <div
           className="col-3-hero"
-          style={{ gridAutoRows: "auto" }}>
+          style={{ gridAutoRows: "auto" }}
+        >
           <Button
             color="orange"
             className="cta cta-hero"
-            link="/services/seo-services/">
+            link="/services/seo-services/"
+          >
             Search Engine Optimization
           </Button>
           <Button
             color="red"
             className="cta cta-hero"
-            link="/services/manage-pay-per-click/">
+            link="/services/manage-pay-per-click/"
+          >
             Paid Advertising
           </Button>
           <Button
             color="blue"
             className="cta cta-hero"
-            link="/services/social-media-optimization/">
+            link="/services/social-media-optimization/"
+          >
             Social Media Optimization
           </Button>
           {/* <Button color="green" link="/services/web-analytics-consultation/">
@@ -98,7 +103,8 @@ const Home = () => {
             <SectionLabel red>How Do You Measure Success?</SectionLabel>
             <h2
               className="sub-headline"
-              style={{ maxWidth: "515px", margin: "0 auto" }}>
+              style={{ maxWidth: "515px", margin: "0 auto" }}
+            >
               The <b>success</b> of your <b>digital marketing</b> is all about
               the <b>data</b> and the <b>spend</b>.
             </h2>
@@ -116,7 +122,8 @@ const Home = () => {
           <SectionLabel blue>What We Can Do For You</SectionLabel>
           <h2
             className="sub-headline"
-            style={{ margin: "0 auto 30px auto" }}>
+            style={{ margin: "0 auto 30px auto" }}
+          >
             We offer a <b>full range</b> of data-driven <b>digital marketing</b>{" "}
             services:
           </h2>
@@ -283,7 +290,8 @@ const Home = () => {
           </h2>
           <Button
             className="cta"
-            link="/services/">
+            link="/services/"
+          >
             SEE ALL SERVICES
           </Button>
         </div>
@@ -294,7 +302,7 @@ const Home = () => {
           <h2 className="sub-headline">
             Our <b>satisfied clients</b> come from <b>various industries</b>.
           </h2>
-          <div className="col-4 unset">
+          <div className="logo-grid-top">
             <div className="flex-center">
               <Image
                 src="/images/logos/adobe.png"
@@ -309,8 +317,8 @@ const Home = () => {
             </div>
             <div className="flex-center">
               <Image
-                src="/images/logos/BlueJeans_logo.png"
-                alt="Asana logo"
+                src="/images/logos/verizon-logo.svg"
+                alt="verizon logo"
                 width={283}
                 height={65}
                 style={{
@@ -337,6 +345,20 @@ const Home = () => {
                 alt="Discovery logo"
                 width={340}
                 height={70}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
+          </div>
+          <div className="logo-grid-bottom">
+            <div className="flex-center">
+              <Image
+                src="/images/logos/malwarebytes-logo.svg"
+                alt="Malwarebytes logo"
+                width={300}
+                height={60}
                 style={{
                   maxWidth: "100%",
                   height: "auto",
@@ -399,7 +421,8 @@ const Home = () => {
         contactHeader={
           <h2
             className="sub-headline"
-            style={{ maxWidth: "800px", margin: "0 auto 40px auto" }}>
+            style={{ maxWidth: "800px", margin: "0 auto 40px auto" }}
+          >
             Reach out with any <b>questions</b> you have regarding{" "}
             <b>projects or estimates</b>, or request any other{" "}
             <b>information</b> you need.

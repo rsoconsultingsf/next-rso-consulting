@@ -75,13 +75,15 @@ const StickyHeader = () => {
       <SideDrawer
         show={drawerIsOpen}
         close={closeDrawer}
-        isClosing={drawerIsClosing}>
+        isClosing={drawerIsClosing}
+      >
         <MobileNav />
       </SideDrawer>
       {showDiv && (
         <header
           className={styles["sticky-header"]}
-          style={isMounted ? mountedStyle : unmountedStyle}>
+          style={isMounted ? mountedStyle : unmountedStyle}
+        >
           <div className={`${styles.header} container`}>
             <Link href="/">
               <Image
@@ -101,7 +103,8 @@ const StickyHeader = () => {
             </div>
             <div
               className="mobile"
-              onClick={openDrawer}>
+              onClick={openDrawer}
+            >
               <BiMenu
                 color="#000"
                 size={32}

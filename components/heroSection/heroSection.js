@@ -47,20 +47,23 @@ const Hero = (props) => {
       <SideDrawer
         show={drawerIsOpen}
         close={closeDrawer}
-        isClosing={drawerIsClosing}>
+        isClosing={drawerIsClosing}
+      >
         <MobileNav />
         <p style={{ fontSize: "22px", fontWeight: "700" }}>Contact Us Today</p>
       </SideDrawer>
       <section
         className={styles["hero-container"]}
-        style={{ marginBottom: props.noAnchor ? "-35px" : null }}>
+        style={{ marginBottom: props.noAnchor ? "-35px" : null }}
+      >
         <div className={props.fixed ? "hero-fixed" : styles.hero}>
           <div
             className={
               props.noAnchor
                 ? styles["hero-inner-no-anchor"]
                 : styles["hero-inner"]
-            }>
+            }
+          >
             <Image
               src={image}
               alt={alt}
@@ -91,7 +94,8 @@ const Hero = (props) => {
               </div>
               <div
                 className="mobile"
-                onClick={openDrawer}>
+                onClick={openDrawer}
+              >
                 <BiMenu
                   color="#fff"
                   size={32}
@@ -104,7 +108,8 @@ const Hero = (props) => {
                   ? `${styles["hero-overlay"]} ${props.className}`
                   : `${styles["hero-overlay"]} container ${props.className}`
               }
-              style={{ maxWidth: props.fixed ? "none" : "1440px" }}>
+              style={{ maxWidth: props.fixed ? "none" : "1440px" }}
+            >
               <div className={styles["hero-overlay-inner"]}>{children}</div>
             </div>
           </div>
@@ -113,7 +118,8 @@ const Hero = (props) => {
             <div className={styles["btn-container"]}>
               <Button
                 heroAnchor
-                anchor={anchor}>
+                anchor={anchor}
+              >
                 Learn More
               </Button>
             </div>
