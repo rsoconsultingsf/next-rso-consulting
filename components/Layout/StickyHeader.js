@@ -12,7 +12,6 @@ import SideDrawer from "../UI/SideDrawer/SideDrawer";
 
 import styles from "./Header.module.css";
 
-// set delay for Sticky Header display
 const useDelayUnmount = (isMounted, delayTime) => {
   const [showDiv, setShowDiv] = useState(false);
   useEffect(() => {
