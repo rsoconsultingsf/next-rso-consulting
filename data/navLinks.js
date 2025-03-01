@@ -50,6 +50,10 @@ const navLinks = [
     path: "/about-us/",
   },
   {
+    name: "Case Studies",
+    path: "/case-studies/",
+  },
+  {
     name: "Get In Touch",
     path: "/digital-marketing-consultation/",
   },
