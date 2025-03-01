@@ -174,7 +174,6 @@ export default function AlscoCaseStudy() {
         </div>
       </section>
 
-      {/* Related Case Studies */}
       <section className={styles.section}>
         <div className={styles.container}>
           <SectionLabel>More Case Studies</SectionLabel>
