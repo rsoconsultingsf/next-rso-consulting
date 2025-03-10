@@ -43,7 +43,7 @@ const Footer = () => {
           rel="noreferrer"
         >
           <Image
-            src="https://www.gstatic.com/partners/badge/images/2024/PremierBadgeClickable.svg"
+            src="https://www.gstatic.com/partners/badge/images/2025/PremierBadgeClickable.svg"
             alt="Google Partner Badge"
             width={140}
             height={140}
