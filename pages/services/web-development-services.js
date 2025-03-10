@@ -62,7 +62,7 @@ const WebDevelopmentServices = () => {
             <b>
               <a
                 style={{ textDecoration: "underline" }}
-                href="https://alkalyne.solutions"
+                href="https://alkalyne.com"
                 target="_blank"
               >
                 Alkalyne Solutions
