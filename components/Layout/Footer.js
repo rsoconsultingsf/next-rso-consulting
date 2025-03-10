@@ -19,8 +19,8 @@ const Footer = () => {
           rel="noreferrer"
         >
           <Image
-            src="/images/footer/logo-clutch-sem.png"
-            alt="Clutch Top SEM Company badge"
+            src="/images/footer/logo-clutch-enterprise.png"
+            alt="Clutch Top Digital Marketing Company badge"
             width={138}
             height={149}
           />
@@ -31,8 +31,8 @@ const Footer = () => {
           rel="noreferrer"
         >
           <Image
-            src="/images/footer/logo-clutch-seo.png"
-            alt="Clutch Top SEO Company badge"
+            src="/images/footer/logo-clutch-2025.png"
+            alt="Clutch Top Digital Marketing Company California 2025 badge"
             width={138}
             height={149}
           />
