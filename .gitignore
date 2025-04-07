@@ -39,3 +39,4 @@ next-env.d.ts
 # sitemap related
 /robots.txt
 /sitemap.xml
+.qodo
