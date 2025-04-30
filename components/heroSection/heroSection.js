@@ -69,11 +69,11 @@ const Hero = (props) => {
               alt={alt}
               priority
               loading="eager"
-              style={{
-                objectFit: "cover",
-                maxWidth: "100%",
-                height: "95vh",
-              }}
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+              placeholder="blur"
+              blurDataURL={image.blurDataURL}
             />
             <div className={`${styles.header} container`}>
               <Link href="/">
