@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.rso-consulting.com/
+Host: https://example.com
 
 # Sitemaps
-Sitemap: https://www.rso-consulting.com/sitemap.xml
+Sitemap: https://example.com/sitemap.xml
