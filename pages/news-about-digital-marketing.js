@@ -102,17 +102,25 @@ const News = ({ items }) => {
   );
 };
 
-export async function getStaticProps({ params }) {
-  const feed = FEEDS[0];
-  const detailedFeed = await getFeed(feed.url);
-
-  return {
-    props: {
-      feed,
-      items: detailedFeed.items,
-    },
-    revalidate: 60,
-  };
+export async function getStaticProps() {
+  try {
+    const feed = await getFeed(FEEDS[0].url);
+    return {
+      props: {
+        items: feed.items || [],
+      },
+      // Regenerate page every 6 hours
+      revalidate: 21600,
+    };
+  } catch (error) {
+    console.error("Error fetching RSS feed:", error);
+    return {
+      props: {
+        items: [],
+      },
+      revalidate: 300, // On error, try again in 5 minutes
+    };
+  }
 }
 
 export default News;

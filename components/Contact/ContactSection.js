@@ -57,7 +57,7 @@ const ContactSection = (props) => {
                   <FaPhoneAlt />
                   <a
                     className="medium"
-                    href="tel:4159923830"
+                    href="tel:+14159923830"
                   >
                     +1 415-992-3830
                   </a>
