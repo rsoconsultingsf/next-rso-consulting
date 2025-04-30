@@ -55,15 +55,15 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://www.bbb.org/greater-san-francisco/business-reviews/marketing-consultants/rso-consulting-in-san-francisco-ca-305599"
+          href="https://wimgo.com/s/ca/san-francisco/business-consultant"
           target="_blank"
           rel="noreferrer"
         >
           <Image
-            src="/images/AB_logo_200x76-1.png"
+            src="/images/footer/logo-clutch-veteran-owned.png"
             alt=""
-            width={200}
-            height={76}
+            width={150}
+            height={200}
             style={{
               maxWidth: "100%",
               height: "auto",
@@ -77,7 +77,7 @@ const Footer = () => {
           rel="noreferrer"
         >
           <Image
-            src="/images/footer/wimgo-2020.png"
+            src="/images/footer/logo-clutch-ga4.png"
             alt="Top Service Provider"
             width={160}
             height={173}
