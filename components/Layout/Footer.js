@@ -55,7 +55,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://wimgo.com/s/ca/san-francisco/business-consultant"
+          href="https://clutch.co/profile/rso-consulting#summary"
           target="_blank"
           rel="noreferrer"
         >
@@ -72,7 +72,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://wimgo.com/s/ca/san-francisco/business-consultant"
+          href="https://clutch.co/profile/rso-consulting#summary"
           target="_blank"
           rel="noreferrer"
         >
