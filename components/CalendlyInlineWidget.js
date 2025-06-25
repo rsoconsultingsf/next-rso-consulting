@@ -1,46 +1,25 @@
-import { useEffect, useCallback } from "react";
-import Script from "next/script";
+import React from "react";
 
 /*
- * Reusable Calendly inline widget component.
- * Renders a placeholder div that Calendly will transform into an iframe
- * after its external script loads. We load the script lazily on the client
- * and disable SSR to avoid React hydration mismatches.
+ * Lightweight Calendly iframe embed.
+ * The iframe-only method avoids loading Calendly's heavy widget.js
+ * and therefore renders much faster.
  */
 const CalendlyInlineWidget = ({
   url = "https://calendly.com/rob-rso/30min",
   styles = { minWidth: 320, height: 700 },
-  parentId = "calendly-inline-widget",
+  domain,
 }) => {
-  // Fallback for cases where the script has already loaded before this component mounts
-  const initCalendly = useCallback(() => {
-    if (window.Calendly) {
-      window.Calendly.initInlineWidget({
-        url,
-        parentElement: document.getElementById(parentId),
-        prefill: {},
-        utm: {},
-      });
-    }
-  }, [url, parentId]);
-
-  useEffect(() => {
-    initCalendly();
-  }, [initCalendly]);
+  const embedDomain =
+    domain || (typeof window !== "undefined" ? window.location.hostname : "");
+  const src = `${url}?embed_domain=${embedDomain}&embed_type=Inline`;
 
   return (
-    <>
-      <div
-        id={parentId}
-        style={styles}
-      />
-      {/* Load Calendly script only on the client */}
-      <Script
-        src="https://assets.calendly.com/assets/external/widget.js"
-        strategy="afterInteractive"
-        onLoad={initCalendly}
-      />
-    </>
+    <iframe
+      src={src}
+      style={{ ...styles, border: 0, width: "100%" }}
+      title="Schedule time with RSO Consulting"
+    />
   );
 };
 
