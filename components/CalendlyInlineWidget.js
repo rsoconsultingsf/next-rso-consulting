@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import Script from "next/script";
 
 /*
@@ -12,8 +12,8 @@ const CalendlyInlineWidget = ({
   styles = { minWidth: 320, height: 700 },
   parentId = "calendly-inline-widget",
 }) => {
-  useEffect(() => {
-    // Ensure Calendly global is available and initialise the inline widget
+  // Fallback for cases where the script has already loaded before this component mounts
+  const initCalendly = useCallback(() => {
     if (window.Calendly) {
       window.Calendly.initInlineWidget({
         url,
@@ -24,6 +24,10 @@ const CalendlyInlineWidget = ({
     }
   }, [url, parentId]);
 
+  useEffect(() => {
+    initCalendly();
+  }, [initCalendly]);
+
   return (
     <>
       <div
@@ -33,7 +37,8 @@ const CalendlyInlineWidget = ({
       {/* Load Calendly script only on the client */}
       <Script
         src="https://assets.calendly.com/assets/external/widget.js"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
+        onLoad={initCalendly}
       />
     </>
   );
