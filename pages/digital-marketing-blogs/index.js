@@ -74,7 +74,8 @@ const Blog = ({ posts, pageCount, categories }) => {
       <Hero
         image={heroImage}
         alt=""
-        anchor="#cards">
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Digital Marketing</b> <br />
           Blog
@@ -86,17 +87,20 @@ const Blog = ({ posts, pageCount, categories }) => {
             textAlign: "center",
             maxWidth: "1000px",
             margin: "0 auto",
-          }}>
+          }}
+        >
           Read about the latest trends and tips in digital marketing.
         </h2>
       </Hero>
       <section id="cards">
         <div
           id="intro"
-          ref={myRef}></div>
+          ref={myRef}
+        ></div>
         <div
           ref={myRef}
-          className={styles["blog-archive"]}>
+          className={styles["blog-archive"]}
+        >
           <div></div>
           <div className={visible ? "fade-in" : "fade-out"}>
             <Archive posts={archivePosts} />
@@ -110,7 +114,8 @@ const Blog = ({ posts, pageCount, categories }) => {
             </div>
             <div
               className={styles["categories-mobile"]}
-              style={{ paddingTop: "50px" }}>
+              style={{ paddingTop: "50px" }}
+            >
               <Card>
                 <h2 className="sidebar-title">Categories</h2>
                 <Categories
@@ -123,7 +128,8 @@ const Blog = ({ posts, pageCount, categories }) => {
           <Card
             className="right"
             sticky
-            desktop>
+            desktop
+          >
             <div>
               <h2 className="sidebar-title">Categories</h2>
               <Categories categories={categories} />
@@ -136,7 +142,8 @@ const Blog = ({ posts, pageCount, categories }) => {
         contactHeader={
           <h2
             className="sub-headline"
-            style={{ maxWidth: "900px", margin: "0 auto 40px auto" }}>
+            style={{ maxWidth: "900px", margin: "0 auto 40px auto" }}
+          >
             Reach out with any <b>questions</b> you might have regarding how{" "}
             <b>RSO</b> can help you with your <b>digital marketing</b>.
           </h2>
@@ -178,6 +185,6 @@ export async function getStaticProps({ params, preview = false }) {
       pageCount: pageCount,
       categories: uniqueCategoryArray,
     },
-    revalidate: 60,
+    //revalidate: 60,
   };
 }

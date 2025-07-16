@@ -237,7 +237,7 @@ export async function getStaticProps({ params, preview = false }) {
       morePosts: data?.morePosts ?? null,
       uniqueCategories: uniqueCategoryArray,
     },
-    revalidate: 60,
+    //revalidate: 60,
   };
 }
 
