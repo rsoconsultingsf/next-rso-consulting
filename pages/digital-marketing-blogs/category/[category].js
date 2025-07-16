@@ -200,7 +200,7 @@ export async function getStaticProps({ params, preview = false }) {
       categories: uniqueCategoryArray,
       category: categoryName[0],
     },
-    revalidate: 60,
+    //revalidate: 60,
   };
 }
 
