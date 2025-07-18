@@ -198,6 +198,14 @@ export default function Post({
 
 export async function getStaticProps({ params, preview = false }) {
   const data = await getPostAndMorePosts(params.slug, preview);
+
+  // If no post is returned for the given slug, show the 404 page
+  if (!data?.post) {
+    return {
+      notFound: true,
+    };
+  }
+
   const postCategories = await getAllPostsCategories(preview);
   let categoryArray = [];
   let uniqueCategoryArray = [];
@@ -248,6 +256,6 @@ export async function getStaticPaths() {
     paths:
       allPosts.items?.map(({ slug }) => `/digital-marketing-blogs/${slug}`) ??
       [],
-    fallback: true,
+    fallback: "blocking",
   };
 }
