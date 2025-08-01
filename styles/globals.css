@@ -159,6 +159,7 @@ section {
 
 .contact-meta p,
 .contact-meta a {
+  text-align: left;
   font-size: 13px;
   padding: 0 15px;
 }
@@ -167,7 +168,7 @@ section {
   .contact-meta-responsive {
     grid-template-columns: 1fr !important;
   }
-  
+
   .contact-meta-hours {
     grid-column: 1 !important;
     justify-self: start !important;
