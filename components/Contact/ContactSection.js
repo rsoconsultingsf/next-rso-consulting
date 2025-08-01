@@ -43,40 +43,31 @@ const ContactSection = (props) => {
             </div>
             <Card>
               <div
-                className="col-2 contact-meta collapse"
+                className="col-2 contact-meta collapse contact-meta-responsive"
                 style={{ rowGap: "0", padding: "10px 0" }}
               >
                 <div className="contact-meta-inner">
-                  <FaMapMarkerAlt />
+                  <FaMapMarkerAlt size={16} />
                   <p className="medium">
-                    268 Bush St. #3038,
+                    548 Market St
                     <br /> San Francisco, CA 94104
                   </p>
                 </div>
                 <div className="contact-meta-inner">
-                  <FaPhoneAlt />
-                  <a
-                    className="medium"
-                    href="tel:+14159923830"
-                  >
-                    +1 415-992-3830
-                  </a>
-                </div>
-                <div className="contact-meta-inner">
-                  <FaRegClock size={36} />
-                  <p className="medium">
-                    Hours? Our work is not limited to set hours. Contact us and
-                    give us a try!
-                  </p>
-                </div>
-                <div className="contact-meta-inner">
-                  <FaEnvelope />
+                  <FaEnvelope size={16} />
                   <a
                     className="medium"
                     href="mailto:support@rso-consulting.com"
                   >
                     support@rso-consulting.com
                   </a>
+                </div>
+                <div className="contact-meta-inner contact-meta-hours" style={{ gridColumn: "span 2", justifySelf: "center" }}>
+                  <FaRegClock size={16} />
+                  <p className="medium">
+                    Hours? Our work is not limited to set hours. Contact us and
+                    give us a try!
+                  </p>
                 </div>
               </div>
             </Card>
