@@ -163,6 +163,17 @@ section {
   padding: 0 15px;
 }
 
+@media (max-width: 1024px) {
+  .contact-meta-responsive {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .contact-meta-hours {
+    grid-column: 1 !important;
+    justify-self: start !important;
+  }
+}
+
 .container {
   max-width: var(--width);
   width: 100%;
