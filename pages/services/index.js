@@ -32,7 +32,10 @@ const Services = () => {
           <b>Dedicated To Digital Marketing</b>
           <br /> Top Notch Digital Marketing and Website Analytics Services
         </h1>
-        <div className="col-3-hero" style={{ gridAutoRows: "auto" }}>
+        <div
+          className="col-3-hero"
+          style={{ gridAutoRows: "auto" }}
+        >
           {/* <Button color="orange" link="/services/seo-services/">
             Search Engine Optimization
           </Button>
@@ -48,13 +51,22 @@ const Services = () => {
           <Button color="purple" link="/services/web-development-services/">
             Website Development
           </Button> */}
-          <Button color="turq" link="/services/a-b-testing/">
+          <Button
+            color="turq"
+            link="/services/a-b-testing/"
+          >
             A/B Testing
           </Button>
-          <Button color="dark-red" link="/services/email-marketing/">
+          <Button
+            color="dark-red"
+            link="/services/email-marketing/"
+          >
             Email Marketing
           </Button>
-          <Button color="teal" link="/services/affiliate-marketing/">
+          <Button
+            color="teal"
+            link="/services/affiliate-marketing/"
+          >
             Affiliate Marketing
           </Button>
         </div>
@@ -80,8 +92,9 @@ const Services = () => {
               height={461}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="sub-intro">
             <SectionLabel red>We Get The Job Done!</SectionLabel>
@@ -109,7 +122,10 @@ const Services = () => {
       <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
-          <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
+          <h2
+            className="sub-headline"
+            style={{ margin: "0 auto 30px auto" }}
+          >
             We offer a <b>full range</b> of data-driven <b>digital marketing</b>{" "}
             services:
           </h2>
@@ -125,8 +141,9 @@ const Services = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Search Engine Optimization"
             description="Drive more traffic to your website, generate leads, and grow your business."
@@ -149,8 +166,9 @@ const Services = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Paid Search Advertising"
             description="Boost your brand awareness, sales, and revenue."
@@ -173,8 +191,9 @@ const Services = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Social Media Optimization"
             description="Build your brand awareness, expand online
@@ -184,7 +203,7 @@ const Services = () => {
               <ul>
                 <li>Platform Selections</li>
                 <li>Content Strategy & Creation</li>
-                <li>Scheduleing & Interaction</li>
+                <li>Scheduling & Interaction</li>
                 <li>Analysis & Reporting</li>
               </ul>
             }
@@ -199,8 +218,9 @@ const Services = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Web Analytics Consultation"
             description="Understand your website behavior and learn how 
@@ -224,8 +244,9 @@ const Services = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Web Design & Development"
             description="Offer an engaging experience for your 
@@ -250,8 +271,9 @@ const Services = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="A/B Testing"
             description="Optimize your website's engagement by testing 
@@ -276,8 +298,9 @@ const Services = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Email Marketing"
             description="Email delivery based on best practices that will 
@@ -302,8 +325,9 @@ const Services = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Affiliate Marketing"
             description="Promote your product or service through partners 
