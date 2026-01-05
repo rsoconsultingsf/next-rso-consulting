@@ -90,15 +90,12 @@ const Footer = () => {
       </div>
       <div className={`${styles["footer__bottom__desktop"]} container`}>
         <div className={`${styles["footer__col"]} ${styles.logo}`}>
-          <Image
-            src="/images/logos/san-francisco-digital-marketing-agency_gray.svg"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logos/RSO_20th_logo1_gray.svg"
             alt="RSO Logo - San Francisco Digital Marketing Agency"
             width={100}
-            height={37}
-            style={{
-              maxWidth: "100%",
-              height: "auto",
-            }}
+            height={70}
           />
         </div>
         <div className={`${styles["footer__col"]} ${styles.social}`}>
@@ -197,15 +194,12 @@ const Footer = () => {
           <Link href="/digital-marketing-consultation/">Contact</Link>
         </div>
         <div className={`${styles["footer__col"]} ${styles.logo}`}>
-          <Image
-            src="/images/logos/san-francisco-digital-marketing-agency_gray.svg"
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logos/RSO_20th_logo1_gray.svg"
             alt="RSO Logo - San Francisco Digital Marketing Agency"
             width={100}
-            height={37}
-            style={{
-              maxWidth: "100%",
-              height: "auto",
-            }}
+            height={70}
           />
         </div>
         <div className={`${styles["footer__col"]} ${styles.copyright}`}>

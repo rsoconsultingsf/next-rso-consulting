@@ -271,6 +271,11 @@ section {
   align-items: center;
 }
 
+.header-logo-link {
+  height: 70px !important;
+  width: auto !important;
+}
+
 .header-logo-link:hover {
   cursor: pointer;
 }

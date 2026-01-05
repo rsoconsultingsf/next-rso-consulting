@@ -77,16 +77,13 @@ const Hero = (props) => {
             />
             <div className={`${styles.header} container`}>
               <Link href="/">
-                <Image
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
                   src="/images/logos/RSO_20th_logo1_white.svg"
                   alt="RSO Logo - San Francisco Digital Marketing Agency"
                   className="header-logo-link"
                   width={145}
-                  height={54}
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto",
-                  }}
+                  height={70}
                 />
               </Link>
               <div className="desktop">
