@@ -78,7 +78,7 @@ const Hero = (props) => {
             <div className={`${styles.header} container`}>
               <Link href="/">
                 <Image
-                  src="/images/logos/san-francisco-digital-marketing-agency_white.svg"
+                  src="/images/logos/RSO_20th_logo1_white.svg"
                   alt="RSO Logo - San Francisco Digital Marketing Agency"
                   className="header-logo-link"
                   width={145}

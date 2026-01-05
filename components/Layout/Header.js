@@ -43,16 +43,18 @@ const Header = () => {
       <SideDrawer
         show={drawerIsOpen}
         close={closeDrawer}
-        isClosing={drawerIsClosing}>
+        isClosing={drawerIsClosing}
+      >
         <MobileNav />
       </SideDrawer>
       <header className={styles["normal-header"]}>
         <div className={`${styles.header} container`}>
           <Link
             href="/"
-            passHref>
+            passHref
+          >
             <Image
-              src="/images/logos/san-francisco-digital-marketing-agency_color.svg"
+              src="/images/logos/RSO_20th_logo1_rgb.svg"
               alt="RSO Logo - San Francisco Digital Marketing Agency"
               className="header-logo-link"
               width={145}
@@ -68,7 +70,8 @@ const Header = () => {
           </div>
           <div
             className="mobile"
-            onClick={openDrawer}>
+            onClick={openDrawer}
+          >
             <BiMenu
               color="#000"
               size={32}

@@ -18,7 +18,7 @@ const Archive = (props) => {
                 imageURL={
                   post.featuredImage
                     ? post.featuredImage.url
-                    : "/images/logos/san-francisco-digital-marketing-agency_color.svg"
+                    : "/images/logos/RSO_20th_logo1_rgb.svg"
                 }
                 imageTitle={
                   post.featuredImage

@@ -33,14 +33,15 @@ const SideDrawer = (props) => {
               <Link href="/">
                 <Image
                   className={styles["side__drawer__logo"]}
-                  src="/images/logos/san-francisco-digital-marketing-agency_color.svg"
+                  src="/images/logos/RSO_20th_logo1_rgb.svg"
                   alt="RSO Consulting logo"
                   width={200}
                   height={125}
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
-                  }} />
+                    height: "auto",
+                  }}
+                />
               </Link>
             </div>
             {props.children}

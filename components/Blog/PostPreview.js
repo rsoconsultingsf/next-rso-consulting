@@ -18,9 +18,7 @@ const PostPreview = (props) => {
             className={styles.image}
             style={{
               margin:
-                props.imageURL.indexOf(
-                  "san-francisco-digital-marketing-agency_color.svg"
-                ) > -1
+                props.imageURL.indexOf("RSO_20th_logo1_rgb.svg") > -1
                   ? "0 20px"
                   : "0",
             }}
@@ -33,9 +31,7 @@ const PostPreview = (props) => {
                 height={175}
                 layout="responsive"
                 objectFit={
-                  props.imageURL.indexOf(
-                    "san-francisco-digital-marketing-agency_color.svg"
-                  ) > -1
+                  props.imageURL.indexOf("RSO_20th_logo1_rgb.svg") > -1
                     ? "contain"
                     : "cover"
                 }
