@@ -75,10 +75,9 @@ const Home = () => {
         <div className="container">
           <h2 className="intro sub-headline">
             Over the past <b>20 years</b>, we’ve watched digital behavior
-            evolve—and
-            <b>we’ve evolved with it</b>. Today, customers research, decide, and
-            purchase online <b>more than ever before</b>. We help you show up in
-            the right places to{" "}
+            evolve—and <b>we’ve evolved with it</b>. Today, customers research,
+            decide, and purchase online <b>more than ever before</b>. We help
+            you show up in the right places to{" "}
             <b>
               build awareness, nurture relationships, and convert demand into
               revenue
