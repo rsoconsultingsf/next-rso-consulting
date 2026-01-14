@@ -27,10 +27,22 @@ const Home = () => {
         alt="Digital Marketing Agency Graphic"
         anchor="/services/#cards"
       >
-        <h1 style={{ color: "#fff", textAlign: "center" }}>
-          <b>Make It Easy</b>
-          <br /> For Future Customers To Find You
+        <h1 style={{ color: "#fff", textAlign: "center", marginBottom: "0" }}>
+          <b>20 Years of Helping Customers Find You Online</b>
         </h1>
+        <p
+          className="sub-intro-details"
+          style={{
+            marginTop: "0",
+            marginBottom: "2rem",
+            color: "#fff",
+            fontSize: "1.5rem",
+            maxWidth: "800px",
+          }}
+        >
+          Two decades of helping brands stay visible, competitive, and
+          profitable in a constantly evolving digital world.
+        </p>
         <div
           className="col-3-hero"
           style={{ gridAutoRows: "auto" }}
@@ -56,32 +68,22 @@ const Home = () => {
           >
             Social Media Optimization
           </Button>
-          {/* <Button color="green" link="/services/web-analytics-consultation/">
-            Web Analytics Consulting
-          </Button>
-          <Button color="purple" link="/services/web-development-services/">
-            Website Development
-          </Button>
-          <Button color="turq" link="/services/a-b-testing/">
-            A/B Testing
-          </Button>
-          <Button color="dark-red" link="/services/email-marketing/">
-            Email Marketing
-          </Button>
-          <Button color="teal" link="/services/affiliate-marketing/">
-            Affiliate Marketing
-          </Button> */}
         </div>
       </Hero>
       <section>
         <div id="intro"></div>
         <div className="container">
           <h2 className="intro sub-headline">
-            Your customers are <b>researching</b>, <b>making decisions</b>, and{" "}
-            <b>completing purchases online</b> more than ever before. We help
-            you <b>position your business</b> in all the <b>digital spaces</b>{" "}
-            where it makes sense to <b>gather awareness</b>,{" "}
-            <b>nurture relationships</b>, and <b>increase conversions</b>.
+            Over the past <b>20 years</b>, we’ve watched digital behavior
+            evolve—and
+            <b>we’ve evolved with it</b>. Today, customers research, decide, and
+            purchase online <b>more than ever before</b>. We help you show up in
+            the right places to{" "}
+            <b>
+              build awareness, nurture relationships, and convert demand into
+              revenue
+            </b>
+            .
           </h2>
         </div>
       </section>
