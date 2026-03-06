@@ -178,11 +178,14 @@ export default function JosysCaseStudy() {
                 style={{
                   backgroundImage:
                     'url("/images/case-studies/threatdown-hero.png")',
-                  backgroundSize: "140%",
                 }}
               >
                 <div className={styles.studyCardOverlay}>
                   <h3>Threatdown</h3>
+                  <p className={styles.studyCardOverlayP}>
+                    Leveraging Non-Brand Keywords to Increase Brand Awareness
+                    and Pipeline
+                  </p>
                 </div>
               </div>
             </Link>
@@ -191,11 +194,29 @@ export default function JosysCaseStudy() {
                 className={styles.studyCard}
                 style={{
                   backgroundImage: 'url("/images/case-studies/alsco-hero.png")',
-                  backgroundSize: "140%",
                 }}
               >
                 <div className={styles.studyCardOverlay}>
                   <h3>Alsco</h3>
+                  <p className={styles.studyCardOverlayP}>
+                    Driving Customer Acquisition and Market Expansion
+                  </p>
+                </div>
+              </div>
+            </Link>
+            <Link href="/case-studies/global-education-consultancy">
+              <div
+                className={styles.studyCard}
+                style={{
+                  backgroundImage:
+                    'url("/images/case-studies/global-education-consultancy-hero.png")',
+                }}
+              >
+                <div className={styles.studyCardOverlay}>
+                  <h3>Global Educational Consultancy</h3>
+                  <p className={styles.studyCardOverlayP}>
+                    2025 SEO: Stabilization, Recovery, and AI Acceleration
+                  </p>
                 </div>
               </div>
             </Link>

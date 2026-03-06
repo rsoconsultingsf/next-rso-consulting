@@ -178,11 +178,14 @@ export default function ThreatdownCaseStudy() {
                 className={styles.studyCard}
                 style={{
                   backgroundImage: 'url("/images/case-studies/josys-hero.png")',
-                  backgroundSize: "140%",
                 }}
               >
                 <div className={styles.studyCardOverlay}>
                   <h3>Josys</h3>
+                  <p className={styles.studyCardOverlayP}>
+                    Accelerating Growth: Shortening the Sales Cycle and
+                    Expanding Market Reach
+                  </p>
                 </div>
               </div>
             </Link>
@@ -191,11 +194,29 @@ export default function ThreatdownCaseStudy() {
                 className={styles.studyCard}
                 style={{
                   backgroundImage: 'url("/images/case-studies/alsco-hero.png")',
-                  backgroundSize: "140%",
                 }}
               >
                 <div className={styles.studyCardOverlay}>
                   <h3>Alsco</h3>
+                  <p className={styles.studyCardOverlayP}>
+                    Driving Customer Acquisition and Market Expansion
+                  </p>
+                </div>
+              </div>
+            </Link>
+            <Link href="/case-studies/global-education-consultancy">
+              <div
+                className={styles.studyCard}
+                style={{
+                  backgroundImage:
+                    'url("/images/case-studies/global-education-consultancy-hero.png")',
+                }}
+              >
+                <div className={styles.studyCardOverlay}>
+                  <h3>Global Educational Consultancy</h3>
+                  <p className={styles.studyCardOverlayP}>
+                    2025 SEO: Stabilization, Recovery, and AI Acceleration
+                  </p>
                 </div>
               </div>
             </Link>

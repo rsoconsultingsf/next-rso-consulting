@@ -77,12 +77,27 @@ export default function CaseStudies() {
             className={styles.relatedStudies}
             style={{ marginTop: "2rem", gap: "2rem" }}
           >
+            <Link href="/case-studies/global-education-consultancy">
+              <div
+                className={styles.studyCard}
+                style={{
+                  backgroundImage:
+                    'url("/images/case-studies/global-education-consultancy-hero.png")',
+                }}
+              >
+                <div className={styles.studyCardOverlay}>
+                  <h3>Global Educational Consultancy</h3>
+                  <p className={styles.studyCardOverlayP}>
+                    2025 SEO: Stabilization, Recovery, and AI Acceleration
+                  </p>
+                </div>
+              </div>
+            </Link>
             <Link href="/case-studies/josys">
               <div
                 className={styles.studyCard}
                 style={{
                   backgroundImage: 'url("/images/case-studies/josys-hero.png")',
-                  backgroundSize: "cover",
                 }}
               >
                 <div className={styles.studyCardOverlay}>
@@ -99,7 +114,6 @@ export default function CaseStudies() {
                 className={styles.studyCard}
                 style={{
                   backgroundImage: 'url("/images/case-studies/alsco-hero.png")',
-                  backgroundSize: "cover",
                 }}
               >
                 <div className={styles.studyCardOverlay}>
@@ -116,7 +130,6 @@ export default function CaseStudies() {
                 style={{
                   backgroundImage:
                     'url("/images/case-studies/threatdown-hero.png")',
-                  backgroundSize: "cover",
                 }}
               >
                 <div className={styles.studyCardOverlay}>
