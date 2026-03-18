@@ -53,9 +53,9 @@ const Services = () => {
           </Button> */}
           <Button
             color="turq"
-            link="/services/a-b-testing/"
+            link="/services/ai-search-optimization/"
           >
-            A/B Testing
+            AI SEO
           </Button>
           <Button
             color="dark-red"

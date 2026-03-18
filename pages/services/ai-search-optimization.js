@@ -391,38 +391,6 @@ const AISearchOptimization = () => {
             description="Analyze which sources AI systems rely on when generating answers in your category."
           />
         </div>
-        <div
-          className="container center"
-          style={{ marginTop: "40px" }}
-        >
-          <p
-            className="sub-intro-details"
-            style={{ maxWidth: "850px", margin: "0 auto" }}
-          >
-            We continuously monitor performance and adjust strategy as AI
-            platforms evolve. Supporting Performance Indicators include:
-          </p>
-
-          <ul
-            className="sub-intro-details"
-            style={{
-              textAlign: "left",
-              maxWidth: "600px",
-              margin: "20px auto",
-              listStyle: "none",
-              padding: 0,
-            }}
-          >
-            <li style={{ marginBottom: "10px" }}>
-              • Organic traffic and keyword visibility
-            </li>
-            <li style={{ marginBottom: "10px" }}>• Brand query growth</li>
-            <li style={{ marginBottom: "10px" }}>
-              • Content engagement metrics
-            </li>
-            <li style={{ marginBottom: "10px" }}>• Conversion impact</li>
-          </ul>
-        </div>
       </section>
       <section>
         <div className="container center">
@@ -509,34 +477,6 @@ const AISearchOptimization = () => {
               <li>Sustainable authority building</li>
             </ul>
           </div>
-        </div>
-      </section>
-      <section>
-        <div className="container center">
-          <h2
-            className="sub-headline"
-            style={{ maxWidth: "850px", margin: "0 auto" }}
-          >
-            <b>Prepare Your Brand for AI Search</b>
-          </h2>
-          <p
-            className="sub-intro-details"
-            style={{ maxWidth: "800px", margin: "30px auto" }}
-          >
-            AI-driven discovery is accelerating across platforms. Organizations
-            that structure their knowledge and content for AI systems today will
-            have a significant advantage as AI becomes the primary interface for
-            information discovery.
-          </p>
-          <p
-            className="sub-intro-details"
-            style={{ maxWidth: "800px", margin: "30px auto" }}
-          >
-            <b>
-              Contact RSO Consulting to learn how AI Search Optimization can
-              position your brand at the center of AI-driven discovery.
-            </b>
-          </p>
         </div>
       </section>
       <ContactSection

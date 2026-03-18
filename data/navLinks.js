@@ -4,6 +4,10 @@ const navLinks = [
     path: "/services/",
     subMenu: [
       {
+        name: "AI SEO",
+        path: "/services/ai-search-optimization/",
+      },
+      {
         name: "Search Engine Optimization",
         path: "/services/seo-services/",
       },
