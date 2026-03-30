@@ -48,6 +48,19 @@ const Button = (props) => {
     );
   }
 
+  if (props.target) {
+    return (
+      <a
+        href={props.target}
+        target="_blank"
+      >
+        <span className={`${styles.btn} ${styles[props.color]}`}>
+          {props.children}
+        </span>
+      </a>
+    );
+  }
+
   return (
     <button
       type={props.type}
