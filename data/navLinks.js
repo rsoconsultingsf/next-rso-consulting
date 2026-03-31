@@ -39,6 +39,10 @@ const navLinks = [
         name: "Affiliate Marketing",
         path: "/services/affiliate-marketing/",
       },
+      {
+        name: "Google Marketing Platform",
+        path: "/services/google-marketing-platform-consulting-training/",
+      },
     ],
   },
   {

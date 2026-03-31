@@ -3,11 +3,11 @@ import React, { Fragment } from "react";
 import Image from "next/legacy/image";
 import Head from "next/head";
 
-import Hero from "../components/heroSection/heroSection";
-import SectionLabel from "../components/UI/Labels/SectionLabel";
-import TrainingContact from "../components/Contact/TrainingContact";
-import Button from "../components/UI/Buttons/Button";
-import TrainingTestimonials from "../components/Sliders/TrainingTestimonialsSlider";
+import Hero from "../../components/heroSection/heroSection";
+import SectionLabel from "../../components/UI/Labels/SectionLabel";
+import TrainingContact from "../../components/Contact/TrainingContact";
+import Button from "../../components/UI/Buttons/Button";
+import TrainingTestimonials from "../../components/Sliders/TrainingTestimonialsSlider";
 
 import heroImage from "/public/images/hero/rso-hero_google-marketing-platform.png";
 
