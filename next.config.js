@@ -2,11 +2,19 @@
 
 module.exports = {
   images: {
-    domains: ["images.ctfassets.net", "www.gstatic.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.ctfassets.net",
+      },
+      {
+        protocol: "https",
+        hostname: "www.gstatic.com",
+      },
+    ],
   },
   reactStrictMode: false,
   trailingSlash: true,
-  swcMinify: true,
   async redirects() {
     return [
       {
