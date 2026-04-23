@@ -71,7 +71,9 @@ export default function CaseStudies() {
               exceptional outcomes for our clients.
             </p>
           </div>
-          <SectionLabel>Featured Case Studies</SectionLabel>
+          <div style={{ textAlign: "center" }}>
+            <SectionLabel>Featured Case Studies</SectionLabel>
+          </div>
 
           <div
             className={styles.relatedStudies}
