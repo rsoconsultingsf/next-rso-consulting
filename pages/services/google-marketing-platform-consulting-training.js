@@ -9,7 +9,7 @@ import TrainingContact from "../../components/Contact/TrainingContact";
 import Button from "../../components/UI/Buttons/Button";
 import TrainingTestimonials from "../../components/Sliders/TrainingTestimonialsSlider";
 
-import heroImage from "../../public/images/hero/rso-hero_google-marketing-platform.png";
+import heroImage from "../../assets/images/hero/rso-hero_google-marketing-platform.png";
 
 const GoogleMarketingPlatformConsultingTraining = () => {
   return (
