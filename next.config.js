@@ -2,6 +2,7 @@
 
 module.exports = {
   images: {
+    qualities: [75, 100],
     remotePatterns: [
       {
         protocol: "https",

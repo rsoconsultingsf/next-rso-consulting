@@ -93,49 +93,64 @@ const FractionalCMOServices = () => {
 
       {/* Who This Is For Section */}
       <section>
-        <div className="container center">
-          <SectionLabel red>Who This Is For</SectionLabel>
-          <h2
-            className="sub-headline"
-            style={{ margin: "0 auto 20px auto", lineHeight: "1.2" }}
-          >
-            <b>Fractional CMO services</b> are designed for organizations that:
-          </h2>
-          <ul
-            className="sub-intro-details"
-            style={{
-              textAlign: "left",
-              maxWidth: "500px",
-              margin: "20px auto",
-              lineHeight: "2",
-            }}
-          >
-            <li>Are scaling but lack senior marketing leadership</li>
-            <li>Have internal teams but need strategic direction</li>
-            <li>Want marketing tied directly to revenue goals</li>
-            <li>
-              Are investing significantly in digital but not seeing predictable
-              growth
-            </li>
-            <li>
-              Need cross-functional alignment between marketing, sales, and
-              leadership
-            </li>
-          </ul>
-          <p
-            className="sub-intro-details"
-            style={{
-              maxWidth: "800px",
-              textAlign: "center",
-              margin: "20px auto",
-            }}
-          >
-            <b>
-              Ideal for growth-stage B2B companies, performance-driven
-              organizations, and founder-led businesses entering their next
-              phase.
-            </b>
-          </p>
+        <div className="col-2 unset container">
+          <div className="img-center">
+            <Image
+              src="/images/fractional-cmo-services.jpg"
+              alt="Who Fractional CMO Services Are For"
+              width={705}
+              height={461}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
+            />
+          </div>
+          <div className="sub-intro">
+            <SectionLabel red>Who This Is For</SectionLabel>
+            <h2
+              className="sub-headline"
+              style={{
+                maxWidth: "515px",
+                margin: "0 auto 20px auto",
+                lineHeight: "1.2",
+              }}
+            >
+              <b>Fractional CMO services</b> are designed for organizations
+              that:
+            </h2>
+            <ul
+              className="sub-intro-details"
+              style={{
+                textAlign: "left",
+                maxWidth: "515px",
+                margin: "20px auto",
+                lineHeight: "2",
+              }}
+            >
+              <li>Are scaling but lack senior marketing leadership</li>
+              <li>Have internal teams but need strategic direction</li>
+              <li>Want marketing tied directly to revenue goals</li>
+              <li>
+                Are investing significantly in digital but not seeing
+                predictable growth
+              </li>
+              <li>
+                Need cross-functional alignment between marketing, sales, and
+                leadership
+              </li>
+            </ul>
+            <p
+              className="sub-intro-details"
+              style={{ maxWidth: "515px", margin: "20px auto" }}
+            >
+              <b>
+                Ideal for growth-stage B2B companies, performance-driven
+                organizations, and founder-led businesses entering their next
+                phase.
+              </b>
+            </p>
+          </div>
         </div>
       </section>
 
