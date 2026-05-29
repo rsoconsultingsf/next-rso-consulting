@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 
+import Image from "next/legacy/image";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -128,35 +129,44 @@ const AIAnalyticsSearchInsightsConsulting = () => {
 
       {/* How We Help Section */}
       <section>
-        <div className="container center">
-          <SectionLabel teal>How We Help</SectionLabel>
-          <p
-            className="sub-intro-details"
-            style={{
-              maxWidth: "800px",
-              textAlign: "center",
-              margin: "0 auto 30px auto",
-            }}
-          >
-            We combine <b>AI analytics consulting</b> with practical, hands-on
-            support to help your team apply AI in meaningful ways.
-          </p>
-          <ul
-            className="sub-intro-details"
-            style={{
-              textAlign: "left",
-              maxWidth: "650px",
-              margin: "20px auto",
-              lineHeight: "2",
-            }}
-          >
-            <li>AI-powered data analysis using ChatGPT and Claude</li>
-            <li>BigQuery data extraction, querying, and interpretation</li>
-            <li>Automated reporting and insight generation</li>
-            <li>Marketing performance analysis across channels</li>
-            <li>Connecting search visibility with analytics data</li>
-            <li>Ongoing consulting and team enablement</li>
-          </ul>
+        <div className="col-2 unset reverse-mobile container">
+          <div className="img-center">
+            <Image
+              src="/images/ai-data-extraction.png"
+              alt="AI Data Extraction and Analytics"
+              width={705}
+              height={461}
+            />
+          </div>
+          <div className="sub-intro">
+            <SectionLabel teal>How We Help</SectionLabel>
+            <p
+              className="sub-intro-details"
+              style={{
+                maxWidth: "515px",
+                margin: "0 auto 20px auto",
+              }}
+            >
+              We combine <b>AI analytics consulting</b> with practical, hands-on
+              support to help your team apply AI in meaningful ways.
+            </p>
+            <ul
+              className="sub-intro-details"
+              style={{
+                textAlign: "left",
+                maxWidth: "515px",
+                margin: "20px auto",
+                lineHeight: "2",
+              }}
+            >
+              <li>AI-powered data analysis using ChatGPT and Claude</li>
+              <li>BigQuery data extraction, querying, and interpretation</li>
+              <li>Automated reporting and insight generation</li>
+              <li>Marketing performance analysis across channels</li>
+              <li>Connecting search visibility with analytics data</li>
+              <li>Ongoing consulting and team enablement</li>
+            </ul>
+          </div>
         </div>
       </section>
 
