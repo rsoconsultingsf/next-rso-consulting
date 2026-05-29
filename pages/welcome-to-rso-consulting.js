@@ -4,7 +4,7 @@ import Head from "next/head";
 
 import Hero from "../components/heroSection/heroSection";
 
-import heroImage from "../public/images/hero/rso-hero_contact.png";
+import heroImage from "../assets/images/hero/rso-hero_contact.png";
 
 const ThankYou = () => {
   return (

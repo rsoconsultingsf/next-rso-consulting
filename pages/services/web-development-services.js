@@ -10,7 +10,7 @@ import ServiceCard from "../../components/UI/Cards/ServiceCard";
 import WebsiteCard from "../../components/UI/Cards/WebsiteCard";
 import ContactSection from "../../components/Contact/ContactSection";
 
-import heroImage from "../../public/images/hero/rso-hero_web-design.png";
+import heroImage from "../../assets/images/hero/rso-hero_web-design.png";
 
 const WebDevelopmentServices = () => {
   return (

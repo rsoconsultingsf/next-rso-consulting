@@ -8,7 +8,7 @@ import SectionLabel from "../../components/UI/Labels/SectionLabel";
 import ContactSection from "../../components/Contact/ContactSection";
 import Button from "../../components/UI/Buttons/Button";
 
-import heroImage from "../../public/images/hero/non-profits.png";
+import heroImage from "../../assets/images/hero/non-profits.png";
 
 const NonprofitDigitalMarketingServices = () => {
   return (

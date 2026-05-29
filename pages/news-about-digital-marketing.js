@@ -8,7 +8,7 @@ import ContactSection from "../components/Contact/ContactSection";
 import Button from "../components/UI/Buttons/Button";
 import RssItem from "../components/RSS/RssItem";
 
-import heroImage from "../public/images/hero/rso-hero_news.png";
+import heroImage from "../assets/images/hero/rso-hero_news.png";
 
 import { FEEDS, getFeed } from "../data/rss";
 

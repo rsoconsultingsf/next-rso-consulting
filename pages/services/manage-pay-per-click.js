@@ -10,7 +10,7 @@ import ContactSection from "../../components/Contact/ContactSection";
 import Button from "../../components/UI/Buttons/Button";
 import PPCSlider from "../../components/Sliders/PPCSlider";
 
-import heroImage from "../../public/images/hero/rso-hero_ppc.png";
+import heroImage from "../../assets/images/hero/rso-hero_ppc.png";
 
 const ManagePayPerClick = () => {
   return (

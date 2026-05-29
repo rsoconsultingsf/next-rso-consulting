@@ -7,7 +7,7 @@ import Header from "../components/Layout/Header";
 
 import ContactSection from "../components/Contact/ContactSection";
 
-import heroImage from "../public/images/hero/rso-hero_contact.png";
+import heroImage from "../assets/images/hero/rso-hero_contact.png";
 
 const ContactUs = () => {
   return (

@@ -9,7 +9,7 @@ import ServiceCard from "../../components/UI/Cards/ServiceCard";
 import ContactSection from "../../components/Contact/ContactSection";
 import Button from "../../components/UI/Buttons/Button";
 
-import heroImage from "../../public/images/hero/ai-search-optimization.png";
+import heroImage from "../../assets/images/hero/ai-search-optimization.png";
 
 const AISearchOptimization = () => {
   return (

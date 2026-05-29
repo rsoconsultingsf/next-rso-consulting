@@ -17,7 +17,7 @@ import {
   getCategoryPostPreviews,
 } from "../../../lib/api";
 
-import heroImage from "../../../public/images/hero/rso-hero_blog.png";
+import heroImage from "../../../assets/images/hero/rso-hero_blog.png";
 
 import styles from "../../../styles/Archive.module.css";
 

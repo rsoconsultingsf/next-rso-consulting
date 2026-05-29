@@ -9,7 +9,7 @@ import ServiceCard from "../../components/UI/Cards/ServiceCard";
 import ContactSection from "../../components/Contact/ContactSection";
 import Button from "../../components/UI/Buttons/Button";
 
-import heroImage from "../../public/images/hero/rso-hero_a-b-testing.png";
+import heroImage from "../../assets/images/hero/rso-hero_a-b-testing.png";
 
 const ABTesting = () => {
   return (

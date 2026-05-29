@@ -10,7 +10,7 @@ import ServiceCard from "../components/UI/Cards/ServiceCard";
 import Testimonials from "../components/Testimonials/Testimonials";
 import ContactSection from "../components/Contact/ContactSection";
 
-import heroImage from "../public/images/hero/digital-marketing-agency.png";
+import heroImage from "../assets/images/hero/digital-marketing-agency.png";
 
 const Home = () => {
   return (

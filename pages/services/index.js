@@ -9,7 +9,7 @@ import SectionLabel from "../../components/UI/Labels/SectionLabel";
 import ServiceCard from "../../components/UI/Cards/ServiceCard";
 import ContactSection from "../../components/Contact/ContactSection";
 
-import heroImage from "../../public/images/hero/rso-hero_services.png";
+import heroImage from "../../assets/images/hero/rso-hero_services.png";
 
 const Services = () => {
   return (

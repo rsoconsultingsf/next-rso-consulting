@@ -7,7 +7,7 @@ import Hero from "../components/heroSection/heroSection";
 import SectionLabel from "../components/UI/Labels/SectionLabel";
 import ContactSection from "../components/Contact/ContactSection";
 
-import heroImage from "../public/images/hero/rso-hero_about-us.png";
+import heroImage from "../assets/images/hero/rso-hero_about-us.png";
 
 const AboutUs = () => {
   return (
