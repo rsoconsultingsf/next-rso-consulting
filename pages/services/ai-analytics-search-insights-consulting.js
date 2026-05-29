@@ -43,8 +43,11 @@ const AIAnalyticsSearchInsightsConsulting = () => {
           with the insights.
         </h2>
         <div
-          className="col-2-hero"
-          style={{ gridAutoRows: "auto" }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
         >
           <Button anchor="contact">Free Consultation</Button>
         </div>
