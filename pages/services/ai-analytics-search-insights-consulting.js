@@ -46,12 +46,7 @@ const AIAnalyticsSearchInsightsConsulting = () => {
           className="col-2-hero"
           style={{ gridAutoRows: "auto" }}
         >
-          <Button
-            color="orange"
-            link="#contact"
-          >
-            Free Consultation
-          </Button>
+          <Button anchor="contact">Free Consultation</Button>
         </div>
       </Hero>
 
