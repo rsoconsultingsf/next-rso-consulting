@@ -40,6 +40,10 @@ const navLinks = [
         path: "/services/affiliate-marketing/",
       },
       {
+        name: "Fractional CMO",
+        path: "/services/fractional-cmo-services/",
+      },
+      {
         name: "Google Marketing Platform",
         path: "/services/google-marketing-platform-consulting-training/",
       },
