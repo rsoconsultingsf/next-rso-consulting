@@ -52,12 +52,6 @@ const AIAnalyticsSearchInsightsConsulting = () => {
           >
             Free Consultation
           </Button>
-          <Button
-            color="blue"
-            link="#contact"
-          >
-            Contact Us
-          </Button>
         </div>
       </Hero>
 
