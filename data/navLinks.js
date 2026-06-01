@@ -44,8 +44,8 @@ const navLinks = [
         path: "/services/fractional-cmo-services/",
       },
       {
-        name: "Google Marketing Platform",
-        path: "/services/google-marketing-platform-consulting-training/",
+        name: "AI Analytics & Search Insights Consulting",
+        path: "/services/ai-analytics-search-insights-consulting/",
       },
     ],
   },
