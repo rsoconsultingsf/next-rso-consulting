@@ -77,9 +77,9 @@ const AIAnalyticsSearchInsightsConsulting = () => {
               margin: "0 auto 20px auto",
             }}
           >
-            Our <b>AI analytics consulting</b> helps your team use tools like
-            ChatGPT, Claude, and BigQuery to extract, analyze, and act on your
-            data faster. We connect those insights to your visibility in
+            Our <b>AI analytics consulting</b> &nbsp;helps your team use tools
+            like ChatGPT, Claude, and BigQuery to extract, analyze, and act on
+            your data faster. We connect those insights to your visibility in
             AI-driven search, giving you a clearer picture of what&apos;s
             working — and what to do next.
           </p>
