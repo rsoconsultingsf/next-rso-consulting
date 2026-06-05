@@ -140,32 +140,58 @@ const NonprofitDigitalMarketingServices = () => {
       </section>
 
       {/* Ama Foundation */}
-      <section>
-        <div className="col-2 unset container">
-          <div className="img-center">
-            <Image
-              src="/images/non-profit/ama-logo.png"
-              alt="Ama Foundation / Ama Ghar Logo"
-              width={360}
-              height={80}
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }}
-            />
+      <section style={{ paddingBottom: "60px" }}>
+        <div className="container">
+          <div
+            className="col-2 unset"
+            style={{ marginBottom: "30px" }}
+          >
+            <div className="img-center">
+              <Image
+                src="/images/non-profit/ama-logo.png"
+                alt="Ama Foundation / Ama Ghar Logo"
+                width={360}
+                height={80}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
+            <div className="img-center">
+              <Image
+                src="/images/non-profit/AmaGharImage.png"
+                alt="Ama Foundation kids"
+                width={800}
+                height={468}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
           </div>
-          <div className="sub-intro">
+          <div
+            className="sub-intro"
+            style={{ textAlign: "center" }}
+          >
             <h3
               className="sub-headline"
-              style={{ maxWidth: "515px", margin: "0 auto 20px auto" }}
+              style={{ maxWidth: "1030px", margin: "0 auto 20px auto" }}
             >
               <b>Ama Foundation / Ama Ghar</b>
             </h3>
-            <p className="sub-intro-details">
+            <p
+              className="sub-intro-details"
+              style={{ maxWidth: "1024px" }}
+            >
               A nonprofit dedicated to supporting vulnerable children in Nepal
               through its Ama Ghar home.
             </p>
-            <p className="sub-intro-details">
+            <p
+              className="sub-intro-details"
+              style={{ maxWidth: "1024px" }}
+            >
               The organization provides food, shelter, healthcare, and education
               to children who have been orphaned, abandoned, or affected by
               poverty and trafficking. Its mission is simple but powerful: give
@@ -184,20 +210,58 @@ const NonprofitDigitalMarketingServices = () => {
       </section>
 
       {/* GiveLight Foundation */}
-      <section>
-        <div className="col-2 unset reverse-mobile container">
-          <div className="sub-intro">
+      <section style={{ paddingTop: "60px", paddingBottom: "60px" }}>
+        <div className="container">
+          <div
+            className="col-2 unset"
+            style={{ marginBottom: "30px" }}
+          >
+            <div className="img-center">
+              <Image
+                src="/images/non-profit/givelight-logo.jpg"
+                alt="GiveLight Foundation Logo"
+                width={380}
+                height={300}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
+            <div className="img-center">
+              <Image
+                src="/images/non-profit/GiveLightImage.png"
+                alt="GiveLight Foundation kids"
+                width={800}
+                height={733}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
+          </div>
+          <div
+            className="sub-intro"
+            style={{ textAlign: "center" }}
+          >
             <h3
               className="sub-headline"
-              style={{ maxWidth: "515px", margin: "0 auto 20px auto" }}
+              style={{ maxWidth: "1030px", margin: "0 auto 20px auto" }}
             >
               <b>GiveLight Foundation</b>
             </h3>
-            <p className="sub-intro-details">
+            <p
+              className="sub-intro-details"
+              style={{ maxWidth: "1024px" }}
+            >
               A global nonprofit focused on building homes and futures for
               orphaned and at-risk children.
             </p>
-            <p className="sub-intro-details">
+            <p
+              className="sub-intro-details"
+              style={{ maxWidth: "1024px" }}
+            >
               Operating across more than a dozen countries, GiveLight provides
               long-term care, education, and a stable, family-like environment
               to help children reach their full potential.
@@ -211,48 +275,62 @@ const NonprofitDigitalMarketingServices = () => {
               </Button>
             </div>
           </div>
-          <div className="img-center">
-            <Image
-              src="/images/non-profit/givelight-logo.jpg"
-              alt="GiveLight Foundation Logo"
-              width={380}
-              height={300}
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
         </div>
       </section>
 
       {/* Sneaky Saves */}
-      <section>
-        <div className="col-2 unset container">
-          <div className="img-center">
-            <Image
-              src="/images/non-profit/logo_sneaky-saves.png"
-              alt="Sneaky Saves Logo"
-              width={204}
-              height={195}
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }}
-            />
+      <section style={{ paddingTop: "60px", paddingBottom: "60px" }}>
+        <div className="container">
+          <div
+            className="col-2 unset"
+            style={{ marginBottom: "30px" }}
+          >
+            <div className="img-center">
+              <Image
+                src="/images/non-profit/logo_sneaky-saves.png"
+                alt="Sneaky Saves Logo"
+                width={204}
+                height={195}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
+            <div className="img-center">
+              <Image
+                src="/images/non-profit/SneakySaveImage.png"
+                alt="Sneaky Saves presentation"
+                width={800}
+                height={755}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
           </div>
-          <div className="sub-intro">
+          <div
+            className="sub-intro"
+            style={{ textAlign: "center" }}
+          >
             <h3
               className="sub-headline"
-              style={{ maxWidth: "515px", margin: "0 auto 20px auto" }}
+              style={{ maxWidth: "1030px", margin: "0 auto 20px auto" }}
             >
               <b>Sneaky Saves</b>
             </h3>
-            <p className="sub-intro-details">
+            <p
+              className="sub-intro-details"
+              style={{ maxWidth: "1024px" }}
+            >
               A nonprofit focused on financial literacy for underserved high
               school students.
             </p>
-            <p className="sub-intro-details">
+            <p
+              className="sub-intro-details"
+              style={{ maxWidth: "1024px" }}
+            >
               Through engaging, real-world education, Sneaky Saves helps young
               people build essential skills in saving, investing, and financial
               decision-making—setting them up for long-term independence and
@@ -271,20 +349,59 @@ const NonprofitDigitalMarketingServices = () => {
       </section>
 
       {/* Mare Blu */}
-      <section>
-        <div className="col-2 unset reverse-mobile container">
-          <div className="sub-intro">
+      <section style={{ paddingTop: "60px", paddingBottom: "60px" }}>
+        <div className="container">
+          <div
+            className="col-2 unset"
+            style={{ marginBottom: "30px" }}
+          >
+            <div className="img-center">
+              <Image
+                src="/images/non-profit/Mareblu-logo.png"
+                alt="Mare Blu Logo"
+                width={600}
+                height={166}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
+            <div className="img-center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/jhTbim1xguw?si=JofgCxAaU21yEMfr"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                style={{ maxWidth: "100%", borderRadius: "8px" }}
+              ></iframe>
+            </div>
+          </div>
+          <div
+            className="sub-intro"
+            style={{ textAlign: "center" }}
+          >
             <h3
               className="sub-headline"
-              style={{ maxWidth: "515px", margin: "0 auto 20px auto" }}
+              style={{ maxWidth: "1030px", margin: "0 auto 20px auto" }}
             >
               <b>Mare Blu</b>
             </h3>
-            <p className="sub-intro-details">
+            <p
+              className="sub-intro-details"
+              style={{ maxWidth: "1024px" }}
+            >
               An environmental conservation nonprofit based in Costa Rica,
               dedicated to making oceans, rivers, and coastlines plastic free.
             </p>
-            <p className="sub-intro-details">
+            <p
+              className="sub-intro-details"
+              style={{ maxWidth: "1024px" }}
+            >
               Through coastal cleanup expeditions, artificial reef projects, and
               an international volunteer program spanning more than 25
               countries, Mare Blu is driving real change for marine ecosystems
@@ -298,18 +415,6 @@ const NonprofitDigitalMarketingServices = () => {
                 Learn More
               </Button>
             </div>
-          </div>
-          <div className="img-center">
-            <Image
-              src="/images/non-profit/Mareblu-logo.png"
-              alt="Mare Blu Logo"
-              width={600}
-              height={166}
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }}
-            />
           </div>
         </div>
       </section>
