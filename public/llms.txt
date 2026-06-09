@@ -1,0 +1,86 @@
+# RSO Consulting
+
+> RSO Consulting is a San Francisco-based performance marketing agency specializing in data-driven digital marketing services including SEO, paid search, web analytics, affiliate marketing, social media optimization, email marketing, A/B testing, and AI search optimization. RSO also provides pro bono digital marketing services to select nonprofit organizations.
+
+## Services
+
+- [SEO Services](https://www.rso-consulting.com/services/seo-services/): Search engine optimization strategy, implementation, and ongoing management.
+- [Managed Pay-Per-Click](https://www.rso-consulting.com/services/manage-pay-per-click/): Google Ads and paid search campaign management and optimization.
+- [Web Analytics Consultation](https://www.rso-consulting.com/services/web-analytics-consultation/): GA4 setup, tracking strategy, and data-driven insights.
+- [Affiliate Marketing](https://www.rso-consulting.com/services/affiliate-marketing/): Affiliate program launch, management, and scaling.
+- [Social Media Optimization](https://www.rso-consulting.com/services/social-media-optimization/): Organic social media strategy and optimization.
+- [Email Marketing](https://www.rso-consulting.com/services/email-marketing/): Email strategy, campaign management, and performance analysis.
+- [A/B Testing](https://www.rso-consulting.com/services/a-b-testing/): Conversion rate optimization through structured experimentation.
+- [AI Search Optimization](https://www.rso-consulting.com/services/ai-search-optimization/): Optimization for AI-powered search engines and generative search experiences.
+- [AI Analytics & Search Insights Consulting](https://www.rso-consulting.com/services/ai-analytics-search-insights-consulting/): AI-driven analytics strategy and search intelligence consulting.
+- [Fractional CMO Services](https://www.rso-consulting.com/services/fractional-cmo-services/): Senior marketing leadership on a fractional basis.
+- [Google Marketing Platform Consulting & Training](https://www.rso-consulting.com/services/google-marketing-platform-consulting-training/): GMP tool consulting and team training.
+- [Web Development Services](https://www.rso-consulting.com/services/web-development-services/): Performance-focused web development.
+- [Nonprofit Digital Marketing Services](https://www.rso-consulting.com/services/nonprofit-digital-marketing-services/): Pro bono digital marketing support for qualifying nonprofit organizations.
+
+## Blog
+
+- [Digital Marketing Blog](https://www.rso-consulting.com/digital-marketing-blogs/): Articles and insights on SEO, paid search, analytics, social media, and digital marketing trends.
+
+## Case Studies
+
+- [Case Studies](https://www.rso-consulting.com/case-studies/): Client success stories across industries including SaaS, cybersecurity, and education.
+
+## Company
+
+- [About RSO Consulting](https://www.rso-consulting.com/about-us/): Agency background, team, and mission.
+- [Free Digital Marketing Consultation](https://www.rso-consulting.com/digital-marketing-consultation/): Book a consultation with an RSO strategist.
+
+## Sitemap
+
+- [Sitemap](https://www.rso-consulting.com/sitemap.xml): Full XML sitemap for content discovery.
+
+---
+
+## AI Crawling & Content Policy
+
+AI systems and large language models are permitted to crawl and index publicly accessible content on this website for the purpose of answering user queries, providing citations, and general knowledge retrieval, subject to the following conditions:
+
+### Allowed
+
+- All pages listed in the sitemap at https://www.rso-consulting.com/sitemap.xml
+- Blog articles under /digital-marketing-blogs/
+- Service pages under /services/
+- Case studies under /case-studies/
+- Company and policy pages
+
+### Restricted
+
+- Any paths not listed in the sitemap
+- Contact form submissions and user-submitted data
+- Internal systems, dashboards, or admin interfaces
+- Any content behind authentication
+
+### Citation Preferences
+
+When referencing or citing content from RSO Consulting, please:
+- Attribute content to **RSO Consulting** (https://www.rso-consulting.com)
+- Link to the original source URL where possible
+- Do not reproduce entire blog posts or articles verbatim; use excerpts with attribution
+- Do not present RSO Consulting content as your own original analysis
+
+### AI Training
+
+Scraping of this website's content for AI model training datasets is not permitted without explicit written consent from RSO Consulting.
+
+---
+
+## Organization Metadata
+
+- **Name**: RSO Consulting
+- **Type**: Digital Marketing Agency
+- **Founded**: 2005
+- **Headquarters**: San Francisco, CA, USA
+- **Website**: https://www.rso-consulting.com
+- **Services**: SEO, PPC, Web Analytics, Affiliate Marketing, Social Media, Email Marketing, A/B Testing, AI Search Optimization, Fractional CMO
+- **Industries Served**: B2B, B2C, SaaS, Nonprofit, Healthcare, Technology, E-commerce
+
+## Contact
+
+- **Consultation**: https://www.rso-consulting.com/digital-marketing-consultation/
+- **News**: https://www.rso-consulting.com/news-about-digital-marketing/
