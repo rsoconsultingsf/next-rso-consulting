@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Button from "../../components/UI/Buttons/Button";
 import Hero from "../../components/heroSection/heroSection";
@@ -12,6 +13,11 @@ import ContactSection from "../../components/Contact/ContactSection";
 import heroImage from "../../assets/images/hero/rso-hero_services.png";
 
 const Services = () => {
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -21,6 +27,11 @@ const Services = () => {
         <meta
           name="description"
           content="RSO offers data-driven digital marketing solutions: SEO, paid advertising, social media marketing, email marketing, affiliate marketing and Web development."
+        />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </Head>
       <Hero

@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Head from "next/head";
 import Image from "next/legacy/image";
+import { breadcrumb } from "../../lib/schemas";
 
 import Button from "../../components/UI/Buttons/Button";
 import Hero from "../../components/heroSection/heroSection";
@@ -13,6 +14,29 @@ import ContactSection from "../../components/Contact/ContactSection";
 import heroImage from "../../assets/images/hero/rso-hero_web-design.png";
 
 const WebDevelopmentServices = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Web Development Services",
+    serviceType: "Web Development",
+    description:
+      "RSO has partnered with Alkalyne Solutions to provide professional custom web development services. Over 30 years of experience in designing and developing websites, web portals, and more.",
+    url: "https://www.rso-consulting.com/services/web-development-services/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/web-development-services/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "Web Development Services",
+      url: "https://www.rso-consulting.com/services/web-development-services/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -23,6 +47,15 @@ const WebDevelopmentServices = () => {
         <meta
           name="description"
           content="RSO has partnered with Alkalyne Solutions to provide professional custom web development services. Over 30 years of experience in designing and developing websites, web portals, and more."
+        />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </Head>
       <Hero

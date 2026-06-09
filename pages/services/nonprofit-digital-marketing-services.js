@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -11,6 +12,29 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../assets/images/hero/non-profits.png";
 
 const NonprofitDigitalMarketingServices = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Nonprofit Digital Marketing Services",
+    serviceType: "Nonprofit Digital Marketing",
+    description:
+      "RSO Consulting provides pro bono marketing services and nonprofit digital marketing services to help organizations grow visibility, reach, and impact.",
+    url: "https://www.rso-consulting.com/services/nonprofit-digital-marketing-services/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/nonprofit-digital-marketing-services/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "Nonprofit Digital Marketing Services",
+      url: "https://www.rso-consulting.com/services/nonprofit-digital-marketing-services/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -18,6 +42,15 @@ const NonprofitDigitalMarketingServices = () => {
         <meta
           name="description"
           content="RSO Consulting provides pro bono marketing services and nonprofit digital marketing services to help organizations grow visibility, reach, and impact."
+        />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </Head>
       <Hero

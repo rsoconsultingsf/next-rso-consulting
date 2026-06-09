@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -12,6 +13,29 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../assets/images/hero/ai-search-optimization.png";
 
 const AISearchOptimization = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "AI Search Optimization",
+    serviceType: "AI Search Optimization",
+    description:
+      "Position your brand for AI-driven discovery. RSO's AI Search Optimization framework helps improve how your brand appears in ChatGPT, Google AI Overviews, Perplexity, and other AI-generated responses.",
+    url: "https://www.rso-consulting.com/services/ai-search-optimization/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/ai-search-optimization/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "AI Search Optimization",
+      url: "https://www.rso-consulting.com/services/ai-search-optimization/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -19,6 +43,15 @@ const AISearchOptimization = () => {
         <meta
           name="description"
           content="Position your brand for AI-driven discovery. RSO's AI Search Optimization framework helps improve how your brand appears in ChatGPT, Google AI Overviews, Perplexity, and other AI-generated responses."
+        />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </Head>
       <Hero

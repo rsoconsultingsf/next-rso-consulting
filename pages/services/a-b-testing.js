@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -12,6 +13,28 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../assets/images/hero/rso-hero_a-b-testing.png";
 
 const ABTesting = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "A/B Testing & Conversion Rate Optimization",
+    serviceType: "A/B Testing and Conversion Rate Optimization",
+    description:
+      "RSO's AB testing methodology leverages best practices by testing UI/UX and other variations in order to improve your website behavior and conversion rates.",
+    url: "https://www.rso-consulting.com/services/a-b-testing/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage: "https://www.rso-consulting.com/services/a-b-testing/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "A/B Testing",
+      url: "https://www.rso-consulting.com/services/a-b-testing/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -20,8 +43,21 @@ const ABTesting = () => {
           name="description"
           content="RSO's AB testing methodology leverages best practices by testing UI/UX and other variations in order to improve your website behavior and conversion rates. "
         />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       </Head>
-      <Hero image={heroImage} alt="" anchor="#cards">
+      <Hero
+        image={heroImage}
+        alt=""
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>A/B</b> <br />
           Testing
@@ -68,8 +104,9 @@ const ABTesting = () => {
               height={461}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="sub-intro">
             <SectionLabel red>What Is A/B Testing?</SectionLabel>
@@ -91,7 +128,10 @@ const ABTesting = () => {
         </div>
       </section>
       <section id="cards">
-        <div className="container center" style={{ paddingBottom: "30px" }}>
+        <div
+          className="container center"
+          style={{ paddingBottom: "30px" }}
+        >
           <SectionLabel blue>How Can We Help?</SectionLabel>
         </div>
         <div className="col-2 short unset container center">
@@ -104,8 +144,9 @@ const ABTesting = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Methodology:"
             details={
@@ -133,8 +174,9 @@ const ABTesting = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Testing Options:"
             details={
@@ -154,8 +196,9 @@ const ABTesting = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Testing Opportunities:"
             details={
@@ -175,8 +218,9 @@ const ABTesting = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Management:"
             details={

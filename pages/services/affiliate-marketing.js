@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -12,6 +13,15 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../assets/images/hero/rso-hero_affiliate-marketing.png";
 
 const AffiliateMarketing = () => {
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "Affiliate Marketing",
+      url: "https://www.rso-consulting.com/services/affiliate-marketing/",
+    },
+  ]);
+
   const schema = {
     "@context": "https://schema.org/",
     "@type": "Service",
@@ -71,16 +81,32 @@ const AffiliateMarketing = () => {
         />
 
         {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
-        <meta name="twitter:creator" content="rso_consulting" key="twhandle" />
+        <meta
+          name="twitter:card"
+          content="summary"
+          key="twcard"
+        />
+        <meta
+          name="twitter:creator"
+          content="rso_consulting"
+          key="twhandle"
+        />
 
         {/* Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       </Head>
-      <Hero image={heroImage} alt="" anchor="#cards">
+      <Hero
+        image={heroImage}
+        alt=""
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Affiliate Marketing</b> <br />
           Management Solutions
@@ -126,8 +152,9 @@ const AffiliateMarketing = () => {
               height={461}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="sub-intro">
             <SectionLabel red>What Is Affiliate Marketing?</SectionLabel>
@@ -153,7 +180,10 @@ const AffiliateMarketing = () => {
       <section id="cards">
         <div className="container center">
           <SectionLabel blue>How Can We Help?</SectionLabel>
-          <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
+          <h2
+            className="sub-headline"
+            style={{ margin: "0 auto 30px auto" }}
+          >
             <b>Affiliate marketing</b> is an effective way to generate
             additional revenue for your business, but only if you do it right.
             We provide a <b>comprehensive affiliate management service</b> that
@@ -175,8 +205,9 @@ const AffiliateMarketing = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Outreach"
             details={
@@ -204,8 +235,9 @@ const AffiliateMarketing = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Affiliate Development"
             details={
@@ -231,8 +263,9 @@ const AffiliateMarketing = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="End-to-End Management "
             details={

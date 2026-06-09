@@ -18,6 +18,7 @@ import {
 import Head from "next/head";
 import ErrorPage from "next/error";
 import { useRouter } from "next/router";
+import { breadcrumb } from "../../lib/schemas";
 
 import styles from "../../styles/Post.module.css";
 
@@ -46,6 +47,18 @@ export default function Post({
   let schemaImage = "";
 
   metaFeaturedImage ? (schemaImage = metaFeaturedImage) : (schemaImage = "");
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    {
+      name: "Blog",
+      url: "https://www.rso-consulting.com/digital-marketing-blogs/",
+    },
+    {
+      name: seoTitle || postTitle,
+      url: `https://www.rso-consulting.com${router.asPath}`,
+    },
+  ]);
 
   const schema = {
     "@context": "https://schema.org/",
@@ -112,6 +125,10 @@ export default function Post({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </Head>
       {preview && <Alert />}

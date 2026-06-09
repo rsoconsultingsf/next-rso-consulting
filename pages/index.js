@@ -1,6 +1,11 @@
 import { Fragment } from "react";
 
 import Head from "next/head";
+import {
+  organizationSchema,
+  webSiteSchema,
+  localBusinessSchema,
+} from "../lib/schemas";
 import Image from "next/legacy/image";
 
 import Button from "../components/UI/Buttons/Button";
@@ -20,6 +25,23 @@ const Home = () => {
         <meta
           name="description"
           content="RSO is a full-service digital marketing agency in San Francisco, offering SEO, PPC, Social Media, Web Design and Analytics. Call 415-992-3830."
+        />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
         />
       </Head>
       <Hero

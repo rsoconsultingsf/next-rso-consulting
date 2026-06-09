@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -12,6 +13,29 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../assets/images/hero/rso-hero_web-analytics-consulting.png";
 
 const WebAnalytricsConsultation = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Web Analytics Consultation",
+    serviceType: "Web Analytics Consulting",
+    description:
+      "Do you want to increase your website traffic? RSO, a web analytics consultancy, uses tech-forward solutions to help you understand your users & propel your online success.",
+    url: "https://www.rso-consulting.com/services/web-analytics-consultation/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/web-analytics-consultation/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "Web Analytics Consultation",
+      url: "https://www.rso-consulting.com/services/web-analytics-consultation/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -20,8 +44,21 @@ const WebAnalytricsConsultation = () => {
           name="description"
           content="Do you want to increase your website traffic? RSO, a web analytics consultancy, uses tech-forward solutions to you understand your users & propel your online success."
         />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       </Head>
-      <Hero image={heroImage} alt="" anchor="#cards">
+      <Hero
+        image={heroImage}
+        alt=""
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Reliable</b> <br />
           Web Analytics Services
@@ -69,8 +106,9 @@ const WebAnalytricsConsultation = () => {
               height={461}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="sub-intro">
             <SectionLabel red>What are your visitors doing?</SectionLabel>
@@ -98,7 +136,10 @@ const WebAnalytricsConsultation = () => {
       <section id="cards">
         <div className="container center">
           <SectionLabel blue>Data-Driven Marketing</SectionLabel>
-          <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
+          <h2
+            className="sub-headline"
+            style={{ margin: "0 auto 30px auto" }}
+          >
             <b>Data</b> is a valuable commodity for{" "}
             <b>improving website performance</b>. Whether your site is{" "}
             <b>lead generation</b> or <b>e-commerce</b>, our methodology will{" "}
@@ -116,8 +157,9 @@ const WebAnalytricsConsultation = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Configuration:"
             details={
@@ -137,8 +179,9 @@ const WebAnalytricsConsultation = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Analysis:"
             details={
@@ -160,8 +203,9 @@ const WebAnalytricsConsultation = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Management:"
             details={

@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -12,6 +13,29 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../assets/images/hero/fractional-cmo.png";
 
 const FractionalCMOServices = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Fractional CMO Services",
+    serviceType: "Fractional Chief Marketing Officer",
+    description:
+      "RSO Consulting's Fractional CMO services deliver executive-level marketing leadership focused on measurable business growth without the full-time overhead.",
+    url: "https://www.rso-consulting.com/services/fractional-cmo-services/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/fractional-cmo-services/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "Fractional CMO Services",
+      url: "https://www.rso-consulting.com/services/fractional-cmo-services/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -19,6 +43,15 @@ const FractionalCMOServices = () => {
         <meta
           name="description"
           content="RSO Consulting's Fractional CMO services deliver executive-level marketing leadership focused on measurable business growth without the full-time overhead."
+        />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </Head>
       <Hero

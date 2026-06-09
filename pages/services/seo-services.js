@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -12,6 +13,28 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../assets/images/hero/rso-hero_seo.png";
 
 const SEOServices = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "SEO Services",
+    serviceType: "Search Engine Optimization",
+    description:
+      "Award-winning digital marketing agency providing SEO services. Our specialists design customized strategies to help achieve success via organic search.",
+    url: "https://www.rso-consulting.com/services/seo-services/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage: "https://www.rso-consulting.com/services/seo-services/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "SEO Services",
+      url: "https://www.rso-consulting.com/services/seo-services/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -19,6 +42,15 @@ const SEOServices = () => {
         <meta
           name="description"
           content="Award-winning digital marketing agency providing SEO services. Our specialists design customized strategies to help achieve success via organic search."
+        />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </Head>
       <Hero
@@ -68,8 +100,9 @@ const SEOServices = () => {
               height={461}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="sub-intro">
             <SectionLabel red>What is the value of SEO services?</SectionLabel>
@@ -91,7 +124,10 @@ const SEOServices = () => {
       <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
-          <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
+          <h2
+            className="sub-headline"
+            style={{ margin: "0 auto 30px auto" }}
+          >
             Our <b>SEO services</b> help you build a{" "}
             <b>powerful, fully-integrated strategy</b> for <b>organic search</b>
             .
@@ -107,8 +143,9 @@ const SEOServices = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="On-page Optimization"
             description="The first step in our SEO strategy, on-page optimization 
@@ -126,8 +163,9 @@ const SEOServices = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Off-page Optimization"
             description="Off-page SEO is the optimization happening off the page and, 
@@ -145,8 +183,9 @@ const SEOServices = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Technical Audit"
             description="The technical audit process ensures your website is 
@@ -173,8 +212,15 @@ const SEOServices = () => {
           <h2 className="sub-headline">
             <b>Clutch Top SEO Consultant</b>
           </h2>
-          <p className="sub-intro-details" style={{ maxWidth: "850px" }}>
-            <a href="https://clutch.co/" target="_blank" rel="noreferrer">
+          <p
+            className="sub-intro-details"
+            style={{ maxWidth: "850px" }}
+          >
+            <a
+              href="https://clutch.co/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Clutch.co
             </a>{" "}
             is the leading review site for firms nationwide. With 98,000+

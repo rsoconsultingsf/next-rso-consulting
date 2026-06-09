@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -13,6 +14,29 @@ import PPCSlider from "../../components/Sliders/PPCSlider";
 import heroImage from "../../assets/images/hero/rso-hero_ppc.png";
 
 const ManagePayPerClick = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Managed Pay-Per-Click Advertising",
+    serviceType: "Pay-Per-Click Campaign Management",
+    description:
+      "Boost brand awareness, sales, and revenue with best-in-class paid search management. RSO's pay-per-click campaign management services can help you do just that!",
+    url: "https://www.rso-consulting.com/services/manage-pay-per-click/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/manage-pay-per-click/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "Managed Pay-Per-Click",
+      url: "https://www.rso-consulting.com/services/manage-pay-per-click/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -23,8 +47,21 @@ const ManagePayPerClick = () => {
           name="description"
           content="Boost brand awareness, sales, and revenue with best-in-class paid search management. RSO's pay-per-click campaign management services can help you do just that!"
         />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       </Head>
-      <Hero image={heroImage} alt="Paid Search Graphic" anchor="#cards">
+      <Hero
+        image={heroImage}
+        alt="Paid Search Graphic"
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           Certified Seach Engine
           <br /> <span style={{ fontWeight: "400" }}>Marketing Services</span>
@@ -89,7 +126,10 @@ const ManagePayPerClick = () => {
       <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
-          <p className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
+          <p
+            className="sub-headline"
+            style={{ margin: "0 auto 30px auto" }}
+          >
             Our approach to <b>paid search advertising</b> and{" "}
             <b>management services</b> is in line with{" "}
             <b>Google&apos;s best practices</b> and all of our{" "}
@@ -107,8 +147,9 @@ const ManagePayPerClick = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Consider these important questions:"
             details={
@@ -137,8 +178,9 @@ const ManagePayPerClick = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Our initial analysis includes:"
             details={
@@ -164,8 +206,9 @@ const ManagePayPerClick = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Our ongoing management includes: "
             details={

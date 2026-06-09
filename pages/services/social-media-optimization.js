@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -12,6 +13,29 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../assets/images/hero/rso-hero_smo.png";
 
 const SocialMediaOptimization = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Social Media Optimization",
+    serviceType: "Social Media Marketing and Optimization",
+    description:
+      "RSO is an international social media marketing and optimization service that uses the power of social networks to connect brands with their audience.",
+    url: "https://www.rso-consulting.com/services/social-media-optimization/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/social-media-optimization/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "Social Media Optimization",
+      url: "https://www.rso-consulting.com/services/social-media-optimization/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -22,8 +46,21 @@ const SocialMediaOptimization = () => {
           name="description"
           content="RSO is an international social media marketing and optimization service that uses the power of social networks to connect brands with their audience. "
         />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       </Head>
-      <Hero image={heroImage} alt="" anchor="#cards">
+      <Hero
+        image={heroImage}
+        alt=""
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Social Media Optimization Services</b>
         </h1>
@@ -71,8 +108,9 @@ const SocialMediaOptimization = () => {
               height={461}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="sub-intro">
             <SectionLabel red>Successful Social Media</SectionLabel>
@@ -96,7 +134,10 @@ const SocialMediaOptimization = () => {
       <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
-          <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
+          <h2
+            className="sub-headline"
+            style={{ margin: "0 auto 30px auto" }}
+          >
             <b>RSO</b> can help you meet your <b>social media goals</b> in{" "}
             <b>four simple steps</b>:
           </h2>
@@ -114,8 +155,9 @@ const SocialMediaOptimization = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Platform Selection"
             description="The first step to successful social media marketing is understanding your audience and knowing where to reach them."
@@ -129,8 +171,9 @@ const SocialMediaOptimization = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Content Strategy & Creation"
             description="Whether it’s brand awareness or product sales, your social media marketing goals are key to building a successful content strategy. Our goal is to post with intent while still keeping the content on brand with your business."
@@ -144,8 +187,9 @@ const SocialMediaOptimization = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Schedule & Managing Engagement"
             description="To ensure timely posting, the approved content will be scheduled for publishing through our social media management platform. In addition to managing content, we are here to help manage engagement. Social media encourages two-way communication, so it’s important to stay connected and responsive."
@@ -159,8 +203,9 @@ const SocialMediaOptimization = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Analytics & Reporting"
             description="Last, but certainly not least, is measuring the social media metrics. This vital step allows us to see what is working well and what can be improved. From here we will analyze, adjust and continue to monitor."

@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -12,6 +13,29 @@ import Button from "../../components/UI/Buttons/Button";
 import heroImage from "../../assets/images/hero/rso-hero_email-marketing.png";
 
 const EmailMarketing = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Email Marketing Services",
+    serviceType: "Email Marketing",
+    description:
+      "The best email marketing service for businesses of all sizes. From strategy, automations, campaign management, copywriting, and deliverability - we do it all!",
+    url: "https://www.rso-consulting.com/services/email-marketing/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/email-marketing/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "Email Marketing",
+      url: "https://www.rso-consulting.com/services/email-marketing/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -20,8 +44,21 @@ const EmailMarketing = () => {
           name="description"
           content="The best email marketing service for businesses of all sizes. From strategy, automations, campaign management, copywriting, and deliverability - we do it all!"
         />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       </Head>
-      <Hero image={heroImage} alt="" anchor="#cards">
+      <Hero
+        image={heroImage}
+        alt=""
+        anchor="#cards"
+      >
         <h1 style={{ color: "#fff", textAlign: "center" }}>
           <b>Targeted Email</b> <br />
           Marketing Solutions
@@ -66,8 +103,9 @@ const EmailMarketing = () => {
               height={461}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className="sub-intro">
             <SectionLabel red>Marketing Through Email</SectionLabel>
@@ -96,7 +134,10 @@ const EmailMarketing = () => {
       <section id="cards">
         <div className="container center">
           <SectionLabel blue>What We Can Do For You</SectionLabel>
-          <h2 className="sub-headline" style={{ margin: "0 auto 30px auto" }}>
+          <h2
+            className="sub-headline"
+            style={{ margin: "0 auto 30px auto" }}
+          >
             Creating campaigns that are <b>well designed</b> and{" "}
             <b>carefully targeted</b> to <b>grow your business</b>.
           </h2>
@@ -111,8 +152,9 @@ const EmailMarketing = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Prioritize the opportunities that 
             drive revenue"
@@ -143,8 +185,9 @@ const EmailMarketing = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="Elevate your brand and drive conversion"
             details={
@@ -173,8 +216,9 @@ const EmailMarketing = () => {
                 width={160}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             }
             title="RSO Full Service"
             details={

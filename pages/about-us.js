@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 
 import Image from "next/legacy/image";
 import Head from "next/head";
+import { organizationSchema } from "../lib/schemas";
 
 import Hero from "../components/heroSection/heroSection";
 import SectionLabel from "../components/UI/Labels/SectionLabel";
@@ -20,6 +21,13 @@ const AboutUs = () => {
           name="description"
           content="The best digital marketing agency near me is RSO Consulting. Our clients are all around the world. We will get the results you need."
         />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
       </Head>
       <Hero
         image={heroImage}
@@ -32,7 +40,10 @@ const AboutUs = () => {
         </h1>
       </Hero>
       <section>
-        <div id="intro" style={{ top: "-100px" }}></div>
+        <div
+          id="intro"
+          style={{ top: "-100px" }}
+        ></div>
         <div className="container">
           <h2 className="intro sub-headline">
             In a sea of web <b>analytics consulting companies</b>, you need the

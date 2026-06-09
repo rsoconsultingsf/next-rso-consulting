@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import Image from "next/legacy/image";
 import Head from "next/head";
 import Link from "next/link";
+import { breadcrumb } from "../../lib/schemas";
 
 import Hero from "../../components/heroSection/heroSection";
 import SectionLabel from "../../components/UI/Labels/SectionLabel";
@@ -13,6 +14,29 @@ import TrainingTestimonials from "../../components/Sliders/TrainingTestimonialsS
 import heroImage from "../../assets/images/hero/ai-analytics.png";
 
 const AIAnalyticsSearchInsightsConsulting = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "AI Analytics & Search Insights Consulting",
+    serviceType: "AI Analytics Consulting",
+    description:
+      "Use AI to turn data into action. Our AI analytics consulting helps you analyze performance, automate reporting, and connect insights to AI-driven search.",
+    url: "https://www.rso-consulting.com/services/ai-analytics-search-insights-consulting/",
+    provider: { "@id": "https://www.rso-consulting.com/#organization" },
+    areaServed: "Worldwide",
+    mainEntityOfPage:
+      "https://www.rso-consulting.com/services/ai-analytics-search-insights-consulting/",
+  };
+
+  const breadcrumbSchema = breadcrumb([
+    { name: "Home", url: "https://www.rso-consulting.com/" },
+    { name: "Services", url: "https://www.rso-consulting.com/services/" },
+    {
+      name: "AI Analytics & Search Insights Consulting",
+      url: "https://www.rso-consulting.com/services/ai-analytics-search-insights-consulting/",
+    },
+  ]);
+
   return (
     <Fragment>
       <Head>
@@ -20,6 +44,15 @@ const AIAnalyticsSearchInsightsConsulting = () => {
         <meta
           name="description"
           content="Use AI to turn data into action. Our AI analytics consulting helps you analyze performance, automate reporting, and connect insights to AI-driven search."
+        />
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </Head>
       <Hero
