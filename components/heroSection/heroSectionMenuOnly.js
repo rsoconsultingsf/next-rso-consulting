@@ -49,7 +49,6 @@ const Hero = (props) => {
         isClosing={drawerIsClosing}
       >
         <MobileNav />
-        <p style={{ fontSize: "22px", fontWeight: "700" }}>Contact Us Today</p>
       </SideDrawer>
       <section
         className={styles["nav-container"]}

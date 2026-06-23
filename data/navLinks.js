@@ -66,6 +66,10 @@ const navLinks = [
     path: "/case-studies/",
   },
   {
+    name: "Giving Back",
+    path: "/services/nonprofit-digital-marketing-services/",
+  },
+  {
     name: "Get In Touch",
     path: "/digital-marketing-consultation/",
   },
