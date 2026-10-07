@@ -12,6 +12,7 @@ import Card from "../../components/UI/Cards/Card";
 import Categories from "../../components/Posts/Categories";
 
 import { getPostPreviews, getAllPostsCategories } from "../../lib/api";
+import { fetchPostPreviews } from "../../lib/fetchPostPreviews";
 
 import heroImage from "../../assets/images/hero/rso-hero_blog.png";
 
@@ -31,12 +32,7 @@ const Blog = ({ posts, pageCount, categories }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       const fetchData = async () => {
-        const postPreviews = await getPostPreviews(
-          false,
-          page - 1,
-          ITEMS_PER_PAGE,
-          "all"
-        );
+        const postPreviews = await fetchPostPreviews(page - 1, "all");
         setArchivePosts(postPreviews.items);
         setVisible(true);
       };
