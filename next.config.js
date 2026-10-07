@@ -1573,6 +1573,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: "/privacy-policy/",
+        destination: "/policies/privacy-policy/",
+        statusCode: 301,
+      },
+      {
         source: "/privacy-policy-terms-pages/",
         destination: "/digital-marketing-blogs/privacy-policy-terms-pages/",
         permanent: true,
@@ -2182,6 +2187,12 @@ module.exports = {
         destination:
           "/digital-marketing-blogs/what-is-a-goal-in-google-analytics/",
         permanent: true,
+      },
+      {
+        source: "/what-is-indexnow-and-will-it-help-increase-ai-visibility/",
+        destination:
+          "/digital-marketing-blogs/what-is-indexnow-and-will-it-help-increase-ai-visibility/",
+        statusCode: 301,
       },
       {
         source: "/what-is-local-search/",
