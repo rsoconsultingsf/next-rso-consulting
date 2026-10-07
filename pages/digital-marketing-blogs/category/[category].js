@@ -203,8 +203,10 @@ export async function getStaticProps({ params, preview = false }) {
   };
 }
 
-export async function getStaticPaths(preview = false) {
-  const postCategories = await getAllPostsCategories(preview);
+// getStaticPaths never runs in preview mode, so always list published
+// categories (its argument is Next.js's context object, not a preview flag).
+export async function getStaticPaths() {
+  const postCategories = await getAllPostsCategories(false);
 
   let categoryArray = [];
   let uniqueCategoryArray = [];
