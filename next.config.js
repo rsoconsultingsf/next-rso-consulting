@@ -1748,6 +1748,11 @@ module.exports = {
         statusCode: 301,
       },
       {
+        source: "/services/google-marketing-platform-consulting-training/",
+        destination: "/services/ai-analytics-search-insights-consulting/",
+        statusCode: 301,
+      },
+      {
         source: "/should-brand-have-brand-purpose/",
         destination:
           "/digital-marketing-blogs/should-brand-have-brand-purpose/",
