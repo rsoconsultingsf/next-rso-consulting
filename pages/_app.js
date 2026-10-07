@@ -4,7 +4,10 @@ import React, { useEffect } from "react";
 import Layout from "../components/Layout/Layout";
 // import Transition from "../components/UI/Transitions/Transition";
 
+import Head from "next/head";
 import Script from "next/script";
+
+import { canonicalUrl } from "../lib/canonicalUrl";
 
 import "../styles/globals.css";
 
@@ -12,9 +15,24 @@ import "../styles/globals.css";
 //   document.documentElement.style.scrollBehavior = isSmooth ? "smooth" : "auto";
 // };
 
+// Error pages render under the requested URL, which doesn't exist, so they
+// get no canonical.
+const NO_CANONICAL_PATHNAMES = ["/404", "/_error"];
+
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
     <>
+      {!NO_CANONICAL_PATHNAMES.includes(router.pathname) && (
+        <Head>
+          <link
+            rel="canonical"
+            href={canonicalUrl(router.asPath)}
+            key="canonical"
+          />
+        </Head>
+      )}
       <Script
         id="google-tag-manager"
         strategy="afterInteractive"
