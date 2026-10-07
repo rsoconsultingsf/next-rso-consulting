@@ -16,6 +16,7 @@ import {
   getAllPostsCategories,
   getCategoryPostPreviews,
 } from "../../../lib/api";
+import { fetchPostPreviews } from "../../../lib/fetchPostPreviews";
 
 import heroImage from "../../../assets/images/hero/rso-hero_blog.png";
 
@@ -39,10 +40,8 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       const fetchData = async () => {
-        const categoryPostPreviews = await getCategoryPostPreviews(
-          false,
+        const categoryPostPreviews = await fetchPostPreviews(
           page - 1,
-          ITEMS_PER_PAGE,
           category
         );
         setArchivePosts(categoryPostPreviews.items);
