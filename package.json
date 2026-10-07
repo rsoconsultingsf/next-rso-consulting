@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/generate-static-routes.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/generate-static-routes.mjs",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,7 +20,6 @@
     "date-fns": "^2.29.2",
     "framer-motion": "^10.10.0",
     "next": "^16.2.4",
-    "next-sitemap": "^4.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
