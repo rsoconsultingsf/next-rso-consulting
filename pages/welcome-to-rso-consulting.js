@@ -10,8 +10,10 @@ const ThankYou = () => {
   return (
     <Fragment>
       <Head>
-        <title></title>
-        <meta name="description" content="" />
+        <title>Thanks for Reaching Out | RSO Consulting</title>
+        {/* Post-form thank-you page: keep it out of search results. The
+            sitemap generator skips pages marked noindex. */}
+        <meta name="robots" content="noindex, follow" />
       </Head>
       <Hero image={heroImage} alt="" noAnchor>
         <div
