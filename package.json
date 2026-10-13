@@ -19,7 +19,7 @@
     "@mui/material": "^5.14.9",
     "date-fns": "^2.29.2",
     "framer-motion": "^10.10.0",
-    "next": "^16.2.4",
+    "next": "^16.3.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
@@ -27,7 +27,7 @@
     "react-sticky-el": "^2.0.9",
     "react-twitter-embed": "^4.0.4",
     "rss-parser": "^3.12.0",
-    "sharp": "^0.32.0",
+    "sharp": "^0.35.5",
     "slick-carousel": "^1.8.1",
     "slugify": "^1.6.6"
   },
@@ -35,5 +35,10 @@
     "@contentful/rich-text-html-renderer": "^16.0.3",
     "eslint": "^8.37.0",
     "eslint-config-next": "^13.2.4"
+  },
+  "overrides": {
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "^9.0.7"
+    }
   }
 }
