@@ -12,7 +12,7 @@ import Alert from "../../components/UI/Alert/alert";
 import {
   getAllPostsCategories,
   getAllPostSlugs,
-  getPostAndMorePosts,
+  getPostBySlug,
 } from "../../lib/api";
 
 import Head from "next/head";
@@ -214,14 +214,16 @@ export default function Post({
 }
 
 export async function getStaticProps({ params, preview = false }) {
-  const data = await getPostAndMorePosts(params.slug, preview);
+  const post = await getPostBySlug(params.slug, preview);
 
   // If no post is returned for the given slug, show the 404 page
-  if (!data?.post) {
+  if (!post) {
     return {
       notFound: true,
     };
   }
+
+  const data = { post };
 
   const postCategories = await getAllPostsCategories(preview);
   let categoryArray = [];
@@ -259,7 +261,6 @@ export async function getStaticProps({ params, preview = false }) {
       metaDescription:
         data?.post?.metaDescription ??
         `Read the latest news and trends about Digital Marketing`,
-      morePosts: data?.morePosts ?? null,
       uniqueCategories: uniqueCategoryArray,
     },
     //revalidate: 60,

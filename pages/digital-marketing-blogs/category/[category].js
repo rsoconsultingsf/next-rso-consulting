@@ -36,8 +36,15 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
 
   const pageTitle = `${pageCategory} Blog Posts | RSO Consulting`;
 
-  // Update post previews displayed
+  // Update post previews displayed. Page one is already rendered from props,
+  // so only later pages need a round trip (each one is a Contentful request).
   useEffect(() => {
+    if (page === 1) {
+      setArchivePosts(posts);
+      setVisible(true);
+      return;
+    }
+
     const timer = setTimeout(() => {
       const fetchData = async () => {
         const categoryPostPreviews = await fetchPostPreviews(
@@ -52,7 +59,7 @@ const CategoryArchive = ({ posts, pageCount, categories, category }) => {
     }, 500);
 
     return () => clearTimeout(timer);
-  }, [page, category]);
+  }, [page, category, posts]);
 
   const paginationChangeHandler = (e, value) => {
     setVisible(false);
