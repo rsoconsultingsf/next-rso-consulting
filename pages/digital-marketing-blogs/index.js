@@ -28,8 +28,15 @@ const Blog = ({ posts, pageCount, categories }) => {
   const [archivePosts, setArchivePosts] = useState(posts);
   const [visible, setVisible] = useState(true);
 
-  // Update post previews displayed
+  // Update post previews displayed. Page one is already rendered from props,
+  // so only later pages need a round trip (each one is a Contentful request).
   useEffect(() => {
+    if (page === 1) {
+      setArchivePosts(posts);
+      setVisible(true);
+      return;
+    }
+
     const timer = setTimeout(() => {
       const fetchData = async () => {
         const postPreviews = await fetchPostPreviews(page - 1, "all");
@@ -41,7 +48,7 @@ const Blog = ({ posts, pageCount, categories }) => {
     }, 500);
 
     return () => clearTimeout(timer);
-  }, [page]);
+  }, [page, posts]);
 
   useEffect(() => {
     if (router.query.page) {
