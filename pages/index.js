@@ -21,10 +21,10 @@ const Home = () => {
   return (
     <Fragment>
       <Head>
-        <title>Full Service Digital Marketing Agency - RSO</title>
+        <title>AI-Era Marketing Strategy & Consulting - RSO Consulting</title>
         <meta
           name="description"
-          content="RSO is a full-service digital marketing agency in San Francisco, offering SEO, PPC, Social Media, Web Design and Analytics. Call 415-992-3830."
+          content="RSO is a senior-led marketing strategy firm helping brands navigate AI-driven search and discovery through project-based consulting or full-service management."
         />
         {/* Schema */}
         <script
@@ -50,7 +50,7 @@ const Home = () => {
         anchor="/services/#cards"
       >
         <h1 style={{ color: "#fff", textAlign: "center", marginBottom: "0" }}>
-          <b>20 Years of Helping Customers Find You Online</b>
+          <b>Senior Strategists for the AI Era of Marketing</b>
         </h1>
         <p
           className="sub-intro-details"
@@ -62,8 +62,8 @@ const Home = () => {
             maxWidth: "800px",
           }}
         >
-          Two decades of helping brands stay visible, competitive, and
-          profitable in a constantly evolving digital world.
+          AI is changing how customers search, decide, and buy. We help you stay
+          ahead of it.
         </p>
         <div
           className="col-3-hero"
@@ -96,15 +96,12 @@ const Home = () => {
         <div id="intro"></div>
         <div className="container">
           <h2 className="intro sub-headline">
-            Over the past <b>20 years</b>, we’ve watched digital behavior
-            evolve—and <b>we’ve evolved with it</b>. Today, customers research,
-            decide, and purchase online <b>more than ever before</b>. We help
-            you show up in the right places to{" "}
-            <b>
-              build awareness, nurture relationships, and convert demand into
-              revenue
-            </b>
-            .
+            RSO Consulting brings <b>senior-level marketing strategy</b> to
+            every engagement. Whether you need a focused, project-based
+            initiative or full-service, always-on management. We&apos;re not
+            here to just execute a channel checklist. We&apos;re here to{" "}
+            <b>think alongside you</b>, at the strategic level, on the{" "}
+            <b>work that actually moves the business</b>.
           </h2>
         </div>
       </section>
@@ -123,33 +120,45 @@ const Home = () => {
             />
           </div>
           <div className="sub-intro">
-            <SectionLabel red>How Do You Measure Success?</SectionLabel>
+            <SectionLabel red>
+              How Do You Know What&apos;s Actually Working?
+            </SectionLabel>
             <h2
               className="sub-headline"
               style={{ maxWidth: "515px", margin: "0 auto" }}
             >
-              The <b>success</b> of your <b>digital marketing</b> is all about
-              the <b>data</b> and the <b>spend</b>.
+              Anyone can hand you a <b>dashboard</b>. The harder question is
+              knowing <b>what the numbers mean</b> - and <b>what to do next</b>.
             </h2>
             <p className="sub-intro-details">
-              To justify marketing expenses, you need the numbers to prove
-              what&apos;s working - and what&apos;s not. We are certified in
-              Google Ads and Google Analytics, and our services are supported by
-              the best in the business.
+              That&apos;s the strategic layer most agencies skip. We bring
+              senior judgment to the data, not just the data itself. We back
+              that judgment with deep platform expertise and multiple industry
+              certifications.
             </p>
           </div>
         </div>
       </section>
       <section>
         <div className="container center">
-          <SectionLabel blue>What We Can Do For You</SectionLabel>
+          <SectionLabel blue>
+            Strategy First. Execution Where It Counts
+          </SectionLabel>
           <h2
             className="sub-headline"
             style={{ margin: "0 auto 30px auto" }}
           >
-            We offer a <b>full range</b> of data-driven <b>digital marketing</b>{" "}
-            services:
+            We lead every engagement as <b>consultants</b> - scoping the{" "}
+            <b>strategy</b> before touching a single channel.
           </h2>
+          <p
+            className="sub-intro-details"
+            style={{ maxWidth: "800px", margin: "0 auto 30px auto" }}
+          >
+            Whether it&apos;s a defined project or full-service, ongoing
+            management, the work is led by senior people, and increasingly
+            shaped by how AI is changing search and discovery.
+          </p>
         </div>
         <div className="col-3 unset full-grid container center">
           <ServiceCard
@@ -166,8 +175,8 @@ const Home = () => {
                 }}
               />
             }
-            title="Search Engine Optimization"
-            description="Grow your website’s organic search results, drive more traffic to your website and generate leads."
+            title="SEO | Organic Growth Strategy"
+            description="Senior-led strategy for visibility in an AI-driven search landscape."
             details={
               <ul>
                 <li>Site Audits</li>
@@ -191,8 +200,8 @@ const Home = () => {
                 }}
               />
             }
-            title="Paid Search Advertising"
-            description="Boost your brand awareness, sales, and revenue."
+            title="Paid Search Advertising Strategy"
+            description="Strategic budget and channel decisions - not just campaign management."
             details={
               <ul>
                 <li>Strategy-Campaign Alignment</li>
@@ -216,8 +225,8 @@ const Home = () => {
                 }}
               />
             }
-            title="Social Media Optimization"
-            description="Build your brand awareness, grow your audience and increase engagement through organic or paid content."
+            title="Social Media Optimization & Content Strategy"
+            description="Building brand presence with intention, not just a posting calendar."
             details={
               <ul>
                 <li>Platform Selections</li>
@@ -241,9 +250,8 @@ const Home = () => {
                 }}
               />
             }
-            title="Web Analytics Consultation"
-            description="Understand your website visitors and spend
-            your budget more effectively."
+            title="Web Analytics Strategy & Consultation"
+            description="Turning data into decisions, not just dashboards."
             details={
               <ul>
                 <li>Data-Driven Marketing</li>
@@ -268,7 +276,7 @@ const Home = () => {
               />
             }
             title="Web Design & Development"
-            description="Offer an engaging experience for your website visitors with modern web design using the latest technology and best practices."
+            description="Strategic UX consulting behind every rebuild."
             details={
               <ul>
                 <li>Optimized Content</li>
@@ -292,10 +300,8 @@ const Home = () => {
                 }}
               />
             }
-            title="A/B Testing"
-            description="Optimize your website's engagement by testing 
-            variants of webpages and measuring resulting
-            conversion rates."
+            title="A/B Testing & Conversion Strategy"
+            description="Testing frameworks designed around business goals, not just page tweaks."
             details={
               <ul>
                 <li>A/B Testing</li>
@@ -308,14 +314,13 @@ const Home = () => {
         </div>
         <div className="container center">
           <h2 className="sub-headline">
-            Take a look at our <b>complete list</b> of digital marketing
-            services.
+            See how we <b>structure strategy</b> across every channel
           </h2>
           <Button
             className="cta"
             link="/services/"
           >
-            SEE ALL SERVICES
+            EXPLORE OUR APPROACH
           </Button>
         </div>
       </section>
