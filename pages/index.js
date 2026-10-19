@@ -96,8 +96,8 @@ const Home = () => {
         <div id="intro"></div>
         <div className="container">
           <h2 className="intro sub-headline">
-            RSO Consulting brings <b>senior-level marketing strategy</b> to
-            every engagement. Whether you need a focused, project-based
+            RSO Consulting brings <b>senior-level marketing strategy</b>{" "}
+            to every engagement. Whether you need a focused, project-based
             initiative or full-service, always-on management. We&apos;re not
             here to just execute a channel checklist. We&apos;re here to{" "}
             <b>think alongside you</b>, at the strategic level, on the{" "}
