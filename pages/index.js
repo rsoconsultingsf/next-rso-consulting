@@ -157,7 +157,8 @@ const Home = () => {
           >
             Whether it&apos;s a defined project or full-service, ongoing
             management, the work is led by senior people, and increasingly
-            shaped by how AI is changing search and discovery.
+            shaped by how AI is changing search and discovery, including how
+            brands show up in AI-generated answers and recommendations.
           </p>
         </div>
         <div className="col-3 unset full-grid container center">
