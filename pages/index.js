@@ -177,7 +177,7 @@ const Home = () => {
               />
             }
             title="SEO | Organic Growth Strategy"
-            description="Senior-led strategy for visibility in an AI-driven search landscape."
+            description="Senior-led strategy for visibility across traditional and AI-driven search, including AI search optimization."
             details={
               <ul>
                 <li>Site Audits</li>
