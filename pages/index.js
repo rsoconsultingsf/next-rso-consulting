@@ -184,6 +184,7 @@ const Home = () => {
                 <li>Keyword Research & Mapping</li>
                 <li>Optimized Content Creation</li>
                 <li>On-site & Off-site SEO</li>
+                <li>AI Search Optimization</li>
               </ul>
             }
           />
